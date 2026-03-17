@@ -5,6 +5,7 @@ import { BackButton } from "@/components/back-button";
 import { monthLabels, monthOrder } from "@/lib/utils";
 import type { Question } from "@/types/payload-types";
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const payload = await getPayload({ config });
 
@@ -98,12 +99,17 @@ const ExamenesOficialesPage: NextPage = async () => {
                     className="rounded-md border px-3 py-2 text-sm"
                   >
                     <p className="font-medium">{monthLabels[month]}</p>
-                    <p className="text-muted-foreground">
+                    <div className="text-muted-foreground space-x-2">
                       {[...examsByYearAndMonth[year][month]]
                         .sort((a, b) => a - b)
-                        .map((examNumber) => `Test 0${examNumber}`)
-                        .join(", ")}
-                    </p>
+                        .map((examNumber) => (
+                          <Link
+                            key={`exam-${examNumber}`}
+                            href={`/examenes-oficiales/${year}/${month}/${examNumber}`}
+                            className="hover:underline"
+                          >{`Test 0${examNumber}`}</Link>
+                        ))}
+                    </div>
                   </li>
                 ))}
             </ul>
