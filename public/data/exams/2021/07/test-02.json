@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2021070201,
+    "question": "La bocina es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070202,
+    "question": "Un grillete es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070203,
+    "question": "Escorar es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070204,
+    "question": "A la parte de los costados del barco donde éste empieza a estrecharse para formar la proa se la conoce como:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070205,
+    "question": "¿Qué es una cornamusa?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070206,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070207,
+    "question": "¿Cuál es la mejor forma de evitar los envites del mar por proa?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070208,
+    "question": "¿Cuál es la capacidad que deben tener las balsas salvavidas en una embarcación de recreo?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070209,
+    "question": "En caso de navegar con visibilidad reducida por niebla:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070210,
+    "question": "Señale la afirmación FALSA:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070211,
+    "question": "¿Cuántas Zonas Especialmente Protegidas de Importancia para el Mediterráneo (ZEPIM) existen en la actualidad?",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070212,
+    "question": "Los reconocimientos periódicos de las embarcaciones de recreo NO son obligatorios para:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070213,
+    "question": "¿Cuál es la marca de tope de la Marca Cardinal que nos indica aguas navegables en el cuadrante oeste?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070214,
+    "question": "Si al entrar a un puerto vemos una marca cilíndrica de color rojo:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070215,
+    "question": "Las Marcas Especiales indican:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070216,
+    "question": "Las Marcas de Aguas Navegables se usan para indicar:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070217,
+    "question": "El color de las Marcas de Peligro Aislado es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070218,
+    "question": "Según la Regla 33 del RIPA, los buques de eslora inferior a 12 metros:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070219,
+    "question": "Según la Regla 19 del RIPA, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070220,
+    "question": "Según la Regla 23 del RIPA, los aerodeslizadores cuando operen en la condición sin desplazamiento, además de las luces prescritas para los buques de propulsión mécanica, exhibirán:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070221,
+    "question": "De acuerdo con la Regla 20.e del RIPA, las luces y marcas mencionadas en estas Reglas:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070222,
+    "question": "De acuerdo a la Regla 18 del RIPA - Obligaciones entre categorías de buques, sin perjuicio de lo dispuesto en otras reglas, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070223,
+    "question": "Según la Regla 25.e del RIPA, un buque que navegue a vela, cuando sea también propulsado mecánicamente, deberá exhibir a proa, en el lugar más visible:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070224,
+    "question": "De acuerdo a su Regla 1 - Ámbito de aplicación, del RIPA, este Reglamento se aplicará a todos los buques:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070225,
+    "question": "Según la Regla 3 del RIPA, la expresión “buque sin gobierno” significa:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070226,
+    "question": "Según el Anexo IV del RIPA, si observamos una señal consistente en una bandera cuadrada que tenga encima o debajo de ella una bola u objeto análogo:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070227,
+    "question": "Según el Anexo IV del RIPA, ¿cuál de las siguientes señales NO es una señal de peligro?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070228,
+    "question": "`Amarrar por seno´ consiste en:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070229,
+    "question": "Al amarrar a un muerto, con objeto de que la cadena y los cabos del muerto no se enreden en la hélice , hay que acercarse a él:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070230,
+    "question": "Si encontrándonos en una balsa salvavidas durante la noche, escuchamos medios aéreos en la zona, ¿cuál sería la mejor medida a tomar?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070231,
+    "question": "¿Qué es un espiche?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070232,
+    "question": "Si descubre agua a bordo y ésta es salada y caliente, ¿qué debe hacer?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070233,
+    "question": "¿Cuál de las siguientes afirmaciones en relación a la presión atmosférica es FALSA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070234,
+    "question": "¿Cuál de las siguientes unidades de medida NO se emplea para la presión atmosférica?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070235,
+    "question": "¿Cuál es el instrumento que nos permite conocer la velocidad del viento?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070236,
+    "question": "De las siguientes formas de obtener la previsión meteorológica para la navegación marítima, ¿cuál es CORRECTA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070237,
+    "question": "En relación al desvío de la aguja elija cuál de las siguientes afirmaciones es CORRECTA:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070238,
+    "question": "Entre las características de las luces marítimas están:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070239,
+    "question": "Si disponemos de una carta en la que las latitudes aumentan hacia abajo y las longitudes aumentan hacia la izquierda, dicha carta representa una zona que se encuentra en:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070240,
+    "question": "¿De qué color es la luz de una marca lateral en la región A que marca el canal de entrada a un puerto, si saliendo correctamente del mismo la dejamos por nuestro costado de babor?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070241,
+    "question": "En un lugar determinado, la declinación magnética:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070242,
+    "question": "Determine las coordenadas de una embarcación situada a 6 millas del Cabo Espartel y a 5,5 millas de Punta Malabata.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070243,
+    "question": "Hallar la sonda en el momento de la primera pleamar el día 3 de julio de 2021 en el puerto de Santander con una presión atmosférica de 1023 mb y una sonda en la carta de 7,8 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070244,
+    "question": "Navegando en una zona con una declinación magnética (dm) de 2° W y un desvío de la aguja de 4° E, se toma una demora de aguja (Da) de 343° a un punto conocido de la costa. Calcular la demora verdadera (Dv) del punto.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2021070245,
+    "question": "¿Qué distancia (d) se tiene entre la posición A (l = 36º 20,0´N L = 006º 19,0´W) y la posición B (l = 36º 20,0´N L = 006º 10,0´W)?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 7,
+    "examNumber": 2,
+    "explanation": null
+  }
+]

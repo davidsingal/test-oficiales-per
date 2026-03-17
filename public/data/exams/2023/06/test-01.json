@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2023060101,
+    "question": "Los baos son:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060102,
+    "question": "El término náutico “Imbornal” se refiere a:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060103,
+    "question": "De las partes del timón, la mecha es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060104,
+    "question": "El francobordo de una embarcación es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060105,
+    "question": "¿Cómo se denomina a la pieza sólida de metal o de madera fuertemente unida a la cubierta – por lo regular dos columnas de hierro fundidas sobre una misma base – y utilizada para tomar vueltas sobre ella a las cadenas de las anclas, amarras del buque o para hacer firme un cabo?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060106,
+    "question": "El orinque se utiliza para:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060107,
+    "question": "¿Cuál es la flotabilidad mínima que deben tener los chalecos salvavidas a bordo de una embarcación de recreo durante una navegación entre 5 y 12 millas de la costa?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060108,
+    "question": "Correr el temporal significa:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060109,
+    "question": "¿Cuál de las siguientes es una maniobra recomendada de búsqueda cuando no se ve al náufrago?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060110,
+    "question": "Elevar un peso en una embarcación:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060111,
+    "question": "Para el gobierno de una embarcación de recreo es necesario superar un reconocimiento psicofísico que:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060112,
+    "question": "En el supuesto de observar una bandera roja con una franja en diagonal blanca, se entenderá el siguiente mensaje:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060113,
+    "question": "En las Marcas de peligro aislado la luz es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060114,
+    "question": "Arribando de noche al puerto de Panxón, vislumbramos una luz blanca centelleante de grupos de seis centelleos Q(6) más un destello largo cada 15 segundos, ¿en qué cuadrante se encontrarán las aguas más profundas?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060115,
+    "question": "¿Cómo es la marca de tope de las Marcas laterales de estribor?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060116,
+    "question": "Las Marcas especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060117,
+    "question": "En las Marcas de aguas navegables:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060118,
+    "question": "Según la Regla 34 del RIPA, “Señales de maniobra y advertencia”, cuando un buque lleve la luz utilizada para complementar las pitadas reglamentarias para indicar señales de maniobra y advertencia, esta luz será visible a una distancia mínima de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060119,
+    "question": "Conforme a la Regla 9 del RIPA, “Canales angostos”, los buques que se aproximen a un canal angosto en donde, por estar obstaculizada la visión, no puedan verse otros buques:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060120,
+    "question": "Según la Regla 29 del RIPA, “Embarcaciones de prácticos”, las embarcaciones en servicio de practicaje, si se encuentran en navegación, además de exhibir en la parte superior del palo dos luces todo horizonte en línea vertical, siendo blanca la superior y roja la inferior, mostrarán:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060121,
+    "question": "Navegando de Cádiz a Málaga en un yate de 22 metros de eslora, se observa que se va a transitar una zona que cuenta con un dispositivo de separación de tráfico. Conforme a la Regla 10 del RIPA, “Dispositivos de separación del tráfico”, ¿cuál sería la manera correcta de transitarlo?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060122,
+    "question": "Según la Regla 30 del RIPA, “Buques fondeados y buques varados”, los buques fondeados exhibirán en la parte de proa:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060123,
+    "question": "De acuerdo con la Regla 21 del RIPA, “Definiciones”, la “luz de tope” es una luz blanca colocada sobre el eje longitudinal del buque, que muestra su luz sin interrupción en todo un arco del horizonte de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060124,
+    "question": "Conforme a la Regla 3 del RIPA, “Definiciones generales”, la expresión “buque con capacidad de maniobra restringida”:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060125,
+    "question": "De acuerdo con la Regla 24 del RIPA, “Buques remolcando y empujando”, todo buque de propulsión mecánica, cuando remolque a otro, exhibirá dos luces de tope en la línea vertical en sustitución de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060126,
+    "question": "De acuerdo con la Regla 18 del RIPA, “Obligaciones entre categorías de buques”, sin perjuicio de lo dispuesto en las Reglas 9, 10 y 13, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060127,
+    "question": "De acuerdo con la Regla 26 del RIPA, “Buques de pesca”, si observamos un buque dedicado a la pesca sin ningún otro buque dedicado a la pesca en sus inmediaciones, y que exhibe dos luces todo horizonte en la línea vertical, siendo verde la superior y blanca la inferior, sabremos que se trata de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060128,
+    "question": "¿De qué cabo deberemos cobrar estando amarrados por el costado de estribor en el muelle, para evitar que la roda toque la embarcación adyacente?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060129,
+    "question": "¿Cómo se denomina a la acción de equilibrar proporcionalmente el grado de tensión entre varios cabos?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060130,
+    "question": "Si una persona sufre quemaduras sin que existan lesiones por inhalación en vías respiratorias, NO se podrán tratar a bordo y requerirá la evacuación del herido a un centro hospitalario:",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060131,
+    "question": "Si se ha producido un incendio de grandes proporciones en la popa de la embarcación que no somos capaces de controlar, se recomienda de forma general:",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060132,
+    "question": "En relación con la prevención de los abordajes ¿cuál de las siguientes medidas es CORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060133,
+    "question": "En relación con las brisas costeras, el “virazón” es un viento que sopla generalmente durante:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060134,
+    "question": "En relación con la definición de temperatura, señale la afirmación CORRECTA. En la atmósfera:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060135,
+    "question": "En relación con las borrascas, señale la afirmación INCORRECTA.",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060136,
+    "question": "De acuerdo con la escala de Douglas empleada en meteorología, indique cuál de las siguientes afirmaciones es INCORRECTA.",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060137,
+    "question": "Si tenemos una corrección total = +10º y una declinación magnética = 10º NE, ¿cuál será el valor del desvío?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060138,
+    "question": "El viento que percibimos cuando el buque está en movimiento recibe el nombre de:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060139,
+    "question": "Con relación a la tablilla de desvíos, indique cuál es la afirmación CORRECTA.",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060140,
+    "question": "¿Cuál es la definición CORRECTA de latitud?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060141,
+    "question": "La longitud de un grado medido en la escala de latitudes de una carta mercatoriana equivale a:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060142,
+    "question": "Hallar la sonda en el momento de la primera bajamar del día 06 de junio de 2023 en Algeciras, con una presión atmosférica de 996 Mb y una sonda en la carta de 4,6 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060143,
+    "question": "En un momento dado tomamos simultáneamente demora verdadera de Cabo Espartel = 216º y demora verdadera de Punta Malabata=115º. Desde esta situación damos rumbo para pasar a 3 millas de Punta Cires. ¿Dónde nos encontraremos después de navegar una distancia de 13 millas?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060144,
+    "question": "Navegando por el Estrecho de Gibraltar con un desvío de aguja de 1°(-), en una zona con declinación magnética 1°W, tomamos simultáneamente demora de aguja a Punta Paloma =349º y a Isla de Tarifa =077º. Situados, damos rumbo a Cabo Trafalgar. Se pide calcular la distancia navegada desde el momento de la situación hasta que la embarcación se encuentre al través de Punta Camarinal.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2023060145,
+    "question": "¿Cuál es la situación de nuestra embarcación si estamos a 5 millas de Punta Paloma y con una demora verdadera de ese punto de 020º?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 6,
+    "examNumber": 1,
+    "explanation": null
+  }
+]

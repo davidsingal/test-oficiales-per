@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2021040301,
+    "question": "¿Qué nombre reciben las aberturas practicadas en el casco para que pueda salir el agua embarcada en la cubierta?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040302,
+    "question": "La parte curvada trasera del costado que converge hacia popa se denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040303,
+    "question": "¿Qué nombre recibe la maniobra de largar o arriar cabo o cadena?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040304,
+    "question": "¿Qué nombre recibe el `anclote´de más de dos brazos sin cepo?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040305,
+    "question": "¿Dónde se afirman los cabos de amarre en tierra?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040306,
+    "question": "La mena de un cabo es:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040307,
+    "question": "Para recoger a una persona en el agua, lo más recomendable cuando se ve al náufrago es:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040308,
+    "question": "¿Cuál de las siguientes formas de realizar un remolque es recomendable en un río angosto o dentro de un puerto?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040309,
+    "question": "Respecto a su estiba y conservación, las bengalas de mano deben:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040310,
+    "question": "Respecto a las medidas a tomar a bordo con mal tiempo, ¿cuál de las siguientes afirmaciones NO ES CORRECTA?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040311,
+    "question": "¿Cuál de los siguientes espacios no está comprendido en la lista ZEPIM (Zonas Especialmente Protegidas de Importancia para el Mediterráneo)?",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040312,
+    "question": "Las embarcaciones deportivas en el interior de los puertos y sus canales de acceso:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040313,
+    "question": "¿Qué tipo de marcas están rodeadas de aguas seguras, pero no señalan ningún peligro?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040314,
+    "question": "¿Qué afirmación sobre las Marcas de Peligro Aislado ES CORRECTA?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040315,
+    "question": "La marca de tope de una Marca de Aguas Navegables es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040316,
+    "question": "Una Marca Especial será de color:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040317,
+    "question": "La marca de tope de una Marca Cardinal Norte es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040318,
+    "question": "A efectos de la Regla 3 del RIPA, ¿puede ser considerado un \"buque de vela\" como un \"buque de propulsión mecánica\"?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040319,
+    "question": "Encontrándonos en navegación, observamos por nuestro costado de estribor, hacia proa del través, una embarcación que demora al 030º. Veinte minutos más tarde vemos que la demora apenas ha variado, estando al 030,5º. Según la Regla 7 del RIPA, ¿qué hemos de considerar?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040320,
+    "question": "La Regla 30 del RIPA determina que un buque fondeado exhibirá en el lugar más visible:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040321,
+    "question": "Conforme a la Regla 27 del RIPA, ¿cuál de los siguientes conjuntos de luces debe exhibir en el lugar más visible un buque sin gobierno?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040322,
+    "question": "Conforme al Anexo IV del RIPA, ¿cuál de las siguientes señales es indicativa de peligro y necesidad de ayuda?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040323,
+    "question": "Con arreglo a la Regla 20.d del RIPA, las reglas relativas a las marcas deberán cumplirse:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040324,
+    "question": "Aproximándose, vemos un buque remolcando a otro. En esta situación, y atendiendo a la Regla 27 del RIPA, debemos considerar que:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040325,
+    "question": "Según la Regla 18 del RIPA, los buques de vela en navegación se mantendrán apartados de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040326,
+    "question": "De acuerdo con la Regla 2.b del RIPA, un buque puede apartarse de dicho Reglamento:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040327,
+    "question": "Según la Regla 34.b del RIPA, cuando se lleven señales luminosas para complementar las pitadas prescritas para que todo buque de propulsión mecánica en navegación indique su maniobra, ¿qué luz será la utilizada para estas señales?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040328,
+    "question": "Faenando con cabos, ¿qué significa el término \"cobrar\"?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040329,
+    "question": "¿A qué se denomina \"lascar\"?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040330,
+    "question": "Según la Guía Médica del Instituto Social de la Marina, ¿cada cuánto tiempo se debe aflojar un torniquete a un accidentado con hemorragia?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040331,
+    "question": "¿Cuándo abandonaremos el barco?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040332,
+    "question": "¿Cuándo es más conveniente elegir el agua como agente extintor?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040333,
+    "question": "El terral es un viento que se desplaza desde:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040334,
+    "question": "La expresión \"refrescar\", relativa al viento, significa:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040335,
+    "question": "Navegando a 12 millas de la costa, si no disponemos de teléfono móvil, televisión por satélite ni de conexión a internet de ningún tipo, obtendremos la previsión meteorológica:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040336,
+    "question": "En metereología, ¿hasta que límite se considera baja presión?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040337,
+    "question": "Señale la afirmación CORRECTA sobre la demora:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040338,
+    "question": "¿Cómo se denomina a la diferencia expresada en metros entre la altura de la marea en la bajamar más próxima y la altura de marea en la pleamar más próxima?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040339,
+    "question": "De las siguientes líneas de una carta náutica, ¿cuál NO se considera una línea de posición?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040340,
+    "question": "A la diferencia entre el rumbo verdadero y el rumbo de aguja se denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040341,
+    "question": "Señale cuál de las siguientes afirmaciones es CORRECTA:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040342,
+    "question": "Año 2021, una embarcación situada a 1,5´ al SE del faro de Isla de Tarifa navega hacia el NE buscando recalar en la bahía de Algeciras, su rumbo verdadero es paralelo al dispositivo de separación de tráfico del Estrecho de Gibraltar en sentido NE que tiene por su costado de estribor. Sabiendo que el desvío para el rumbo actual es de 1º W, ¿cuál de los siguientes rumbos de aguja se aproxima más al que lleva la embarcación en ese momento?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040343,
+    "question": "¿Cuál es la distancia entre los faros de Cabo Trafalgar y Punta Círes?. Se pide precisión en el resultado.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040344,
+    "question": "Una embarcación se encuentra en l=36° - 04,0' N y L=006° - 05,0' W, navegando al norte verdadero a 12 nudos. Calcular la situación tras 30 minutos navegando a ese rumbo y velocidad.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2021040345,
+    "question": "Calcular la situación verdadera de una embarcación que se encuentra situada en la zona de precaución del sistema de organización del tráfico del Estrecho de Gibraltar, a 8 millas del faro de Punta Almina y a 7 millas del faro de Punta Europa.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  }
+]

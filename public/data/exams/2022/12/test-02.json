@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2022120201,
+    "question": "En relación con el equipo de fondeo, ¿cuál es la definición INCORRECTA?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120202,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120203,
+    "question": "¿Cuál de las siguientes definiciones es INCORRECTA?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120204,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120205,
+    "question": "En el fondeo:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120206,
+    "question": "¿Cómo se denomina el lazo que se forma en el extremo de un cabo doblándolo y uniéndolo con costura o ligada, y que sirve para enganchar o ceñir algo?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120207,
+    "question": "Navegando en aguas someras con oleaje:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120208,
+    "question": "¿Por qué medio podemos contactar con Salvamento Marítimo?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120209,
+    "question": "Estando en aguas tranquilas con la embarcación recuperando su posición de equilibrio desde una escora determinada, ¿en cuál de las siguientes circunstancias podemos asegurar que existe una mayor estabilidad transversal de la embarcación?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120210,
+    "question": "Navegando a 8 millas de la costa, ¿cuál es la flotabilidad mínima que deben tener los chalecos salvavidas que llevemos a bordo?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120211,
+    "question": "Para la protección de las praderas de Posidonia Oceánica:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120212,
+    "question": "En un tramo de costa donde no está balizada la zona de baño, si usted se encuentra a menos de 50 metros de la costa:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120213,
+    "question": "Si avistamos una marca de color amarillo con una ancha banda horizontal negra coronada por dos conos negros superpuestos opuestos por sus vértices, ¿qué información nos está dando?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120214,
+    "question": "El color de las Marcas Especiales es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120215,
+    "question": "Navegando, observamos por proa una luz blanca en grupo de dos destellos GpD (2). ¿Qué Marca es?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120216,
+    "question": "Las Marcas de aguas navegables:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120217,
+    "question": "Recalando de noche, avistamos por el través de babor una luz roja con un ritmo de destello en grupos de (2+1) destello. Por el través de estribor avistamos una luz verde centelleante continua. ¿Por dónde navega la embarcación?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120218,
+    "question": "Según la Regla 34 del RIPA, “Señales de maniobra y advertencia”, si nos aproximamos a un recodo donde tenemos la visión obstruida y no podemos ver a otros buques, haremos sonar:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120219,
+    "question": "De acuerdo con la Regla 21.b del RIPA, “Definiciones”, las “luces de costado” se definen como luces que muestran cada una su luz sin interrupción:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120220,
+    "question": "Según la Regla 10 del RIPA, “Dispositivos de separación del tráfico”, ¿qué buques NO utilizarán la zona de navegación costera adyacente de un dispositivo de separación de tráfico?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120221,
+    "question": "De acuerdo con la Regla 15 del RIPA, “Situación de cruce”, y la Regla 16, “Maniobra del buque que cede el paso”, cuando dos buques se crucen con riesgo de abordaje, de forma general:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120222,
+    "question": "De acuerdo con la Regla 25 del RIPA, “Buques de vela en navegación y embarcaciones de remo”, si una embarcación de remo no exhibe las luces prescritas en la misma Regla para los buques de vela, deberá tener a mano para uso inmediato una linterna eléctrica o farol encendido que muestre:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120223,
+    "question": "Según la Regla 4 del RIPA, la Regla 8 “Maniobras para evitar el abordaje” se aplica:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120224,
+    "question": "Según la Regla 14 del RIPA, “Situación de vuelta encontrada”, cuando dos buques de propulsión mecánica naveguen de vuelta encontrada a rumbos opuestos o casi opuestos, con riesgo de abordaje:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120225,
+    "question": "Según la Regla 19 del RIPA, “Conducta de los buques en condiciones de visibilidad reducida”, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120226,
+    "question": "El RIPA define en la Regla 3, “Definiciones generales”, la expresión “buque sin gobierno” como:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120227,
+    "question": "Según el Anexo IV del RIPA, “Señales de peligro”, ¿cómo podemos indicar la existencia de un peligro o la necesidad de ayuda?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120228,
+    "question": "Cuando llegamos al punto escogido para dar fondo, ¿cuál de las siguientes será la primera orden que se le dé al tripulante encargado del fondeo?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120229,
+    "question": "Si tenemos suficiente resguardo de seguridad entre la embarcación y la costa u otro escollo, navegando en condiciones desfavorables en las que el viento y el oleaje, así como la corriente tiende a echarnos sobre el peligro, ¿qué expresión utilizaremos?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120230,
+    "question": "En el caso de sufrir una insolación o golpe de calor, al afectado se le debe:",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120231,
+    "question": "¿Cuál de los siguientes lugares a bordo de una embarcación NO está identificado como un lugar de riesgo por la generación de un incendio?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120232,
+    "question": "¿Qué es lo primero que se debe hacer tras un abordaje?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120233,
+    "question": "El anemómetro es un instrumento para medir:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120234,
+    "question": "Señale cuál de las siguientes afirmaciones relativas a la presión atmosférica es CORRECTA.",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120235,
+    "question": "El viento del NW es aquel que:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120236,
+    "question": "En relación con los anticiclones, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120237,
+    "question": "¿Cómo se aplica el coeficiente de corredera?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120238,
+    "question": "A la inserción a mayor escala, en determinadas cartas, de una zona concreta de la misma, se denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120239,
+    "question": "¿Cuál es la definición correcta de ecuador?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120240,
+    "question": "¿Cómo puede actualizarse el valor de la declinación magnética?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120241,
+    "question": "La diferencia de alturas entre una Pleamar y una Bajamar consecutivas recibe el nombre de:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120242,
+    "question": "Hallar la sonda en el momento de la primera bajamar, el día 09 de diciembre de 2022 en Algeciras, con una presión atmosférica de 1023 Mb y una sonda en la carta de 6,5 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120243,
+    "question": "El día 7 de diciembre de 2022 a las 17:45 UTC nos encontramos navegando al rumbo de aguja 275°. En ese mismo instante tomamos una demora de aguja al faro de Cabo Trafagar de 334°, simultáneamente tomamos otra demora de aguja al faro de Cabo Espartel de 204°. El desvío de la aguja es 3° (-). ¿Cuál de las siguientes respuestas más se aproxima a nuestra situación?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120244,
+    "question": "Situados en la oposición de los Faros de Cabo Trafalgar y Punta de Gracia, a 2 millas de la marca cardinal Este, obtenemos la siguiente lectura: Demora de aguja a Cabo Trafalgar = 297º. Sabemos que el Desvío es 3º(-). ¿Cuál de las siguientes respuestas más se ajusta a la Corrección Total?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022120245,
+    "question": "Navegando a Hrb=10:00 a Rumbo de aguja=S50°W, con una Velocidad de máquinas de 12 nudos, tomamos marcación a Punta Leona= 35º Estribor y demora de aguja a Punta Almina= 210º. Situados, se pide calcular el Rumbo de aguja para pasar a 5 millas al Norte verdadero de Punta Cires, sabiendo que la Corrección total para todo el ejercicio es de 5º (-).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 12,
+    "examNumber": 2,
+    "explanation": null
+  }
+]

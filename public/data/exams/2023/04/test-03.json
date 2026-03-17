@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2023040301,
+    "question": "El desplazamiento máximo corresponde al:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040302,
+    "question": "El ancla de arado es más eficaz para fondear en:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040303,
+    "question": "Si queremos llevar un cabo de proa a popa para proporcionar mayor seguridad a la tripulación, ¿qué podremos usar?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040304,
+    "question": "La parte más plana y horizontal del casco, próxima a la quilla, se denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040305,
+    "question": "Una roldana es:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040306,
+    "question": "En relación con el fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040307,
+    "question": "¿Cuál de las siguientes NO es una precaución a tomar navegando en aguas someras?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040308,
+    "question": "Atendiendo a su eslora, ¿cuántos extintores del tipo 34B deberá llevar a bordo una embarcación de recreo de 11 metros de eslora sin marcado CE, para uso particular, y que se encuentre navegando por aguas interiores?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040309,
+    "question": "Cuando todos los equipos eléctricos a bordo tienen una toma de masa, ¿cuál es el principal riesgo a tener en cuenta tras una tormenta eléctrica?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040310,
+    "question": "¿Cómo se verá afectado el movimiento de la embarcación si el periodo de la ola es igual al periodo de balance?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040311,
+    "question": "En las zonas especiales se permitirá la descarga en el mar de desechos de alimentos:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040312,
+    "question": "El seguro de responsabilidad civil de suscripción obligatoria tiene por objeto la cobertura de la responsabilidad:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040313,
+    "question": "Las Marcas de Peligro Aislado y de Aguas Navegables utilizan luces blancas:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040314,
+    "question": "Las Marcas Cardinales se usan para indicar:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040315,
+    "question": "Las Marcas Laterales de babor de la región A, son de color:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040316,
+    "question": "Las Marcas de Peligro Aislado se utilizan para indicar:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040317,
+    "question": "La naturaleza de las Marcas Especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040318,
+    "question": "Según la Regla 36 del RIPA, Señales para llamar la atención, ¿qué señal luminosa es la más adecuada para llamar la atención de otro buque?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040319,
+    "question": "Según la Regla 19 del RIPA, Conducta de los buques en condiciones de visibilidad reducida, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque, o que no pueda evitar una situación de aproximación excesiva con otro buque situado a proa de su través deberá:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040320,
+    "question": "De acuerdo con la Regla 21 del RIPA, Definiciones, las “luces de costado” muestran su luz sin interrupción en todo un arco del horizonte de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040321,
+    "question": "De acuerdo con la Regla 24 del RIPA, Buques remolcando y empujando, si observamos en un buque remolcado poco visible y parcialmente sumergido una marca bicónica en el extremo popel y otra marca bicónica adicional en el lugar más visible y tan cerca como sea posible al extremo proel, esto nos indicará que:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040322,
+    "question": "Según la Regla 7 del RIPA, Riesgo de abordaje, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040323,
+    "question": "Según la Regla 14 del RIPA, Situación de vuelta encontrada, en navegación nocturna, se considera que existe situación de vuelta encontrada cuando un buque vea a otro por:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040324,
+    "question": "Según el Anexo IV del RIPA, se puede utilizar como señal de peligro una señal SOS del Código Morse emitida por cualquier sistema de señales, consistente en:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040325,
+    "question": "Según la Regla 10 del RIPA, Dispositivos de separación del tráfico, ¿cuál es la manera correcta de transitar por un dispositivo de separación del tráfico, si se navega a vela y hay bastante tráfico de buques de propulsión mecánica?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040326,
+    "question": "Según la Regla 2 del RIPA, Responsabilidad, en la interpretación y cumplimiento del presente Reglamento no se tomarán en consideración:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040327,
+    "question": "De acuerdo con las reglas 23. d) ii) y 30.b) del RIPA, si visualizamos únicamente una luz blanca todo horizonte, ¿qué interpretación será INCORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040328,
+    "question": "Navegando en un canal angosto, es necesario que realicemos una maniobra de ciaboga con una hélice dextrógira, ¿en general, cuál será la manera más favorable de proceder?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040329,
+    "question": "¿Cómo se denomina a la acción de cobrar un cabo o cadena por medios mecánicos?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040330,
+    "question": "En relación con los incendios, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040331,
+    "question": "¿Cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040332,
+    "question": "En relación con las medidas a tomar para salir de una embarrancada o varada que se produzca en un fondo fangoso o de arena, en un lugar donde haya mareas, con buen estado de la mar y en circunstancias normales, ¿cuál de las siguientes medidas sería la más apropiada?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040333,
+    "question": "En relación con la borrasca, señale la afirmación CORRECTA.",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040334,
+    "question": "Un catavientos:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040335,
+    "question": "En relación con las unidades de medida de la presión atmosférica, un milibar es equivalente a:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040336,
+    "question": "En relación con las brisas costeras, el “terral” es un viento que comúnmente sopla durante:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040337,
+    "question": "El desvío de aguja varía con:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040338,
+    "question": "La marcación en circulares:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040339,
+    "question": "Si tenemos una declinación magnética = 5º 30' W y un desvío de aguja = 7º E, ¿cúal es el resultado de la corrección total?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040340,
+    "question": "Si visualizamos en la carta náutica un símbolo en forma de lágrima con una estrella junto al que se indica: Fl(3)WRG.15s21m15-11M, debemos interpretar que se trata de un faro:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040341,
+    "question": "En relación con las cartas náuticas, ¿cuál es la definición correcta de cartucho?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040342,
+    "question": "Nuestra embarcación está en la oposición de los faros de Cabo Trafalgar y Punta de Gracia y se obtiene en ese momento una demora de aguja de Cabo Trafalgar= 290º y una demora de aguja de Barbate= 353º. ¿Cuál será la situación en aquel instante?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040343,
+    "question": "Hallándose una embarcación en la oposición del Faro de Punta Europa y del Faro de Punta Almina, calcular la corrección total si la demora de aguja al faro de Punta Europa es de 349°.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040344,
+    "question": "Encontrándonos el día 26 de marzo en el puerto de San Juan de Nieva a las 02:12 Hora Oficial, en un lugar de sonda en la carta de 3,9 metros y siendo la presión atmosférica de 756 milímetros. Indicar cuál de las siguientes respuestas más se aproxima a la sonda que tendremos en el momento de la 1ª bajamar del día 26 de marzo de 2023.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2023040345,
+    "question": "Navegando con rumbo SSW con un desvío de aguja de 2°(­), a Hrb=20:00 tomamos simultáneamente demora de aguja a Punta Europa= 334º y demora de aguja a Punta Leona= 232º. Situados damos rumbo para pasar a 3 millas al Sur verdadero de Isla Tarifa, con un desvío de aguja de 1° (+). Se pide calcular el Rumbo de aguja para pasar a 3 millas al Sur verdadero de Isla Tarifa y la Hrb a la que se pasará al través de Punta Cires, sabiendo que la declinación magnética en la zona para todo el ejercicio es de 5°(­) y nuestra velocidad de máquinas es de 10 nudos.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2023,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  }
+]

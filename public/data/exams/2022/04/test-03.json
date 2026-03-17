@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2022040301,
+    "question": "Las válvulas de entrada y salida de fluidos colocadas por debajo de la línea de flotación son:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040302,
+    "question": "El viento en una embarcación:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040303,
+    "question": "La manga de un barco es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040304,
+    "question": "La pieza en forma de corona en la que se engranan los eslabones para cobrar de la cadena del ancla, se denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040305,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040306,
+    "question": "En relación al fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040307,
+    "question": "En lo relativo a los extintores que debe llevar una embarcación sin marcado CE de 12 metros de eslora de casco y que navega por zona 4, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040308,
+    "question": "¿A qué se refiere la expresión “a son de mar”?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040309,
+    "question": "Tras una caída al agua, ¿cuál de las siguientes medidas NO es recomendada para evitar o tratar la hipotermia?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040310,
+    "question": "¿Con cuál de los siguientes números de teléfono nos ponemos en contacto con Salvamento Marítimo?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040311,
+    "question": "Conforme al artículo 33.1 del Convenio internacional para la seguridad de la vida humana en el mar, 1974, el capitán de un buque que reciba alerta de socorro y no pueda prestar auxilio:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040312,
+    "question": "Según el artículo 23 del Real Decreto 339/2021, de 18 de mayo, por el que se regula el equipo de seguridad y de prevención de la contaminación de las embarcaciones de recreo, se prohíbe la descarga de aguas sucias por las embarcaciones de recreo en aguas en las que España ejerce soberanía, derechos soberanos o jurisdicción, salvo que la embarcación efectúe la descarga:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040313,
+    "question": "En relación a las marcas cardinales, indique la respuesta INCORRECTA:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040314,
+    "question": "Entrando en un puerto vemos una boya cónica de color verde con una banda roja en el medio, ¿qué indica?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040315,
+    "question": "Es una marca especial:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040316,
+    "question": "La marca de tope en las marcas de aguas navegables:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040317,
+    "question": "¿Qué marcas emiten una luz de color blanco y ritmo en grupos de dos destellos?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040318,
+    "question": "De acuerdo con la Regla 26.b.i) del RIPA, los buques dedicados a la pesca de arrastre, es decir, remolcando a través del agua redes de arrastre u otras artes de pesca, exhibirán:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040319,
+    "question": "Según la Regla 13 del RIPA, se considera buque que alcanza a todo buque que se aproxime a otro viniendo desde:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040320,
+    "question": "Según la regla 2 del RIPA:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040321,
+    "question": "De acuerdo a la Regla 18 del RIPA, sin perjuicio de lo dispuesto en otras reglas, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040322,
+    "question": "Según la Regla 15 del RIPA, cuando dos buques de propulsión mecánica se crucen con riesgo de abordaje:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040323,
+    "question": "Según la Regla 10 del RIPA, los buques dedicados a una operación de mantenimiento de la seguridad de la navegación en un dispositivo de separación de tráfico quedarán exentos del cumplimiento de esta Regla:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040324,
+    "question": "De acuerdo a la Regla 23 del RIPA, los buques de propulsión mecánica en navegación exhibirán una segunda luz de tope, a popa y más alta que la de proa. Sin embargo, no están sujetos a esa obligación, aunque puedan exhibirla igualmente, los buques con una eslora inferior a:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040325,
+    "question": "Según la Regla 35.g del RIPA, un buque que emite tres pitadas consecutivas, a saber, una corta, una larga y una corta, indica que se trata de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040326,
+    "question": "Según la Regla 33.b del RIPA, ¿qué buques podrán sustituir el pito por otros medios para hacer señales acústicas eficaces?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040327,
+    "question": "Según la Regla 6 del RIPA, para determinar la velocidad de seguridad NO se tendrá en cuenta:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040328,
+    "question": "El efecto de la presión lateral de las palas de una hélice, en una embarcación parada y sin arrancada, se debe principalmente a:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040329,
+    "question": "El ángulo entre la orientación verdadera y la derrota del buque causada por la acción del viento se conoce como:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040330,
+    "question": "En el caso de que se vea obligado a abandonar una embarcación ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040331,
+    "question": "Si descubre agua en la sentina de la embarcación, ¿cuál de las siguientes actuaciones es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040332,
+    "question": "¿Cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040333,
+    "question": "La presión atmosférica media al nivel del mar es de:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040334,
+    "question": "Se entiende por Fecht:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040335,
+    "question": "En relación con los anticiclones, señale la afirmación INCORRECTA:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040336,
+    "question": "El viento de las regiones costeras que sopla durante el día desde el mar hacia tierra a consecuencia del mayor calentamiento diurno del suelo se denomina:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040337,
+    "question": "Suponiendo que navegamos a una velocidad de 5 nudos y que existe corriente en contra de 1 nudo, al multiplicar lo que marca la corredera por el coeficiente de corredera, obtendremos:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040338,
+    "question": "En relación con la declinación magnética, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040339,
+    "question": "En la región A de balizamiento las marcas laterales de babor podrán tener forma:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040340,
+    "question": "Cuando nos referimos en la carta náutica a una “línea isobática”, estamos hablando de:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040341,
+    "question": "En relación con los meridianos, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040342,
+    "question": "Nos encontramos navegando al rumbo de aguja 308°. A HRB = 02:45 del día 3 de noviembre de 2021 tomamos una marcación a Cabo Trafalgar de 115° Er, en el mismo instante tomamos una marcación de 055° Er a Cabo Roche. El desvío es 2° (-). ¿Cuál de las siguientes coordenadas más se aproxima a nuestra situación a las 02:45 HRB?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040343,
+    "question": "A HRB=10:00, tomamos simultáneamente demora de aguja a Cabo Trafalgar 327º y demora de aguja a Barbate (FI (2) WR 7S 10/7M) 033º. Una vez situados, ponemos rumbo a pasar a 3 millas de Punta Paloma, a una velocidad de máquinas de 10 nudos. Se pide calcular la HRB cuando pasamos al través de Punta Gracia (Torre de Gracia), suponiendo un desvío de aguja de 1º (-) y una declinación magnética en la zona, en el momento de la navegación, de 4º (-).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040344,
+    "question": "Partiendo de la situación conocida latitud: 39º 20' N y Longitud: 016º 45'W se navega a rumbo de aguja Ra=050º y a velocidad de máquina de 15 nudos, la corrección total para ese rumbo es CT= -3º24'. Determínese la situación estimada al cabo de 10 h.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2022040345,
+    "question": "El día 2 de abril de 2022, nos encontramos atracados con nuestra embarcación en el puerto de Bilbao, en un lugar donde la sonda en la carta es 4,6 m. Queremos zarpar con la segunda pleamar del día. ¿Cuál será la sonda en el momento, si la presión atmosférica es de 1005 mb?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  }
+]

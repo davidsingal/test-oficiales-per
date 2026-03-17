@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2022060201,
+    "question": "La distancia vertical entre un punto de la línea de flotación y la línea base o quilla, incluido el espesor del casco, se denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060202,
+    "question": "A la parte interior, casi horizontal, del fondo de la embarcación se la denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060203,
+    "question": "Marque la afirmación CORRECTA acerca de la escora:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060204,
+    "question": "A la acción de cobrar un cabo o cadena con el molinete se la denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060205,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060206,
+    "question": "En relación con el fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060207,
+    "question": "¿Cuántas bengalas de mano debe llevar como mínimo una embarcación de recreo que navegue entre 2 y 5 millas de una zona de abrigo o playa accesible?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060208,
+    "question": "¿Cuál de las siguientes NO es una precaución a tomar con baja visibilidad por niebla?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060209,
+    "question": "Navegando en una embarcación, se puede capear un temporal:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060210,
+    "question": "¿Cuál de las siguientes NO es una acción válida para búsqueda de una persona que ha caído al agua?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060211,
+    "question": "En un tramo de costa carente de señalización o balizamiento de la zona de baño:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060212,
+    "question": "11 ¿Cuál de los siguientes espacios naturales NO está comprendido en la Lista del ZEPIM (Zonas Especialmente Protegidas de Importancia para el Mediterráneo)?",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060213,
+    "question": "De acuerdo con la Regla 1.2.2 del IALA-AISM, indique a qué equipo del buque se utilizan asociadas las Marcas cardinales, para indicar donde están las aguas navegables.",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060214,
+    "question": "El ritmo de la luz de la Marca de aguas navegables es isofase, de ocultaciones:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060215,
+    "question": "La marca de tope de las Marcas de peligro aislado será:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060216,
+    "question": "Las Marcas especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060217,
+    "question": "En la región A, ¿qué indica una Marca lateral cónica de color verde con una banda ancha horizontal roja?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060218,
+    "question": "De acuerdo con la Regla 2 del RIPA, sobre responsabilidad:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060219,
+    "question": "De acuerdo con la Regla 16 del RIPA, en la Maniobra del buque que “cede el paso”, todo buque que esté obligado a mantenerse apartado de la derrota de otro buque maniobrará, en lo posible:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060220,
+    "question": "De acuerdo con la Regla 13.b) del RIPA, todo buque que alcance a otro:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060221,
+    "question": "De acuerdo con la Regla 6 del RIPA, ¿cuál de las siguientes afirmaciones sobre la velocidad de seguridad es CORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060222,
+    "question": "De acuerdo con la Regla 35.a) del RIPA, en las proximidades o dentro de una zona de visibilidad reducida y navegando de día, un buque de propulsión mecánica, con arrancada, emitirá:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060223,
+    "question": "De acuerdo con la Regla 32.a) del RIPA, la palabra «pito» significa todo dispositivo:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060224,
+    "question": "De acuerdo con la Regla 17 del RIPA, Maniobra del buque que “sigue a rumbo”:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060225,
+    "question": "De acuerdo con la Regla 23.d.iii) del RIPA, la luz de tope o la luz blanca todo horizonte podrá apartarse del eje longitudinal del buque si no es posible colocarla en dicho eje y bajo determinadas condiciones, en los buques de propulsión mecánica en navegación:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060226,
+    "question": "De acuerdo con la Regla 23 del RIPA, los buques de propulsión mecánica en navegación de eslora inferior a 12 metros, podrán exhibir como alternativa a las luces prescritas para los buques de propulsión mecánica en navegación:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060227,
+    "question": "De acuerdo con la Regla 8 del RIPA, Maniobras para evitar el abordaje, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060228,
+    "question": "Si realizando una maniobra de atraque, nuestro objetivo es acolchar la proa al muelle y mover la embarcación hacia popa, daremos:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060229,
+    "question": "La expresión “timón a la vía” significa:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060230,
+    "question": "¿Cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060231,
+    "question": "Tras una varada involuntaria, ¿cuál sería la primera medida a tomar?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060232,
+    "question": "¿Cuál de las siguientes señales visuales de socorro NO es recomendable usar en los casos en los que un helicóptero se aproxima para socorrer a una embarcación?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060233,
+    "question": "En relación con la temperatura, señale la afirmación INCORRECTA:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060234,
+    "question": "¿Cuál de los siguientes dispositivos o aparatos NO se utiliza para conocer las características del viento?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060235,
+    "question": "Se denominan borrascas a aquellas regiones en las que:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060236,
+    "question": "Se define como isobara la línea que une puntos con igual valor de:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060237,
+    "question": "El ángulo que forma la proa con la derrota que sigue el barco sobre la superficie del agua, debido al empuje del viento, se denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060238,
+    "question": "Navegando en una zona con 2W de declinación magnética, y con un rumbo de aguja de 030º, observamos en la tablilla de desvíos, que el desvío correspondiente a este rumbo es de 2º (+). ¿Cuál es el rumbo verdadero de la embarcación?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060239,
+    "question": "En cada lugar de la Tierra el meridiano magnético está separado un cierto ángulo del meridiano verdadero o geográfico. Dicho ángulo se denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060240,
+    "question": "En la carta de navegación del Estrecho de Gibraltar encontramos la siguiente información sobre el Faro Bahía de Algeciras: Fl(2)R.6s8M. Indique cuál de las siguientes afirmaciones sobre el faro es INCORRECTA.",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060241,
+    "question": "Respecto de la declinación magnética, indique la afirmación INCORRECTA:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060242,
+    "question": "A HRB= 10:00, tomamos simultáneamente Demora de aguja al Faro de Punta Europa = 359º y Demora de aguja al Faro de Punta Cires = 237º. Situados, damos rumbo para pasar a 2 millas al Sur verdadero de Isla Tarifa, con velocidad de máquinas de 10 nudos. La declinación magnética en la zona es de 4°(-) y el desvío 1°(-). Se pide calcular el rumbo de aguja para pasar a 2 millas al Sur verdadero de Isla Tarifa y la HRB a la que llegaremos a esa posición.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060243,
+    "question": "Siendo HRB= 10:45, nuestra embarcación navega al Ra= 281º con una declinación magnética de 4º W y un desvío de 1º (+), y obtenemos simultaneamente las marcaciones de los Faros de Punta Paloma = 65º a estribor y de la Isla de Tarifa = 157º a estribor. ¿Cuál es la situación a esa hora?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060244,
+    "question": "Nos encontramos el día 24 de mayo de 2022 en el Faro de Cabo Trafalgar y queremos poner rumbo para pasar a 3 millas de la marca cardinal Este de la granja acuícola de Barbate. El desvío es 3° (-). ¿Cuál de los siguientes Rumbos Verdadero y de Aguja más se aproximan para pasar a 3 millas de la marca cardinal Este de la granja acuícola de Barbate?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2022060245,
+    "question": "El día 25 de junio de 2022 navegando con Rumbo Verdadero = 186,5º nos encontramos a las 08:24HRB a 1,5 millas al SE verdadero de la marca cardinal Este de la Bahía de Algeciras. Sabemos que el valor de la Corrección Total es 6,5º(-) y la velocidad de máquinas es igual a 6,5 nudos. ¿Cuál de las siguientes situaciones obtenidas por demora y distancia a los faros indicados se aproxima más a nuestra posición a las 10:00 HRB?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2022,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  }
+]

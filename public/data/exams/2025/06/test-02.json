@@ -1,0 +1,402 @@
+[
+  {
+    "id": 2025060201,
+    "question": "El arganeo es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060202,
+    "question": "Se define como “escorar” al movimiento de la embarcación que consiste en:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060203,
+    "question": "¿Cuál de las siguientes definiciones es CORRECTA?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060204,
+    "question": "La mecha es:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060205,
+    "question": "En relación con el fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060206,
+    "question": "Una gaza es:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060207,
+    "question": "¿Cuál de los siguientes supuestos afecta negativamente a la estabilidad transversal?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060208,
+    "question": "En relación con las balsas salvavidas, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060209,
+    "question": "¿Cómo se debe actuar ante movimientos de cabezada excesivos cuando llevamos la mar por la proa?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060210,
+    "question": "En caso de hombre al agua, para iniciar una maniobra de Boutakow ¿qué acción deberá realizar?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060211,
+    "question": "¿A qué velocidad mínima debe navegar su embarcación para tener permitida la descarga de aguas sucias siempre que cumpla el resto de las prescripciones para ello?",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060212,
+    "question": "Las Zonas Especialmente Protegidas de Importancia para el Mediterráneo (ZEPIM) son:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060213,
+    "question": "Navegando de noche cerca de la Isla de Sálvora, vemos por proa una luz verde en grupos de 2 destellos, lo que significa que debemos estar viendo una Marca:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060214,
+    "question": "En relación con las Marcas de Peligro Aislado, indique cuál de las siguientes afirmaciones es CORRECTA.",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060215,
+    "question": "En relación con las Marcas Especiales, señale la opción CORRECTA.",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060216,
+    "question": "La marca de tope de una Marca Cardinal Este tiene conos superpuestos:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060217,
+    "question": "Las Marcas de Aguas Navegables pueden:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060218,
+    "question": "Conforme a la Regla 3 del RIPA, “Definiciones generales”, la palabra “buque” designa:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060219,
+    "question": "En relación con la Regla 23 del RIPA, “Buques de propulsión mecánica en navegación”, ¿qué luces está obligada a llevar una embarcación a motor de 15 metros de eslora en navegación nocturna?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060220,
+    "question": "De acuerdo con la Regla 6 del RIPA, ¿cuál de los siguientes factores NO se contempla explícitamente en el reglamento a la hora de determinar la velocidad de seguridad?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060221,
+    "question": "Si una embarcación de prácticos de 21 metros de eslora se va a desplazar, navegando por sus propios medios, a otro puerto para realizar labores de mantenimiento en la propia embarcación, siendo parte de la navegación en horario nocturno y sin realizarse durante el trayecto ningún servicio de practicaje, según la Regla 29 del RIPA, la embarcación exhibirá:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060222,
+    "question": "En relación con las Reglas 12 y 17 de la sección II del RIPA, “Conducta de los buques que se encuentren a la vista uno del otro”, ¿qué debe hacer, en principio, un buque de vela que recibe el viento por estribor cuando se aproxima, con riesgo de abordaje, a otro buque de vela que recibe el viento por babor?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060223,
+    "question": "De acuerdo con la Regla 9 del RIPA, “Canales angostos”, si nos aproximamos a un recodo, en donde la visión esté obstaculizada y no nos permita ver a otros buques, deberemos:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060224,
+    "question": "Conforme a la Regla 18 del RIPA, “Obligaciones entre categorías de buques”, si nos encontramos navegando en alta mar en un buque de vela, nos mantendremos apartados de la derrota de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060225,
+    "question": "Según lo indicado en la Regla 34 del RIPA “Señales y maniobra de emergencia”, si navegando de noche, en una embarcación a motor, a la vista de otro buque al que queremos indicarle nuestra intención de maniobrar cayendo a estribor, lo debemos hacer mediante:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060226,
+    "question": "Según lo indicado en la Regla 37 del RIPA “Señales de peligro”, ¿cuál de las siguientes señales utilizará un buque que esté en peligro y requiera ayuda?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060227,
+    "question": "En relación con la Regla 26 de la parte C del RIPA sobre “Luces y Marcas”, si durante la navegación diurna divisamos una embarcación que exhibe, en el lugar más visible, dos marcas: la primera marca consistente en dos conos unidos por sus vértices en línea vertical, uno sobre el otro; y la segunda, un cono con el vértice hacia arriba, ¿de qué tipo de embarcación se trata?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060228,
+    "question": "Estamos atracados babor al muelle, con un viento que viene de tierra y nos entra por la amura de babor. En general, ¿cómo procedemos para desatracar y salir?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060229,
+    "question": "¿Cuáles son las tres fases de la curva de evolución en marcha avante?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060230,
+    "question": "Si se detecta a bordo un incendio originado en el tanque de combustible de la embarcación, ¿cuál de las siguientes afirmaciones a la hora de proceder a su extinción es INCORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060231,
+    "question": "En relación con los accidentes personales a bordo, indique cuál de las siguientes afirmaciones es CORRECTA.",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060232,
+    "question": ",5º C, administrándole al tiempo una bebida estimulante. 32 En caso de abordaje, indique cuál de las siguientes afirmaciones es CORRECTA.",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060233,
+    "question": "¿Cuál es la definición correcta de paralelo?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060234,
+    "question": "Al ángulo formado entre el Norte magnético y el Norte verdadero, se le denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060235,
+    "question": "En un determinado lugar, actualizando la declinación magnética que viene en la carta, nos da 11°NW y el desvío al rumbo que navegamos, obtenido de la tablilla de desvíos, es de 4º(+), ¿cuál será la corrección total?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060236,
+    "question": "En general y para un punto dado en una latitud media, ¿cuáles de los siguientes efectos combinados generarán, de forma más acusada, que una marea alta determinada esté por debajo del valor predicho?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060237,
+    "question": "Encontrándonos con nuestra embarcación en la oposición Isla Tarifa – Punta Alcázar, tomamos simultáneamente demora de aguja a Isla Tarifa= 344º y demora de aguja a Punta Cires= 117, 5º. Se pide calcular la situación verdadera.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060238,
+    "question": "A Hrb= 11:30, navegando con rumbo de aguja= 220º y un desvío= 3° (-), se toma simultáneamente demora de aguja al Faro Punta Europa= 280° y demora de aguja al Faro Punta Almina= 201º. Una vez situados se da rumbo al Faro de Isla de Tarifa con un desvío de aguja de 4º (-) y una velocidad de máquinas de 7,5 nudos. Calcular el rumbo de aguja al Faro de Isla de Tarifa y la Hrb cuando nos encontremos al Norte verdadero del Faro de Punta Cires. En el momento de la navegación la declinación magnética en toda la zona es de 5°(E).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060239,
+    "question": "A Hrb= 09:00 nos encontramos situados al Sur verdadero de Isla Tarifa, cuando con nuestra aguja obtenemos demora de Punta Alcázar = 109°. El desvío es 3° (+). En ese momento damos rumbo para pasar a 2 millas al Norte verdadero de Punta Cires. El desvío de la aguja para este rumbo es 2°(+). Mantenemos rumbo y velocidad hasta que obtenemos demora de aguja a Punta Carnero= 270° y demora de aguja a Punta Europa= 295°. En dicho instante damos rumbo al extremo Sur del espigón del Puerto de Sotogrande [Fl(3)G.11s4M], en las inmediaciones del Río Guadiaro. Se pide calcular nuestra posición a Hrb= 13:00, sabiendo que nuestra velocidad de máquinas para todo el ejercicio es de 6 nudos y la declinación magnética en la zona para ese día es de 2°(W).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  },
+  {
+    "id": 2025060240,
+    "question": "Hallar la sonda en el momento de la segunda bajamar, el día 23 de enero de 2025 en Algeciras, con una presión atmosférica de 996 mb y una sonda en la carta de 8 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 6,
+    "examNumber": 2,
+    "explanation": null
+  }
+]

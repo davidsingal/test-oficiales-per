@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2025040301,
+    "question": "Siempre que se alcanza el desplazamiento máximo de una embarcación:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040302,
+    "question": "Arriar progresivamente un cabo que está trabajando se denomina:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040303,
+    "question": "¿Cuál de las siguientes características NO es propia de la bocina?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040304,
+    "question": "El plano de crujía es aquel que:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040305,
+    "question": "Navegando con una embarcación de 10 metros de eslora nos disponemos a fondear a la gira, en unas condiciones meteorológicas normales. Si tomamos una sonda de 8 metros, ¿qué longitud de línea de fondeo tenemos como mínimo que largar?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040306,
+    "question": "¿Cuál de las siguientes definiciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040307,
+    "question": "¿Cuál de las siguientes se considera una medida de prevención para evitar una situación de hombre al agua?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040308,
+    "question": "En relación con los aros salvavidas, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040309,
+    "question": "¿Cuál de las siguientes precauciones NO es, en general, la más recomendable a tomar en una navegación con niebla?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040310,
+    "question": "La estabilidad estática de una embarcación depende de la posición simultánea de:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040311,
+    "question": "Respecto a la seguridad en la navegación y los mensajes de socorro, señale la opción INCORRECTA.",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040312,
+    "question": "De acuerdo con la Regla 6 del Anexo V del Convenio MARPOL “Descarga de basuras dentro de zonas especiales”, seleccione la respuesta CORRECTA.",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040313,
+    "question": "Señale la afirmación que NO aplica a las Marcas Especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040314,
+    "question": "Arribando de noche al puerto deportivo de Cangas, vemos por proa una luz roja en grupos de 2+1 destellos. Tras consultar la carta náutica, sabemos que tenemos que transitar el canal secundario para llegar a nuestro destino. En general, ¿cómo deberemos proceder?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040315,
+    "question": "Señale cuál de las siguientes Marcas compone su color con franjas verticales rojas y blancas:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040316,
+    "question": "La luz de la Marca de Peligro Aislado, si la tuviera, será de color:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040317,
+    "question": "¿Qué indica una Marca Cardinal?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040318,
+    "question": "Conforme a la Regla 10 del RIPA, “Dispositivos de separación del tráfico”, un buque de 24 metros de eslora:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040319,
+    "question": "De acuerdo con las Reglas 23 y 27 del RIPA, ¿qué conjunto de luces exhibirá de noche un buque de 60 metros de eslora, de propulsión mecánica, con arrancada y con capacidad de maniobra restringida, sabiendo que no se dedica a operaciones de limpieza de minas?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040320,
+    "question": "Si nos encontramos de noche navegando con nuestra embarcación en una zona cercana a costa, y visualizamos únicamente dos luces rojas sobre una luz blanca en la misma vertical, de acuerdo con la Regla 30 del RIPA, debemos entender que se trata de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040321,
+    "question": "De acuerdo con la Regla 25 del RIPA, “Buques de vela en navegación y embarcaciones de remo”, ¿cuál de las siguientes configuraciones de luces NO se corresponden con las de un buque de vela en navegación que tenga una eslora mayor de 7 metros y menor de 20 metros?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040322,
+    "question": "De conformidad con la Regla 18 del RIPA, “Obligaciones entre categorías de buques”, si se encuentran navegando en alta mar un buque dedicado a la pesca, un buque de propulsión mecánica, un buque de vela y un hidroavión amarado, con carácter general, ¿cuál de ellos mantendrá su derrota?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040323,
+    "question": "Navegando en una motora nos encontramos en una situación de cruce por nuestro costado de estribor con un velero que exhibe una marca cónica con el vértice hacia abajo. Conforme a la Regla 8 del RIPA, “Maniobras para evitar el abordaje”, deberemos:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040324,
+    "question": "De conformidad con la Regla 16 del RIPA, “Maniobra del buque que «cede el paso»”, si estamos obligados a mantenernos apartados de la derrota de otro buque, en la medida de lo posible, ¿cómo debemos actuar?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040325,
+    "question": "Conforme a la Regla 3 del RIPA, “Definiciones generales”, todo buque que, debido a la naturaleza de su trabajo, tenga reducida su capacidad para maniobrar en la forma exigida por este Reglamento y, por consiguiente, no pueda apartarse de la derrota de otro buque, se considerara un:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040326,
+    "question": "Según la Regla 36 del RIPA “Señales para llamar la atención”, si estando en un buque necesitamos llamar la atención de otro buque, podremos:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040327,
+    "question": "Navegando en un yate a motor al rumbo 178º se observa por proa un buque de recreo que también navega a motor al rumbo 358º, con riesgo de abordaje. De acuerdo con la Regla 14 del RIPA, \"Situación de vuelta encontrada\", ¿cuál de las siguientes actuaciones es la CORRECTA ante la situación descrita?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040328,
+    "question": "Si nos encontramos amarrados al muelle únicamente con el esprín de proa, el efecto que nos producirá en la embarcación si viramos el cabo será:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040329,
+    "question": "Lascar un cabo es:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040330,
+    "question": "Si se detecta una vía de agua a bordo, se deberá inmediatamente:",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040331,
+    "question": "Tras sufrir un abordaje:",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040332,
+    "question": "Si se ve obligado a abandonar la embarcación, ¿cuál de las siguientes indicaciones a seguir es CORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040333,
+    "question": "En relación con el fetch, indique cuál de las siguientes afirmaciones es INCORRECTA.",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040334,
+    "question": "¿Cuáles son las características de una borrasca en el Hemisferio Norte?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040335,
+    "question": "El virazón es un viento o brisa:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040336,
+    "question": "La información meteorológica oficial se puede obtener mediante:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040337,
+    "question": "Si tenemos una declinación magnética = 5º NW (-) y un desvío de aguja = 1º NE (+), ¿cuál es el resultado de la Corrección total?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040338,
+    "question": "Las sondas reflejadas en las cartas náuticas se corresponden con:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040339,
+    "question": "¿Qué se entiende por \"Hora de Reloj de Bitácora\"?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040340,
+    "question": "La forma correcta de contar una demora cuadrantal sería:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040341,
+    "question": "Para actualizar el valor de la declinación magnética al año en curso, ¿cuál de los siguientes datos NO tendremos en cuenta?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040342,
+    "question": "A Hrb=12:00, navegando con rumbo de aguja= 095° y un desvío= 3° (-), situados en la oposición de los Faros Punta Paloma y de Punta Malabata, se toma marcación a Punta Alcazar= 30° Estribor. Una vez situados, se pide calcular el rumbo de aguja para pasar a 4 millas al Norte verdadero del Faro de Cabo Espartel, el desvío para el nuevo rumbo es 3,5° (-). La declinación magnética para toda la zona de navegación es de 2°(W).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040343,
+    "question": "Nos encontramos navegando con nuestra embarcación, en demanda del Estrecho de Gibraltar. A Hrb= 15:00, nos situamos a 5 millas al Oeste verdadero del Cabo Trafalgar. En ese instante damos rumbo de aguja 124°, con un desvío de 2° (-), hasta posicionarnos al Sur verdadero de Punta Paloma, momento en el que ponemos Rumbo de aguja 093°, con un desvío de 1º(-) para navegar 5,4 millas más y seguidamente alterar el rumbo 20° a babor. Calcular nuestra situación estimada a Hrb= 18:00, sabiendo que nuestra velocidad de máquinas para todo el ejercicio es de 10 nudos y la declinación magnética en la zona para ese día es de 2°(W).",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040344,
+    "question": "Hallar la sonda en el momento de la primera pleamar el día 10 de abril de 2025 en Algeciras, con una presión atmosférica de 1021 mb y una sonda en la carta de 12,6 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  },
+  {
+    "id": 2025040345,
+    "question": "Obtenga la situación sabiendo que estamos en la oposición de Punta Cires con Punta Carnero y tenemos la demora verdadera al Faro de Isla Tarifa 270º.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2025,
+    "examMonth": 4,
+    "examNumber": 3,
+    "explanation": null
+  }
+]

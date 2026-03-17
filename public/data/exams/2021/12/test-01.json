@@ -1,0 +1,432 @@
+[
+  {
+    "id": 2021120101,
+    "question": "En relación con el ancla, indique cuál de las siguientes afirmaciones es CORRECTA:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120102,
+    "question": "La eficacia del timón dependerá de:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120103,
+    "question": "De las siguientes afirmaciones indique cuál es la CORRECTA:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120104,
+    "question": "Se define “costado” como:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120105,
+    "question": "¿Cuál de las siguientes afirmaciones relativas al fondeo es INCORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120106,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120107,
+    "question": "En una embarcación de recreo, al aumentar los pesos en cubierta:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120108,
+    "question": "¿Qué señales pirotécnicas debe llevar reglamentariamente una embarcación que esté autorizada a navegar en zona 4 hasta 12 millas de la costa?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120109,
+    "question": "Ante una emergencia, ¿cuál es la forma de contactar con Salvamento Marítimo?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120110,
+    "question": "Navegando con la mar por proa, modificar la velocidad es la forma más eficaz de:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120111,
+    "question": "En las embarcaciones de recreo nacionales:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120112,
+    "question": "Conforme al Real Decreto 339/2021, de 18 de mayo, por el que se regula el equipo de seguridad y de prevención de la contaminación de las embarcaciones de recreo:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120113,
+    "question": "La marca de tope de las marcas de peligro aislado será:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120114,
+    "question": "El color de las boyas de las marcas de peligro aislado será:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120115,
+    "question": "Las marcas de aguas navegables son:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120116,
+    "question": "En las marcas especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120117,
+    "question": "¿Qué ritmo y color tendrá la luz de una marca lateral de bifurcación de la región A que indique el canal principal a Babor?",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120118,
+    "question": "Según la Regla 24.a.v) del RIPA, cuando un buque de propulsión mecánica que remolque a otro exhiba una marca bicónica en el lugar más visible, significará que:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120119,
+    "question": "Según la Regla 7 del RIPA, para determinar si existe riesgo de abordaje, se tendrán en cuenta, entre otras, las siguientes consideraciones:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120120,
+    "question": "De acuerdo a la Regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120121,
+    "question": "Según la Regla 10 del RIPA, los buques que utilicen un dispositivo de separación del tráfico deberán, siempre que puedan, evitar:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120122,
+    "question": "Según la Regla 14 del RIPA, cuando dos buques de propulsión mecánica naveguen de vuelta encontrada a rumbos opuestos o casi opuestos, con riesgo de abordaje:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120123,
+    "question": "De acuerdo a la Regla 16 del RIPA, maniobra del buque que cede el paso, todo buque que esté obligado a mantenerse apartado de la derrota de otro buque:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120124,
+    "question": "Según la Regla 2 del RIPA, respecto de la responsabilidad derivada de negligencias en el cumplimiento del Reglamento, este indica que:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120125,
+    "question": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales indica peligro y necesidad de ayuda?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120126,
+    "question": "De acuerdo a la Regla 18 del RIPA, obligaciones entre categorías de buques, sin perjuicio de lo dispuesto en otras reglas, los buques dedicados a la pesca, en navegación, se mantendrán apartados de la derrota de:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120127,
+    "question": "Según la Regla 8 del RIPA, maniobras para evitar el abordaje, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120128,
+    "question": "En la curva de evolución de una embarcación, la parte de la curva descrita por G en el intervalo transcurrido desde el final de la metida del timón hasta que la fuerza centrífuga, creada por la evolución, equilibra a las demás fuerzas que actúan sobre la embarcación, se denomina:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120129,
+    "question": "La corriente de aspiración provoca el siguiente efecto:",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120130,
+    "question": "A la hora de reflotar una embarcación tras una varada involuntaria, ¿cuál de los siguientes aspectos NO es primordial tener en cuenta?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120131,
+    "question": "En relación con los abordajes, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120132,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120133,
+    "question": "En relación con el Fetch, ¿cuál de las siguientes afirmaciones es INCORRECTA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120134,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120135,
+    "question": "En relación con las borrascas, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120136,
+    "question": "Un milibar es:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120137,
+    "question": "La expresión “cartucho” en una carta náutica se refiere a:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120138,
+    "question": "El desvío de la aguja:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120139,
+    "question": "En relación con la declinación magnética, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120140,
+    "question": "El rumbo es el ángulo formado entre la dirección de la proa y:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120141,
+    "question": "La latitud de un punto en la superficie de la Tierra es:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120142,
+    "question": "El día 12 de diciembre de 2021 nos encontramos navegando en las inmediaciones del puerto de Santa Uxía de Ribeira. Sabiendo que la sonda en la carta es de 4 metros y la presión atmosférica de 1003 milibares, ¿cuál de las siguientes respuestas más se aproxima a la sonda en la segunda bajamar?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2021120143,
+    "question": "El día 18 de diciembre de 2010 a HRB: 11:42, situados en l: 36º 01´N L: 006º 01´W navegamos con rumbo de aguja = 020º a una velocidad de 4 nudos. Sabiendo que el desvío de aguja es 3º oeste, ¿cuál de las siguientes coordenadas más se aproxima a nuestra posición a HRB:13:12?",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2021,
+    "examMonth": 12,
+    "examNumber": 1,
+    "explanation": null
+  }
+]

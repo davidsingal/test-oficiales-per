@@ -1,0 +1,452 @@
+[
+  {
+    "id": 2024040101,
+    "question": "¿Cuál de las siguientes afirmaciones es CORRECTA si nos referimos a una hélice dextrógira?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040102,
+    "question": "¿Qué parte del timón mueve la pala de tal forma que, si gira a una banda, la pala del timón lo hace a la banda contraria?",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040103,
+    "question": "En una embarcación:",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040104,
+    "question": "Indique cuál de las siguientes afirmaciones es INCORRECTA.",
+    "topic": "Nomenclatura náutica",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040105,
+    "question": "En relación con el fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040106,
+    "question": "La pieza de metal o madera, encorvada en sus extremos y fija por su punto medio, que sirve para amarrar los cabos, se denomina:",
+    "topic": "Elementos de amarre y fondeo",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040107,
+    "question": "¿Cuál de los siguientes NO es un fenómeno que se pueda experimentar al navegar en aguas someras?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040108,
+    "question": "En situación de “hombre al agua”, ¿cuál de las siguientes acciones NO se recomienda tomar?",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040109,
+    "question": "Teniendo en cuenta las medidas a tomar a bordo con mal tiempo, NO se debe:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040110,
+    "question": "El movimiento del buque en el sentido de la manga, de babor a estribor y viceversa, al inclinarse alternativamente a uno y otro costado, se denomina:",
+    "topic": "Seguridad",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040111,
+    "question": "Las banderas y enseñas reconocidas en los Estatutos de las Comunidades Autónomas:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040112,
+    "question": "Deben tener seguro de responsabilidad civil de suscripción obligatoria en vigor:",
+    "topic": "Legislación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040113,
+    "question": "Una Marca cardinal NO puede ser utilizada para:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040114,
+    "question": "Las Marcas especiales:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040115,
+    "question": "Las Marcas laterales que emiten una luz roja son:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040116,
+    "question": "La forma de las Marcas de aguas navegables es:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040117,
+    "question": "Ante una Marca de peligro aislado el navegante deberá:",
+    "topic": "Balizamiento",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040118,
+    "question": "Navegando a vela cerca de la Isla de Sálvora, nos vemos envueltos en una posible situación de riesgo de abordaje al aproximarse una motora con una demora fija hacia nuestra embarcación. Conforme a la Regla 8 del RIPA, “Maniobras para evitar el abordaje”, deberemos:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040119,
+    "question": "De conformidad con la regla 28 del RIPA, “Buques de propulsión mecánica restringidos por su calado”, todo buque de propulsión mecánica restringido por su calado podrá exhibir en el lugar más visible:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040120,
+    "question": "Conforme a la Regla 10 del RIPA, “Dispositivos de separación del tráfico”, un buque de propulsión mecánica de 15 metros de eslora:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040121,
+    "question": "De acuerdo con la Regla 24.a del RIPA, “Buques remolcando y empujando”, si observamos un buque de propulsión mecánica remolcando a otro y exhibiendo una marca bicónica en el lugar más visible, estará indicando que:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040122,
+    "question": "Conforme a la Regla 3 del RIPA, “Definiciones generales”, un “buque dedicado a la pesca” significa todo buque que esté pescando:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040123,
+    "question": "Según la Regla 34.d del RIPA, “Señales de maniobra y advertencia”, cuando varios buques a la vista unos de otros se aproximen, y por cualquier causa alguno de ellos no entienda las acciones o intenciones del otro o tenga dudas sobre si el otro está efectuando la maniobra adecuada para evitar el abordaje, el buque en duda indicará inmediatamente esa duda emitiendo por lo menos:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040124,
+    "question": "De conformidad con la Regla 21 del RIPA, “Definiciones de la parte C relativa a Luces y Marcas”, la luz de remolque es una luz amarilla:",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040125,
+    "question": "Según el Anexo IV del RIPA, “Señales de peligro”, ¿cómo podremos indicar peligro o necesidad de ayuda mediante un aparato de señales de niebla?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040126,
+    "question": "De acuerdo con la Regla 17 del RIPA, “Maniobra del buque que sigue a rumbo”, indique cuál de las siguientes afirmaciones es CORRECTA.",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040127,
+    "question": "De conformidad con la Regla 23 del RIPA, “Buques de propulsión mecánica en navegación”, ¿cuándo es obligatorio exhibir una luz amarilla de centelleos todo horizonte?",
+    "topic": "Reglamento (RIPA)",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040128,
+    "question": "¿Qué significa “libre a sotavento”?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040129,
+    "question": "Para evitar que la roda de la embarcación adyacente golpee el motor fueraborda de nuestra embarcación, ¿cuál de los siguientes ajustes deberemos realizar estando amarrados por el costado de estribor al muelle?",
+    "topic": "Maniobra y navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040130,
+    "question": "En el caso de que se vea obligado a abandonar una embarcación, ¿cuál de las siguientes medidas NO debe tomar?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040131,
+    "question": "En caso de que se produzca una hemorragia nasal (epistaxis), ¿qué se debe hacer en un primer momento para detener el sangrado?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040132,
+    "question": "Una vez se ha producido una varada involuntaria ¿cuál de las siguientes afirmaciones es INCORRECTA en relación con los factores que influyen a la hora de liberar la embarcación?",
+    "topic": "Emergencias en la mar",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040133,
+    "question": "Se denomina “Fetch” a:",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040134,
+    "question": "¿Qué es el viento real?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040135,
+    "question": "¿Qué parámetro mide el barómetro aneroide?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040136,
+    "question": "¿Cuál es el movimiento general del viento en una borrasca en el hemisferio norte?",
+    "topic": "Meteorología",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040137,
+    "question": "La distancia vertical medida entre una bajamar y una pleamar dadas se define como:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040138,
+    "question": "¿Cómo se debe medir una distancia entre dos puntos en la carta náutica?",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040139,
+    "question": "En relación con la forma de medir el rumbo denominada cuadrantal, indique la respuesta CORRECTA.",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040140,
+    "question": "El ángulo comprendido entre el Norte magnético y el Norte geográfico en un punto específico de la Tierra se denomina:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040141,
+    "question": "El aparato que, colocado sobre un compás magnético, se usa para tomar una demora recibe el nombre de:",
+    "topic": "Teoría de la navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040142,
+    "question": "A Hrb: 08:00, navegando con rumbo de aguja= 355° y un desvío= 3°(-), se toman simultáneamente las siguientes demoras: Demora de aguja a Punta Almina= 299° y Demora de aguja a Ras Aswad (Cabo Negro) = 198°. Una vez situados se da rumbo al Faro de Punta Carnero con un desvío de aguja de 4°(-) y una velocidad de máquinas de 4 nudos. Calcular el rumbo de aguja al Faro de Punta Carnero y la Hrb cuando nos encontremos al través del Faro de Punta Europa. Supóngase que en el momento de la navegación la declinación magnética en toda la zona es de 5°E.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040143,
+    "question": "Nos encontramos navegando con velocidad de máquinas 6 nudos, y a Hrb = 09:30 situados en posición 35°47,0´N; 006°12,0´W damos rumbo a un punto “p” de coordenadas: 35°58,0´N; 005°55,0W; puestos a rumbo el desvío es de 3°(-). Cuando Cabo Espartel nos demora por el 116° de aguja, damos rumbo para pasar a 3 millas al Norte verdadero de Punta Malabata, manteniendo la misma velocidad de máquinas. Se pide calcular la posición de nuestra embarcación a Hrb=12:30, sabiendo que la declinación magnética para todo el ejercicio es 3°W.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040144,
+    "question": "Hallar la sonda en el momento de la segunda bajamar, el día 04 de abril de 2024, en Algeciras con una presión atmosférica de 996 mb y una sonda en la carta de 7,2 metros.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  },
+  {
+    "id": 2024040145,
+    "question": "Dada la situación de salida l= 35º45'N; L= 005º14' W, la Hrb= 15:00 h, la velocidad de la embarcación 5 nudos y el rumbo de aguja 355º. Ct=+5º. Se pide calcular la situación de estima a Hrb= 16:30 h.",
+    "topic": "Carta de navegación",
+    "image": null,
+    "examYear": 2024,
+    "examMonth": 4,
+    "examNumber": 1,
+    "explanation": null
+  }
+]
