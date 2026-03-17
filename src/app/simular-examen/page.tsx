@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { BackButton } from "@/components/back-button";
+import { Button } from "@/components/ui/button";
 
 type TestModel = {
   id: string;
@@ -243,7 +244,7 @@ export default function SimularExamenPage() {
             </p>
             <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Anos de convocatoria">
               {years.map((year) => (
-                <button
+                <Button
                   key={year}
                   type="button"
                   onClick={() => {
@@ -254,21 +255,22 @@ export default function SimularExamenPage() {
                     setSelectedModelId(nextYearData.dates[0].models[0].id);
                   }}
                   className={
-                    "rounded-full border border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold" +
+                    "h-auto rounded-full border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold hover:bg-[#eef8ff]" +
                     (selectedYear === year
                       ? " border-[var(--accent)] bg-[var(--accent-soft)]"
                       : "")
                   }
+                  variant="outline"
                 >
                   {year}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
           <div className="grid gap-2" aria-label="Fechas disponibles">
             {yearData.dates.map((date) => (
-              <button
+              <Button
                 key={date.id}
                 type="button"
                 onClick={() => {
@@ -276,17 +278,18 @@ export default function SimularExamenPage() {
                   setSelectedModelId(date.models[0].id);
                 }}
                 className={
-                  "grid gap-1 rounded-xl border border-[var(--line)] bg-[#fcfcfc] p-3 text-left" +
+                  "h-auto grid gap-1 rounded-xl border-[var(--line)] bg-[#fcfcfc] p-3 text-left hover:bg-[#f8fafc]" +
                   (selectedDateId === date.id
                     ? " border-[var(--accent)] bg-[#effaf8]"
                     : "")
                 }
+                variant="outline"
               >
                 <strong>{date.label}</strong>
                 <small className="text-[var(--ink-muted)]">
                   {date.models.length} modelos disponibles
                 </small>
-              </button>
+              </Button>
             ))}
           </div>
 
@@ -295,19 +298,20 @@ export default function SimularExamenPage() {
             <p className="my-2">Selecciona el modelo:</p>
             <div className="flex flex-wrap gap-2" role="group" aria-label="Modelos de examen">
               {dateData.models.map((model) => (
-                <button
+                <Button
                   key={model.id}
                   type="button"
                   onClick={() => setSelectedModelId(model.id)}
                   className={
-                    "rounded-full border border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold" +
+                    "h-auto rounded-full border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold hover:bg-[#eef8ff]" +
                     (selectedModelId === model.id
                       ? " border-[var(--accent)] bg-[var(--accent-soft)]"
                       : "")
                   }
+                  variant="outline"
                 >
                   {model.name}
-                </button>
+                </Button>
               ))}
             </div>
             <ul className="mt-4 grid list-disc gap-1 pl-5 text-[var(--ink-muted)]">
@@ -315,12 +319,12 @@ export default function SimularExamenPage() {
               <li>45 preguntas tipo test</li>
               <li>Tiempo total: 45 minutos</li>
             </ul>
-            <button
+            <Button
               type="button"
-              className="mt-4 rounded-[10px] bg-[var(--accent)] px-4 py-2.5 font-bold text-white"
+              className="mt-4 h-auto rounded-[10px] bg-[var(--accent)] px-4 py-2.5 font-bold text-white hover:opacity-90"
             >
               Comenzar simulacion
-            </button>
+            </Button>
           </aside>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { BackButton } from "@/components/back-button";
+import { Button } from "@/components/ui/button";
 
 const topics = [
   "Normativa y reglamentacion",
@@ -29,13 +30,14 @@ export default function TestPorTemaPage() {
           <h2 className="m-0 text-[1.15rem]">Temas disponibles</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {topics.map((topic) => (
-              <button
+              <Button
                 key={topic}
                 type="button"
-                className="rounded-[10px] border border-[var(--line)] bg-slate-50 px-3 py-2 text-[var(--ink)]"
+                variant="outline"
+                className="h-auto rounded-[10px] border-[var(--line)] bg-slate-50 px-3 py-2 text-[var(--ink)] hover:bg-slate-100"
               >
                 {topic}
-              </button>
+              </Button>
             ))}
           </div>
           <ul className="mt-4 grid list-disc gap-1 pl-5 text-[var(--ink-muted)]">

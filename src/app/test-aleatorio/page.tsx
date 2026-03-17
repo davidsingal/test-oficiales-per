@@ -1,4 +1,5 @@
 import { BackButton } from "@/components/back-button";
+import { Button } from "@/components/ui/button";
 
 const randomModes = [
   "Dificultad mixta",
@@ -29,13 +30,14 @@ export default function TestAleatorioPage() {
           <h2 className="m-0 text-[1.15rem]">Configuraciones rapidas</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {randomModes.map((mode) => (
-              <button
+              <Button
                 key={mode}
                 type="button"
-                className="rounded-[10px] border border-[var(--line)] bg-slate-50 px-3 py-2 text-[var(--ink)]"
+                variant="outline"
+                className="h-auto rounded-[10px] border-[var(--line)] bg-slate-50 px-3 py-2 text-[var(--ink)] hover:bg-slate-100"
               >
                 {mode}
-              </button>
+              </Button>
             ))}
           </div>
           <ul className="mt-4 grid list-disc gap-1 pl-5 text-[var(--ink-muted)]">
