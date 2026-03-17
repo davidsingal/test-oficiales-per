@@ -67,6 +67,7 @@ export interface Config {
   };
   blocks: {};
   collections: {
+    topics: Topic;
     'payload-kv': PayloadKv;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
@@ -75,6 +76,7 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
+    topics: TopicsSelect<false> | TopicsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -114,6 +116,17 @@ export interface UserAuthOperations {
     email: string;
     password: string;
   };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topics".
+ */
+export interface Topic {
+  id: number;
+  name: string;
+  description?: string | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -163,10 +176,15 @@ export interface User {
  */
 export interface PayloadLockedDocument {
   id: number;
-  document?: {
-    relationTo: 'users';
-    value: number | User;
-  } | null;
+  document?:
+    | ({
+        relationTo: 'topics';
+        value: number | Topic;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: number | User;
+      } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
@@ -208,6 +226,16 @@ export interface PayloadMigration {
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topics_select".
+ */
+export interface TopicsSelect<T extends boolean = true> {
+  name?: T;
+  description?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

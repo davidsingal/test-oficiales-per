@@ -1,5 +1,5 @@
 import { BackButton } from "@/components/back-button";
-import TopicsList from "@/components/topics";
+import TopicsList from "@/components/topics-list";
 
 export default async function TestPorTemaPage() {
   return (
