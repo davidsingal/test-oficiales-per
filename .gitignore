@@ -1,2 +1,30 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.pnpm-debug.log*
+
+# data files
 /data/**/*.txt
 /data/**/*.pdf
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
