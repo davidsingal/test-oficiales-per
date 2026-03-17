@@ -4,6 +4,7 @@ set -euo pipefail
 INPUT_DIR="${1:-extracted/exams}"
 QUESTIONS_CSV="${2:-outputs/questions.csv}"
 ANSWERS_CSV="${3:-outputs/answers.csv}"
+REPORT_CSV="${4:-outputs/generation_report.csv}"
 
 if [[ ! -d "$INPUT_DIR" ]]; then
   echo "Error: input directory '$INPUT_DIR' does not exist." >&2
@@ -12,31 +13,41 @@ fi
 
 mkdir -p "$(dirname "$QUESTIONS_CSV")"
 mkdir -p "$(dirname "$ANSWERS_CSV")"
+mkdir -p "$(dirname "$REPORT_CSV")"
 
 tmp_questions="$(mktemp)"
 tmp_answers="$(mktemp)"
-trap 'rm -f "$tmp_questions" "$tmp_answers"' EXIT
+tmp_report="$(mktemp)"
+trap 'rm -f "$tmp_questions" "$tmp_answers" "$tmp_report"' EXIT
 
 echo 'id,question,category,exam_year,exam_number,image,explanation' > "$tmp_questions"
 echo 'id,question_id,answer,is_correct' > "$tmp_answers"
+echo 'file,exam_year,exam_number,question_count,answers_count,unknown_category_count,status' > "$tmp_report"
 
 q_id=0
 a_id=0
+invalid_exam_count=0
+total_unknown_category_count=0
 
 while IFS= read -r file; do
   exam_year="$(basename "$(dirname "$file")")"
   base_name="$(basename "$file" .txt)"
   exam_number=""
   if [[ "$base_name" =~ _([0-9]+)$ ]]; then
-    exam_number="${BASH_REMATCH[1]}"
+    exam_number="$(printf '%02d' "${BASH_REMATCH[1]}")"
   fi
+
+  prev_q_id="$q_id"
+  prev_a_id="$a_id"
+  file_tmp_questions="$(mktemp)"
+  file_tmp_answers="$(mktemp)"
 
   awk -v year="$exam_year" \
       -v exam="$exam_number" \
       -v start_qid="$q_id" \
       -v start_aid="$a_id" \
-      -v qcsv="$tmp_questions" \
-      -v acsv="$tmp_answers" '
+      -v qcsv="$file_tmp_questions" \
+      -v acsv="$file_tmp_answers" '
     function trim(s) {
       sub(/^[[:space:]]+/, "", s)
       sub(/[[:space:]]+$/, "", s)
@@ -103,13 +114,32 @@ while IFS= read -r file; do
       normalized = normalize_category(s)
       if (normalized == "") return 0
       nxt = next_nonempty(idx)
-      return (nxt ~ /^[0-9]+[[:space:]]+/)
+      return (nxt ~ /^[0-9][0-9]?[0-9]?([^0-9]|$)/)
     }
-    function flush_question() {
+    function category_by_qnum(qn) {
+      qn = qn + 0
+      if (qn >= 1  && qn <= 4)  return "Nomenclatura náutica"
+      if (qn >= 5  && qn <= 6)  return "Elementos de amarre y fondeo"
+      if (qn >= 7  && qn <= 10) return "Seguridad"
+      if (qn >= 11 && qn <= 12) return "Legislación"
+      if (qn >= 13 && qn <= 17) return "Balizamiento"
+      if (qn >= 18 && qn <= 27) return "Reglamento (RIPA)"
+      if (qn >= 28 && qn <= 29) return "Maniobra y navegación"
+      if (qn >= 30 && qn <= 32) return "Emergencias en la mar"
+      if (qn >= 33 && qn <= 36) return "Meteorología"
+      if (qn >= 37 && qn <= 41) return "Teoría de la navegación"
+      if (qn >= 42 && qn <= 45) return "Carta de navegación"
+      return ""
+    }
+    function flush_question(   assigned_category) {
       if (qnum == "") return
 
       qid++
-      print qid "," esc(qtext) "," esc(category) "," esc(year) "," esc(exam) ",\"\",\"\"" >> qcsv
+      assigned_category = category_by_qnum(qnum)
+      if (assigned_category == "") assigned_category = category
+      if (assigned_category == "") assigned_category = "Unknown category"
+      if (assigned_category == "Unknown category") unknown_count++
+      print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(exam) ",\"\",\"\"" >> qcsv
 
       aid++
       print aid "," qid "," esc(opt["a"]) ",\"\"" >> acsv
@@ -134,20 +164,45 @@ while IFS= read -r file; do
     END {
       qid = start_qid
       aid = start_aid
+      unknown_count = 0
 
       for (i = 1; i <= n; i++) {
         line = trim(lines[i])
         if (line == "") continue
 
-        if (line ~ /^[0-9][0-9]?[0-9]?[[:space:]]+/) {
-          flush_question()
-          qnum = line
-          sub(/[[:space:]].*$/, "", qnum)
-          qtext = line
-          sub(/^[0-9][0-9]?[0-9]?[[:space:]]+/, "", qtext)
-          qtext = trim(qtext)
-          current = "q"
-          continue
+        if (line ~ /^[0-9][0-9]?[0-9]?([^0-9]|$)/) {
+          candidate_qnum = line
+          sub(/[[:space:]].*$/, "", candidate_qnum)
+          sub(/[^0-9].*$/, "", candidate_qnum)
+          if (qnum == "" && (candidate_qnum + 0) == 1) {
+            qnum = candidate_qnum + 0
+            qtext = line
+            sub(/^[0-9][0-9]?[0-9]?/, "", qtext)
+            sub(/^[[:space:]]+/, "", qtext)
+            qtext = trim(qtext)
+            current = "q"
+            continue
+          }
+          if (qnum != "" && (candidate_qnum + 0) == (qnum + 1)) {
+            flush_question()
+            qnum = candidate_qnum + 0
+            qtext = line
+            sub(/^[0-9][0-9]?[0-9]?/, "", qtext)
+            sub(/^[[:space:]]+/, "", qtext)
+            qtext = trim(qtext)
+            current = "q"
+            continue
+          }
+          if (qnum != "" && (candidate_qnum + 0) > qnum && (candidate_qnum + 0) <= 45 && current == "d") {
+            flush_question()
+            qnum = candidate_qnum + 0
+            qtext = line
+            sub(/^[0-9][0-9]?[0-9]?/, "", qtext)
+            sub(/^[[:space:]]+/, "", qtext)
+            qtext = trim(qtext)
+            current = "q"
+            continue
+          }
         }
 
         if (line ~ /^[abcd]\)/) {
@@ -179,20 +234,45 @@ while IFS= read -r file; do
       flush_question()
       print "QID=" qid
       print "AID=" aid
+      print "UNKNOWN=" unknown_count
     }
   ' "$file" > /tmp/csv_ids.$$
 
-  q_id="$(awk -F= '/^QID=/{print $2}' /tmp/csv_ids.$$)"
-  a_id="$(awk -F= '/^AID=/{print $2}' /tmp/csv_ids.$$)"
+  q_id_new="$(awk -F= '/^QID=/{print $2}' /tmp/csv_ids.$$)"
+  a_id_new="$(awk -F= '/^AID=/{print $2}' /tmp/csv_ids.$$)"
+  unknown_count="$(awk -F= '/^UNKNOWN=/{print $2}' /tmp/csv_ids.$$)"
+
+  file_q_count=$((q_id_new - prev_q_id))
+  file_a_count=$((a_id_new - prev_a_id))
+  total_unknown_category_count=$((total_unknown_category_count + unknown_count))
+
+  status="ok"
+  if [[ "$file_q_count" -ne 45 || "$file_a_count" -ne 180 ]]; then
+    status="incomplete"
+    echo "WARN: $(basename "$file") produced $file_q_count questions and $file_a_count answers (expected 45/180)." >&2
+    invalid_exam_count=$((invalid_exam_count + 1))
+  fi
+
+  echo "\"$(basename "$file")\",\"$exam_year\",\"$exam_number\",$file_q_count,$file_a_count,$unknown_count,\"$status\"" >> "$tmp_report"
+
+  cat "$file_tmp_questions" >> "$tmp_questions"
+  cat "$file_tmp_answers" >> "$tmp_answers"
+  q_id="$q_id_new"
+  a_id="$a_id_new"
+  rm -f "$file_tmp_questions" "$file_tmp_answers"
 done < <(find "$INPUT_DIR" -type f -name '*.txt' | sort)
 
 rm -f /tmp/csv_ids.$$
 
 mv "$tmp_questions" "$QUESTIONS_CSV"
 mv "$tmp_answers" "$ANSWERS_CSV"
+mv "$tmp_report" "$REPORT_CSV"
 trap - EXIT
 
 echo "Created questions CSV: $QUESTIONS_CSV"
 echo "Created answers CSV: $ANSWERS_CSV"
+echo "Created report CSV: $REPORT_CSV"
 echo "Total questions: $q_id"
 echo "Total answers: $a_id"
+echo "Exams with incomplete parsing: $invalid_exam_count"
+echo "Questions with Unknown category: $total_unknown_category_count"
