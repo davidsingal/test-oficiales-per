@@ -7,7 +7,7 @@ export function BackButton() {
   const router = useRouter();
 
   return (
-    <Button type="button" variant="outline" onClick={() => router.push("/")}>
+    <Button type="button" variant="outline" onClick={() => router.back()}>
       Volver
     </Button>
   );

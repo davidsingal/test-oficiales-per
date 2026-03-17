@@ -1,23 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useQuery } from "@tanstack/react-query";
+import { useRouter } from "next/navigation";
+import { useTopics } from "@/hooks/fetchTopics";
 import type { FC } from "react";
-import type { Topic } from "@/types/data";
-
-async function getTopics(): Promise<Topic[]> {
-  return fetch("/data/topics.json").then((res) => res.json());
-}
 
 const TopicsList: FC = () => {
-  const {
-    data: topics,
-    isLoading,
-    isError,
-  } = useQuery({
-    queryKey: ["topics"],
-    queryFn: () => getTopics(),
-  });
+  const router = useRouter();
+  const { data: topics, isLoading, isError } = useTopics();
 
   return (
     <section className="space-y-4 rounded-md border p-4">
@@ -31,7 +21,16 @@ const TopicsList: FC = () => {
           topics
             ?.filter((topic) => topic.name !== "Carta de navegación") // Excluimos este tema por ahora
             .map((topic) => (
-              <Button key={topic.id} type="button" variant="outline">
+              <Button
+                key={topic.id}
+                type="button"
+                variant="outline"
+                onClick={() =>
+                  router.push(
+                    `/test-por-tema/${encodeURIComponent(topic.name)}`,
+                  )
+                }
+              >
                 {topic.name}
               </Button>
             ))}
