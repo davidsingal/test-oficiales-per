@@ -3,12 +3,16 @@ import config from "@payload-config";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
 import type { NextPage } from "next";
+import type { Question } from "@/types/payload-types";
 
 type PageProps = {
   params: Promise<{ year: string; month: string; test: string }>;
 };
 
 const payload = await getPayload({ config });
+
+const getTopicName = (topic: Question["topic"]) =>
+  typeof topic === "object" && topic !== null ? topic.name : "Tema";
 
 const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   const { year, month, test } = await params;
@@ -29,6 +33,7 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
         equals: selectedTest,
       },
     },
+    sort: ["questionNumber"],
     pagination: false,
   });
 
@@ -38,7 +43,12 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
       <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
-          <QuestionItem key={`question-${question.id}`} data={question} />
+          <div key={`question-${question.id}`} className="space-y-2">
+            <div className="px-4 text-xs text-muted-foreground">
+              <span>{getTopicName(question.topic)}</span>
+            </div>
+            <QuestionItem data={question} />
+          </div>
         ))}
       </div>
     </main>

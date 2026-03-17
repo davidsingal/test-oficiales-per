@@ -151,6 +151,7 @@ export interface Question {
     | 'noviembre'
     | 'diciembre';
   testNumber: number;
+  questionNumber: number;
   topic: number | Topic;
   questionText: string;
   explanation?: string | null;
@@ -279,6 +280,7 @@ export interface QuestionsSelect<T extends boolean = true> {
   year?: T;
   month?: T;
   testNumber?: T;
+  questionNumber?: T;
   topic?: T;
   questionText?: T;
   explanation?: T;

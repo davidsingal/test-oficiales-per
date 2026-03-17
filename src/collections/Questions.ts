@@ -41,6 +41,15 @@ export const Questions: CollectionConfig = {
           type: "number",
           required: true,
         },
+        {
+          name: "questionNumber",
+          label: "Número de pregunta dentro del test",
+          type: "number",
+          required: true,
+          min: 1,
+          max: 45,
+          defaultValue: 1,
+        },
       ],
     },
     {

@@ -20,7 +20,7 @@ tmp_answers="$(mktemp)"
 tmp_report="$(mktemp)"
 trap 'rm -f "$tmp_questions" "$tmp_answers" "$tmp_report"' EXIT
 
-echo 'id,question,category,exam_year,exam_month,exam_number,image,explanation' > "$tmp_questions"
+echo 'id,question,category,exam_year,exam_month,exam_number,question_number,image,explanation' > "$tmp_questions"
 echo 'id,question_id,answer,is_correct' > "$tmp_answers"
 echo 'file,exam_year,exam_month,exam_number,question_count,answers_count,unknown_category_count,status' > "$tmp_report"
 
@@ -149,7 +149,7 @@ while IFS= read -r file; do
       if (qn >= 42 && qn <= 45) return "Carta de navegación"
       return ""
     }
-    function flush_question(   assigned_category) {
+    function flush_question(   assigned_category, test_index) {
       if (qnum == "") return
 
       qid++
@@ -157,7 +157,9 @@ while IFS= read -r file; do
       if (assigned_category == "") assigned_category = category
       if (assigned_category == "") assigned_category = "Unknown category"
       if (assigned_category == "Unknown category") unknown_count++
-      print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(month) "," esc(exam) ",\"\",\"\"" >> qcsv
+      test_index = "undefined"
+      if ((qnum + 0) >= 1 && (qnum + 0) <= 45) test_index = qnum + 0
+      print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(month) "," esc(exam) "," esc(test_index) ",\"\",\"\"" >> qcsv
 
       aid++
       print aid "," qid "," esc(opt["a"]) ",\"\"" >> acsv

@@ -66,12 +66,11 @@ const TestAleatorioPage: NextPage = async () => {
       <div className="space-y-10">
         {questionsData.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
-            <QuestionItem data={question} />
             <div className="px-4 text-xs text-muted-foreground">
               <span>{getTopicName(question.topic)}</span> · Convocatoria{" "}
-              {question.year}{" "}
-              {question.month} - Test 0{question.testNumber}
+              {question.year} {question.month} - Test 0{question.testNumber}
             </div>
+            <QuestionItem data={question} />
           </div>
         ))}
       </div>
