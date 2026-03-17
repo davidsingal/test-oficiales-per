@@ -12,7 +12,6 @@ export default function TestAleatorioPage() {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <p className="text-sm text-muted-foreground">Test aleatorio</p>
         <h1 className="text-3xl font-semibold">Practica dinamica y variada</h1>
         <p className="text-muted-foreground">
           Genera tests combinados para entrenar reflejos y consolidar conceptos.

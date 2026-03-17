@@ -196,8 +196,12 @@ const examCalendar: YearGroup[] = [
 ];
 
 export default function SimularExamenPage() {
-  const [selectedYear, setSelectedYear] = useState<number>(examCalendar[0].year);
-  const [selectedDateId, setSelectedDateId] = useState<string>(examCalendar[0].dates[0].id);
+  const [selectedYear, setSelectedYear] = useState<number>(
+    examCalendar[0].year,
+  );
+  const [selectedDateId, setSelectedDateId] = useState<string>(
+    examCalendar[0].dates[0].id,
+  );
   const [selectedModelId, setSelectedModelId] = useState<string>(
     examCalendar[0].dates[0].models[0].id,
   );
@@ -205,28 +209,35 @@ export default function SimularExamenPage() {
   const years = examCalendar.map((group) => group.year);
 
   const yearData = useMemo(
-    () => examCalendar.find((group) => group.year === selectedYear) ?? examCalendar[0],
+    () =>
+      examCalendar.find((group) => group.year === selectedYear) ??
+      examCalendar[0],
     [selectedYear],
   );
 
   const dateData = useMemo(
-    () => yearData.dates.find((item) => item.id === selectedDateId) ?? yearData.dates[0],
+    () =>
+      yearData.dates.find((item) => item.id === selectedDateId) ??
+      yearData.dates[0],
     [selectedDateId, yearData],
   );
 
   const modelData = useMemo(
-    () => dateData.models.find((item) => item.id === selectedModelId) ?? dateData.models[0],
+    () =>
+      dateData.models.find((item) => item.id === selectedModelId) ??
+      dateData.models[0],
     [selectedModelId, dateData],
   );
 
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <p className="text-sm text-muted-foreground">Simular examen</p>
-        <h1 className="text-3xl font-semibold">Selecciona convocatoria, fecha y modelo</h1>
+        <h1 className="text-3xl font-semibold">
+          Selecciona convocatoria, fecha y modelo
+        </h1>
         <p className="text-muted-foreground">
-          Datos de ejemplo para definir el flujo real. Cada simulacion esta ajustada
-          a 45 preguntas y 45 minutos.
+          Datos de ejemplo para definir el flujo real. Cada simulación está
+          ajustada a 45 preguntas y 45 minutos.
         </p>
         <BackButton />
       </section>
@@ -234,19 +245,25 @@ export default function SimularExamenPage() {
       <section className="grid gap-4 lg:grid-cols-[1.2fr_1.3fr_1fr]">
         <div className="space-y-4 rounded-md border p-4">
           <div>
-            <h2 className="text-lg font-medium">Convocatorias por ano</h2>
+            <h2 className="text-lg font-medium">Convocatorias por año</h2>
             <p className="text-sm text-muted-foreground">
-              Desde 2021 hasta 2025, con 3 o 4 fechas por ano.
+              Desde 2021 hasta 2025, con 3 o 4 fechas por año.
             </p>
           </div>
-          <div className="flex flex-wrap gap-2" role="group" aria-label="Anos de convocatoria">
+          <div
+            className="flex flex-wrap gap-2"
+            role="group"
+            aria-label="Años de convocatoria"
+          >
             {years.map((year) => (
               <Button
                 key={year}
                 type="button"
                 variant={selectedYear === year ? "secondary" : "outline"}
                 onClick={() => {
-                  const nextYearData = examCalendar.find((group) => group.year === year);
+                  const nextYearData = examCalendar.find(
+                    (group) => group.year === year,
+                  );
                   if (!nextYearData) return;
                   setSelectedYear(year);
                   setSelectedDateId(nextYearData.dates[0].id);
@@ -284,7 +301,11 @@ export default function SimularExamenPage() {
         <aside className="space-y-3 rounded-md border p-4" aria-live="polite">
           <h3 className="font-medium">{dateData.label}</h3>
           <p className="text-sm text-muted-foreground">Selecciona el modelo:</p>
-          <div className="flex flex-wrap gap-2" role="group" aria-label="Modelos de examen">
+          <div
+            className="flex flex-wrap gap-2"
+            role="group"
+            aria-label="Modelos de examen"
+          >
             {dateData.models.map((model) => (
               <Button
                 key={model.id}
@@ -303,7 +324,7 @@ export default function SimularExamenPage() {
             <li>Tiempo total: 45 minutos</li>
           </ul>
 
-          <Button type="button">Comenzar simulacion</Button>
+          <Button type="button">Comenzar simulación</Button>
         </aside>
       </section>
     </main>

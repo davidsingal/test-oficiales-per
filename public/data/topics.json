@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Nomenclatura náutica",
+    "description": "Preguntas relacionadas con nomenclatura náutica."
+  },
+  {
+    "id": 2,
+    "name": "Elementos de amarre y fondeo",
+    "description": "Preguntas relacionadas con elementos de amarre y fondeo."
+  },
+  {
+    "id": 3,
+    "name": "Seguridad",
+    "description": "Preguntas relacionadas con seguridad."
+  },
+  {
+    "id": 4,
+    "name": "Legislación",
+    "description": "Preguntas relacionadas con legislación."
+  },
+  {
+    "id": 5,
+    "name": "Balizamiento",
+    "description": "Preguntas relacionadas con balizamiento."
+  },
+  {
+    "id": 6,
+    "name": "Reglamento (RIPA)",
+    "description": "Preguntas relacionadas con reglamento (ripa)."
+  },
+  {
+    "id": 7,
+    "name": "Maniobra y navegación",
+    "description": "Preguntas relacionadas con maniobra y navegación."
+  },
+  {
+    "id": 8,
+    "name": "Emergencias en la mar",
+    "description": "Preguntas relacionadas con emergencias en la mar."
+  },
+  {
+    "id": 9,
+    "name": "Meteorología",
+    "description": "Preguntas relacionadas con meteorología."
+  },
+  {
+    "id": 10,
+    "name": "Teoría de la navegación",
+    "description": "Preguntas relacionadas con teoría de la navegación."
+  },
+  {
+    "id": 11,
+    "name": "Carta de navegación",
+    "description": "Preguntas relacionadas con carta de navegación."
+  }
+]
