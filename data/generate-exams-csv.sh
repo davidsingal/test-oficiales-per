@@ -21,7 +21,7 @@ tmp_report="$(mktemp)"
 trap 'rm -f "$tmp_questions" "$tmp_answers" "$tmp_report"' EXIT
 
 echo 'id,question,category,exam_year,exam_month,exam_number,question_number,image,explanation' > "$tmp_questions"
-echo 'id,question_id,answer,is_correct' > "$tmp_answers"
+echo 'id,question_id,answer_id,answer' > "$tmp_answers"
 echo 'file,exam_year,exam_month,exam_number,question_count,answers_count,unknown_category_count,status' > "$tmp_report"
 
 q_id=0
@@ -162,13 +162,13 @@ while IFS= read -r file; do
       print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(month) "," esc(exam) "," esc(test_index) ",\"\",\"\"" >> qcsv
 
       aid++
-      print aid "," qid "," esc(opt["a"]) ",\"\"" >> acsv
+      print aid "," qid ",\"A\"," esc(opt["a"]) >> acsv
       aid++
-      print aid "," qid "," esc(opt["b"]) ",\"\"" >> acsv
+      print aid "," qid ",\"B\"," esc(opt["b"]) >> acsv
       aid++
-      print aid "," qid "," esc(opt["c"]) ",\"\"" >> acsv
+      print aid "," qid ",\"C\"," esc(opt["c"]) >> acsv
       aid++
-      print aid "," qid "," esc(opt["d"]) ",\"\"" >> acsv
+      print aid "," qid ",\"D\"," esc(opt["d"]) >> acsv
 
       qnum = ""
       qtext = ""
