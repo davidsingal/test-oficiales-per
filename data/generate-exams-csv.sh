@@ -20,9 +20,9 @@ tmp_answers="$(mktemp)"
 tmp_report="$(mktemp)"
 trap 'rm -f "$tmp_questions" "$tmp_answers" "$tmp_report"' EXIT
 
-echo 'id,question,category,exam_year,exam_number,image,explanation' > "$tmp_questions"
+echo 'id,question,category,exam_year,exam_month,exam_number,image,explanation' > "$tmp_questions"
 echo 'id,question_id,answer,is_correct' > "$tmp_answers"
-echo 'file,exam_year,exam_number,question_count,answers_count,unknown_category_count,status' > "$tmp_report"
+echo 'file,exam_year,exam_month,exam_number,question_count,answers_count,unknown_category_count,status' > "$tmp_report"
 
 q_id=0
 a_id=0
@@ -32,6 +32,23 @@ total_unknown_category_count=0
 while IFS= read -r file; do
   exam_year="$(basename "$(dirname "$file")")"
   base_name="$(basename "$file" .txt)"
+  month_token="${base_name%%_*}"
+  month_token="$(printf '%s' "$month_token" | tr '[:upper:]' '[:lower:]')"
+  exam_month=""
+  case "$month_token" in
+    enero) exam_month="01" ;;
+    febrero) exam_month="02" ;;
+    marzo) exam_month="03" ;;
+    abril) exam_month="04" ;;
+    mayo) exam_month="05" ;;
+    junio) exam_month="06" ;;
+    julio) exam_month="07" ;;
+    agosto) exam_month="08" ;;
+    septiembre|setiembre) exam_month="09" ;;
+    octubre) exam_month="10" ;;
+    noviembre) exam_month="11" ;;
+    diciembre) exam_month="12" ;;
+  esac
   exam_number=""
   if [[ "$base_name" =~ _([0-9]+)$ ]]; then
     exam_number="$(printf '%02d' "${BASH_REMATCH[1]}")"
@@ -43,6 +60,7 @@ while IFS= read -r file; do
   file_tmp_answers="$(mktemp)"
 
   awk -v year="$exam_year" \
+      -v month="$exam_month" \
       -v exam="$exam_number" \
       -v start_qid="$q_id" \
       -v start_aid="$a_id" \
@@ -139,7 +157,7 @@ while IFS= read -r file; do
       if (assigned_category == "") assigned_category = category
       if (assigned_category == "") assigned_category = "Unknown category"
       if (assigned_category == "Unknown category") unknown_count++
-      print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(exam) ",\"\",\"\"" >> qcsv
+      print qid "," esc(qtext) "," esc(assigned_category) "," esc(year) "," esc(month) "," esc(exam) ",\"\",\"\"" >> qcsv
 
       aid++
       print aid "," qid "," esc(opt["a"]) ",\"\"" >> acsv
@@ -253,7 +271,7 @@ while IFS= read -r file; do
     invalid_exam_count=$((invalid_exam_count + 1))
   fi
 
-  echo "\"$(basename "$file")\",\"$exam_year\",\"$exam_number\",$file_q_count,$file_a_count,$unknown_count,\"$status\"" >> "$tmp_report"
+  echo "\"$(basename "$file")\",\"$exam_year\",\"$exam_month\",\"$exam_number\",$file_q_count,$file_a_count,$unknown_count,\"$status\"" >> "$tmp_report"
 
   cat "$file_tmp_questions" >> "$tmp_questions"
   cat "$file_tmp_answers" >> "$tmp_answers"

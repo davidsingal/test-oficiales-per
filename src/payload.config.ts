@@ -4,13 +4,14 @@ import { fileURLToPath } from "url";
 import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres";
 import { buildConfig } from "payload";
 import { Topics } from "./collections/Topics";
+import { Questions } from "./collections/Questions";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
 export default buildConfig({
   // Define and configure your collections in this array
-  collections: [Topics],
+  collections: [Topics, Questions],
   // Your Payload secret - should be a complex and secure string, unguessable
   secret: process.env.PAYLOAD_SECRET || "",
   // Whichever Database Adapter you're using should go here

@@ -68,6 +68,7 @@ export interface Config {
   blocks: {};
   collections: {
     topics: Topic;
+    questions: Question;
     'payload-kv': PayloadKv;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
@@ -77,6 +78,7 @@ export interface Config {
   collectionsJoins: {};
   collectionsSelect: {
     topics: TopicsSelect<false> | TopicsSelect<true>;
+    questions: QuestionsSelect<false> | QuestionsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -125,6 +127,34 @@ export interface Topic {
   id: number;
   name: string;
   description?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "questions".
+ */
+export interface Question {
+  id: number;
+  year: number;
+  month:
+    | 'enero'
+    | 'febrero'
+    | 'marzo'
+    | 'abril'
+    | 'mayo'
+    | 'junio'
+    | 'julio'
+    | 'agosto'
+    | 'septiembre'
+    | 'octubre'
+    | 'noviembre'
+    | 'diciembre';
+  testNumber: number;
+  topic: number | Topic;
+  questionText: string;
+  explanation?: string | null;
+  correctAnswer?: ('A' | 'B' | 'C' | 'D') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -182,6 +212,10 @@ export interface PayloadLockedDocument {
         value: number | Topic;
       } | null)
     | ({
+        relationTo: 'questions';
+        value: number | Question;
+      } | null)
+    | ({
         relationTo: 'users';
         value: number | User;
       } | null);
@@ -234,6 +268,21 @@ export interface PayloadMigration {
 export interface TopicsSelect<T extends boolean = true> {
   name?: T;
   description?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "questions_select".
+ */
+export interface QuestionsSelect<T extends boolean = true> {
+  year?: T;
+  month?: T;
+  testNumber?: T;
+  topic?: T;
+  questionText?: T;
+  explanation?: T;
+  correctAnswer?: T;
   updatedAt?: T;
   createdAt?: T;
 }
