@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const links = [
-  { href: "/simular-examen", label: "Simular examen" },
+  { href: "/examenes-oficiales", label: "Exámenes oficiales" },
   { href: "/test-por-tema", label: "Test por tema" },
   { href: "/test-aleatorio", label: "Test aleatorio" },
 ];
