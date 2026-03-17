@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simulador de Examenes",
-  description: "Interfaz responsive para practicar examenes tipo test",
+  title: "Simulador de Exámenes PER",
+  description: "Aplicación para practicar exámenes tipo test",
 };
 
 export default function RootLayout({
