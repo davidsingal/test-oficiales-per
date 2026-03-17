@@ -24,7 +24,7 @@ export function Navbar() {
         aria-label="Navegacion principal"
       >
         <Link href="/" className="text-sm font-semibold">
-          Simulador
+          PER
         </Link>
 
         <NavigationMenu className="max-w-full flex-none justify-start">

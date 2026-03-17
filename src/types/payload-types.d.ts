@@ -69,6 +69,7 @@ export interface Config {
   collections: {
     topics: Topic;
     questions: Question;
+    answers: Answer;
     'payload-kv': PayloadKv;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
@@ -79,6 +80,7 @@ export interface Config {
   collectionsSelect: {
     topics: TopicsSelect<false> | TopicsSelect<true>;
     questions: QuestionsSelect<false> | QuestionsSelect<true>;
+    answers: AnswersSelect<false> | AnswersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -156,6 +158,19 @@ export interface Question {
   questionText: string;
   explanation?: string | null;
   correctAnswer?: ('A' | 'B' | 'C' | 'D') | null;
+  answers?: (number | Answer)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "answers".
+ */
+export interface Answer {
+  id: number;
+  question: number | Question;
+  answerId: 'A' | 'B' | 'C' | 'D';
+  answerText: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -215,6 +230,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'questions';
         value: number | Question;
+      } | null)
+    | ({
+        relationTo: 'answers';
+        value: number | Answer;
       } | null)
     | ({
         relationTo: 'users';
@@ -285,6 +304,18 @@ export interface QuestionsSelect<T extends boolean = true> {
   questionText?: T;
   explanation?: T;
   correctAnswer?: T;
+  answers?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "answers_select".
+ */
+export interface AnswersSelect<T extends boolean = true> {
+  question?: T;
+  answerId?: T;
+  answerText?: T;
   updatedAt?: T;
   createdAt?: T;
 }

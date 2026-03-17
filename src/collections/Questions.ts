@@ -85,6 +85,14 @@ export const Questions: CollectionConfig = {
       ],
       required: false,
     },
+    {
+      name: "answers",
+      label: "Respuestas",
+      type: "relationship",
+      relationTo: "answers",
+      hasMany: true,
+      required: false,
+    },
   ],
 };
 
