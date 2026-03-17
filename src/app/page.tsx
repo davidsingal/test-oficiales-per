@@ -20,17 +20,12 @@ const options = [
 
 export default function HomePage() {
   return (
-    <main className="mx-auto grid w-[min(1120px,92vw)] gap-5 pb-12 pt-6">
-      <section className="rounded-3xl border border-[var(--line)] bg-[linear-gradient(150deg,#fffefe,var(--surface))] p-6 shadow-[0_12px_35px_rgba(34,49,63,0.08)]">
-        <p className="m-0 text-xs font-bold uppercase tracking-[0.08em] text-[var(--accent)]">
-          Inicio
-        </p>
-        <h1 className="mt-1 text-[clamp(1.7rem,3vw,2.8rem)] leading-[1.1]">
-          Elige tu modalidad de entrenamiento
-        </h1>
-        <p className="mt-4 max-w-[70ch] text-[var(--ink-muted)]">
-          Navega por las tres opciones para preparar tu examen. Todas las vistas
-          estan listas con datos de ejemplo y diseno responsive.
+    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
+      <section className="space-y-2">
+        <p className="text-sm text-muted-foreground">Inicio</p>
+        <h1 className="text-3xl font-semibold">Elige tu modalidad de entrenamiento</h1>
+        <p className="text-muted-foreground">
+          Navega por las tres opciones para preparar tu examen.
         </p>
       </section>
 
@@ -39,12 +34,10 @@ export default function HomePage() {
           <Link
             key={option.href}
             href={option.href}
-            className="grid gap-1.5 rounded-[18px] border border-[var(--line)] bg-[var(--surface-muted)] p-4 text-[var(--ink)] no-underline transition hover:-translate-y-0.5 hover:border-[var(--accent)]"
+            className="rounded-md border p-4 text-sm hover:bg-muted"
           >
-            <strong className="text-[1.02rem]">{option.title}</strong>
-            <span className="text-[0.92rem] text-[var(--ink-muted)]">
-              {option.description}
-            </span>
+            <p className="font-medium">{option.title}</p>
+            <p className="mt-1 text-muted-foreground">{option.description}</p>
           </Link>
         ))}
       </section>

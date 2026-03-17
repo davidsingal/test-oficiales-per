@@ -1,12 +1,14 @@
-import Link from "next/link";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 export function BackButton() {
+  const router = useRouter();
+
   return (
-    <Link
-      href="/"
-      className="mt-4 inline-flex rounded-full border border-[var(--line)] bg-white px-3 py-1.5 font-semibold text-[var(--ink)] no-underline transition-colors hover:border-[var(--accent)] hover:bg-white"
-    >
+    <Button type="button" variant="outline" onClick={() => router.push("/")}>
       Volver
-    </Link>
+    </Button>
   );
 }

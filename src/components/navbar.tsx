@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 
 const links = [
   { href: "/simular-examen", label: "Simular examen" },
@@ -13,33 +18,35 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[rgba(216,213,206,0.85)] bg-[rgba(248,245,239,0.85)] backdrop-blur-sm">
+    <header className="border-b">
       <nav
-        className="mx-auto flex min-h-[68px] w-[min(1120px,92vw)] flex-col justify-center gap-4 py-3 md:flex-row md:items-center md:justify-between md:py-0"
+        className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between"
         aria-label="Navegacion principal"
       >
-        <Link href="/" className="text-[1.08rem] font-extrabold text-[var(--ink)] no-underline">
+        <Link href="/" className="text-sm font-semibold">
           Simulador
         </Link>
-        <div className="flex flex-wrap gap-[0.55rem]">
-          {links.map((link) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={
-                  "rounded-full border border-[var(--line)] bg-[rgba(255,255,255,0.8)] px-3 py-[0.45rem] text-[var(--ink)] no-underline transition-colors hover:border-[var(--accent)]" +
-                  (isActive
-                    ? " border-[var(--accent)] bg-[var(--accent-soft)]"
-                    : "")
-                }
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </div>
+
+        <NavigationMenu className="max-w-full flex-none justify-start">
+          <NavigationMenuList className="flex flex-wrap gap-1">
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <NavigationMenuItem key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={
+                      "rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-muted" +
+                      (isActive ? " bg-muted" : "")
+                    }
+                  >
+                    {link.label}
+                  </Link>
+                </NavigationMenuItem>
+              );
+            })}
+          </NavigationMenuList>
+        </NavigationMenu>
       </nav>
     </header>
   );

@@ -220,113 +220,91 @@ export default function SimularExamenPage() {
   );
 
   return (
-    <main className="mx-auto grid w-[min(1120px,92vw)] gap-5 pb-12 pt-6">
-      <section className="rounded-3xl border border-[var(--line)] bg-[linear-gradient(150deg,#fffefe,var(--surface))] p-6 shadow-[0_12px_35px_rgba(34,49,63,0.08)]">
-        <p className="m-0 text-xs font-bold uppercase tracking-[0.08em] text-[var(--accent)]">
-          Simular examen
-        </p>
-        <h1 className="mt-1 text-[clamp(1.7rem,3vw,2.8rem)] leading-[1.1]">
-          Selecciona convocatoria, fecha y modelo
-        </h1>
-        <p className="mt-4 max-w-[70ch] text-[var(--ink-muted)]">
+    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
+      <section className="space-y-2">
+        <p className="text-sm text-muted-foreground">Simular examen</p>
+        <h1 className="text-3xl font-semibold">Selecciona convocatoria, fecha y modelo</h1>
+        <p className="text-muted-foreground">
           Datos de ejemplo para definir el flujo real. Cada simulacion esta ajustada
           a 45 preguntas y 45 minutos.
         </p>
         <BackButton />
       </section>
 
-      <section className="rounded-3xl border border-[var(--line)] bg-[linear-gradient(150deg,#fffefe,var(--surface))] p-5 shadow-[0_12px_35px_rgba(34,49,63,0.08)]">
-        <div className="grid gap-3 lg:grid-cols-[1.2fr_1.3fr_1fr]">
-          <div className="rounded-2xl border border-[var(--line)] bg-white p-4">
-            <h2 className="m-0 text-[1.15rem]">Convocatorias por ano</h2>
-            <p className="mt-2 text-[var(--ink-muted)]">
+      <section className="grid gap-4 lg:grid-cols-[1.2fr_1.3fr_1fr]">
+        <div className="space-y-4 rounded-md border p-4">
+          <div>
+            <h2 className="text-lg font-medium">Convocatorias por ano</h2>
+            <p className="text-sm text-muted-foreground">
               Desde 2021 hasta 2025, con 3 o 4 fechas por ano.
             </p>
-            <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Anos de convocatoria">
-              {years.map((year) => (
-                <Button
-                  key={year}
-                  type="button"
-                  onClick={() => {
-                    const nextYearData = examCalendar.find((group) => group.year === year);
-                    if (!nextYearData) return;
-                    setSelectedYear(year);
-                    setSelectedDateId(nextYearData.dates[0].id);
-                    setSelectedModelId(nextYearData.dates[0].models[0].id);
-                  }}
-                  className={
-                    "h-auto rounded-full border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold hover:bg-[#eef8ff]" +
-                    (selectedYear === year
-                      ? " border-[var(--accent)] bg-[var(--accent-soft)]"
-                      : "")
-                  }
-                  variant="outline"
-                >
-                  {year}
-                </Button>
-              ))}
-            </div>
           </div>
-
-          <div className="grid gap-2" aria-label="Fechas disponibles">
-            {yearData.dates.map((date) => (
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Anos de convocatoria">
+            {years.map((year) => (
               <Button
-                key={date.id}
+                key={year}
                 type="button"
+                variant={selectedYear === year ? "secondary" : "outline"}
                 onClick={() => {
-                  setSelectedDateId(date.id);
-                  setSelectedModelId(date.models[0].id);
+                  const nextYearData = examCalendar.find((group) => group.year === year);
+                  if (!nextYearData) return;
+                  setSelectedYear(year);
+                  setSelectedDateId(nextYearData.dates[0].id);
+                  setSelectedModelId(nextYearData.dates[0].models[0].id);
                 }}
-                className={
-                  "h-auto grid gap-1 rounded-xl border-[var(--line)] bg-[#fcfcfc] p-3 text-left hover:bg-[#f8fafc]" +
-                  (selectedDateId === date.id
-                    ? " border-[var(--accent)] bg-[#effaf8]"
-                    : "")
-                }
-                variant="outline"
               >
-                <strong>{date.label}</strong>
-                <small className="text-[var(--ink-muted)]">
+                {year}
+              </Button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid gap-2" aria-label="Fechas disponibles">
+          {yearData.dates.map((date) => (
+            <Button
+              key={date.id}
+              type="button"
+              variant={selectedDateId === date.id ? "secondary" : "outline"}
+              onClick={() => {
+                setSelectedDateId(date.id);
+                setSelectedModelId(date.models[0].id);
+              }}
+              className="h-auto w-full justify-start text-left"
+            >
+              <span className="flex flex-col items-start">
+                <span>{date.label}</span>
+                <span className="text-xs text-muted-foreground">
                   {date.models.length} modelos disponibles
-                </small>
+                </span>
+              </span>
+            </Button>
+          ))}
+        </div>
+
+        <aside className="space-y-3 rounded-md border p-4" aria-live="polite">
+          <h3 className="font-medium">{dateData.label}</h3>
+          <p className="text-sm text-muted-foreground">Selecciona el modelo:</p>
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Modelos de examen">
+            {dateData.models.map((model) => (
+              <Button
+                key={model.id}
+                type="button"
+                variant={selectedModelId === model.id ? "secondary" : "outline"}
+                onClick={() => setSelectedModelId(model.id)}
+              >
+                {model.name}
               </Button>
             ))}
           </div>
 
-          <aside className="rounded-2xl border border-[var(--line)] bg-white p-4" aria-live="polite">
-            <h3 className="m-0">{dateData.label}</h3>
-            <p className="my-2">Selecciona el modelo:</p>
-            <div className="flex flex-wrap gap-2" role="group" aria-label="Modelos de examen">
-              {dateData.models.map((model) => (
-                <Button
-                  key={model.id}
-                  type="button"
-                  onClick={() => setSelectedModelId(model.id)}
-                  className={
-                    "h-auto rounded-full border-[var(--line)] bg-[#f8fbff] px-3 py-1.5 font-semibold hover:bg-[#eef8ff]" +
-                    (selectedModelId === model.id
-                      ? " border-[var(--accent)] bg-[var(--accent-soft)]"
-                      : "")
-                  }
-                  variant="outline"
-                >
-                  {model.name}
-                </Button>
-              ))}
-            </div>
-            <ul className="mt-4 grid list-disc gap-1 pl-5 text-[var(--ink-muted)]">
-              <li>{modelData.name}</li>
-              <li>45 preguntas tipo test</li>
-              <li>Tiempo total: 45 minutos</li>
-            </ul>
-            <Button
-              type="button"
-              className="mt-4 h-auto rounded-[10px] bg-[var(--accent)] px-4 py-2.5 font-bold text-white hover:opacity-90"
-            >
-              Comenzar simulacion
-            </Button>
-          </aside>
-        </div>
+          <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+            <li>{modelData.name}</li>
+            <li>45 preguntas tipo test</li>
+            <li>Tiempo total: 45 minutos</li>
+          </ul>
+
+          <Button type="button">Comenzar simulacion</Button>
+        </aside>
       </section>
     </main>
   );
