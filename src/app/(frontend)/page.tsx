@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const options = [
   {
-    href: "/simular-examen",
-    title: "Simular examen",
-    description: "Selecciona convocatorias completas por año, fecha y modelo.",
+    href: "/examenes-oficiales",
+    title: "Exámenes oficiales",
+    description: "Selecciona convocatorias anteriores por año, fecha y modelo.",
   },
   {
     href: "/test-por-tema",

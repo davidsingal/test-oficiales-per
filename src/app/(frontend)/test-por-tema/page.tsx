@@ -1,7 +1,8 @@
 import { BackButton } from "@/components/back-button";
 import TopicsList from "@/components/topics-list";
+import type { NextPage } from "next";
 
-export default async function TestPorTemaPage() {
+const TestPorTemaPage: NextPage = async () => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
@@ -23,4 +24,6 @@ export default async function TestPorTemaPage() {
       <TopicsList />
     </main>
   );
-}
+};
+
+export default TestPorTemaPage;
