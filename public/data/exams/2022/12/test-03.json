@@ -7,7 +7,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La limera es la abertura en la bovedilla de popa, para el paso de la cabeza del timón."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La pala es la parte plana del timón que sobresale en su totalidad del agua."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El timón es la pieza plana y móvil montada en la parte posterior de una embarcación, que sirve para controlar su dirección en el plano horizontal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los guardines son los cabos, cadenas o cables que trasmiten los movimientos de la rueda del timón a la caña de mismo, para gobernar el buque."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120302,
@@ -17,7 +36,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La eslora es la longitud que tiene la embarcación sobre la cubierta principal, desde el codaste a la roda, por la parte de adentro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La manga es la anchura de la embarcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El puntal es la altura de la embarcación desde su plan hasta la cubierta de francobordo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El calado de un barco es la distancia vertical entre un punto de la línea de flotación y la línea base o quilla, incluido el espesor del casco."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120303,
@@ -27,7 +65,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El ancla, el tramo de cadena unida al ancla por un grillete, el tramo de estacha o cabo unido a la cadena y el molinete."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El ancla, el tramo de cadena unida al ancla por un grillete y el tramo de estacha o cabo unido a la cadena."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El tramo de cadena unida al ancla por un grillete, sin incluir el ancla, y el tramo de estacha o cabo unido a la cadena."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El tramo de cadena unida al ancla, sin incluir el grillete y el ancla, y el tramo de estacha o cabo unido a la cadena."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120304,
@@ -37,7 +94,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La parte del costado derecho donde la manga va disminuyendo para cerrar y formar la popa del barco."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La parte del costado izquierdo donde el casco se estrecha formando la proa del barco."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La parte del costado derecho donde el casco se estrecha formando la proa del barco."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La parte del costado izquierdo donde la manga va disminuyendo para cerrar y formar la popa del barco."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120305,
@@ -47,7 +123,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Se debe elegir siempre que sea posible un tenedero de fango duro, arena fangosa o arena dura, para facilitar el agarre del ancla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La embarcación debe disponer de una línea de fondeo cuya longitud será cuatro veces su eslora."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El punto de fondeo debe elegirse de forma que en un círculo de radio como mínimo igual a la longitud de la cadena filada se mantenga libre de obstáculos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La aproximación al lugar de fondeo se hará a la velocidad máxima de gobierno, de través al viento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120306,
@@ -57,7 +152,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Fijar las amarras de las embarcaciones cuando atracan al muelle."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Guiar la unión de dos cabos de una misma mena."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Proteger el casco de golpes y rozaduras."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Pasar y guiar los cabos de amarre desde la embarcación hasta los elementos de amarre del muelle."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120307,
@@ -67,7 +181,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "“Capear el temporal” es recibir el oleaje por la amura."
+      },
+      {
+        "answerId": "B",
+        "answerText": "“Correr el temporal” es recibir el oleaje por la proa."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una maniobra válida para hacer frente a la mala mar es echar el ancla de capa o flotante."
+      },
+      {
+        "answerId": "D",
+        "answerText": "“A son de mar” es el término referido a la correcta estiba y trincaje de los elementos a bordo para la navegación con mal tiempo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120308,
@@ -77,7 +210,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ciar inmediatamente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Maniobrar hacia estribor."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Maniobrar hacia babor."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Maniobrar hacia estribor o hacia babor según la dirección del viento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120309,
@@ -87,7 +239,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Permite determinar la profundidad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Es obligatorio en todas las embarcaciones."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Permite a la embarcación ser más detectable."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Determina la posición exacta de otras embarcaciones."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120310,
@@ -97,7 +268,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "3 bengalas de mano."
+      },
+      {
+        "answerId": "B",
+        "answerText": "2 bengalas de mano y 1 cohetes con luz roja y paracaídas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "3 cohetes con luz roja y paracaídas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "6 bengalas de mano y 6 cohetes con luz roja y paracaídas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120311,
@@ -107,7 +297,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Dedicadas exclusivamente al recreo que se detengan en calas o lugares de baño balizados como zona o lugar de baño, si fondean a menos de 50 metros de la costa."
+      },
+      {
+        "answerId": "B",
+        "answerText": "De cualquier clase que se detengan con una finalidad recreativa, en calas o lugares de baño balizados como zona o lugar de baño, si fondean a menos de 200 metros de la costa."
+      },
+      {
+        "answerId": "C",
+        "answerText": "De cualquier clase que se detengan con una finalidad recreativa en calas o lugares de baño balizados como tal y no pongan en peligro la seguridad de la vida humana en la mar o de la navegación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Exclusivamente de recreo que se detengan con tal finalidad en calas o lugares de baño no balizados y no pongan en peligro la seguridad de la vida humana en la mar o de la navegación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120312,
@@ -117,7 +326,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Fondos marinos del Levante Almeriense."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Punta de la Restinga – Mar de las Calmas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El Cachucho."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Roques de Salmor."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120313,
@@ -127,7 +355,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "De libre elección, pero que no se preste a confusión con las Marcas para ayuda a la navegación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Franjas verticales rojas y blancas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Franjas horizontales rojas y blancas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Amarillo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120314,
@@ -137,7 +384,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La embarcación estaría entrando en una zona de peligro aislado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La embarcación estaría saliendo de puerto por dentro del canal."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La embarcación estaría entrando en puerto por dentro del canal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La embarcación navegaría fuera del canal saliendo de puerto."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120315,
@@ -147,7 +413,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Nunca tienen marca de tope."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Siempre tienen marca de tope que será dos esferas negras."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Pueden tener como marca de tope una esfera roja."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si tienen marca de tope será un aspa amarilla."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120316,
@@ -157,7 +442,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Peligro Aislado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Aguas Navegables."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Especial."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Peligro nuevo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120317,
@@ -167,7 +471,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En el cuadrante Norte."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En el cuadrante Oeste."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En el cuadrante Este."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En el cuadrante Sur."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120318,
@@ -177,7 +500,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Se aplica a los buques de propulsión mecánica que se encuentren a la vista uno del otro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se aplica a los buques de vela dentro de una zona de visibilidad reducida."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se aplica a los buques de gran tonelaje sólo cuando la zona de visibilidad reducida está balizada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los buques deben suprimir su arrancada al entrar en una zona de visibilidad reducida."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120319,
@@ -187,7 +529,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La eslora en la flotación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La eslora total del buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La eslora entre perpendiculares."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La eslora al 80% del calado máximo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120320,
@@ -197,7 +558,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Será la necesaria para llegar a destino a la hora estimada de llegada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "No vendrá determinada en ningún caso por la maniobrabilidad del buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Es independiente del estado de visibilidad."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Será la que le permita al buque ejecutar la maniobra adecuada y eficaz para evitar el abordaje."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120321,
@@ -207,7 +587,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Únicamente en condiciones de buena visibilidad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Sólo a los buques de pesca que se encuentren pescando muy cerca unos de otros, en condiciones de visibilidad reducida."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Únicamente en condiciones de visibilidad reducida."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En cualquier condición de visibilidad."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120322,
@@ -217,7 +616,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Las Reglas relativas a las marcas deberán cumplirse de día."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las Reglas relativas a las marcas deberán cumplirse las 24h."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las Reglas relativas a luces y marcas deberán cumplirse en todas las condiciones meteorológicas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las Reglas relativas a luces deberán cumplirse desde la puesta de sol hasta su salida."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120323,
@@ -227,7 +645,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un buque de propulsión mecánica."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un buque de vela utilizando el motor como máquina propulsora."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un hidroavión."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un buque sin gobierno."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120324,
@@ -237,7 +674,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor se mantendrá apartado de la derrota del otro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Si un buque que recibe el viento por estribor avista a otro buque por barlovento y no puede determinar con certeza si el otro buque recibe el viento por babor o estribor, se mantendrá apartado de la derrota del otro."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Si un buque que recibe el viento por babor avista a otro buque por barlovento y no puede determinar con certeza si el otro buque recibe el viento por babor o estribor, mantendrá siempre rumbo y velocidad."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando ambos reciban el viento por la misma banda, el buque que esté a barlovento se mantendrá apartado de la derrota del que esté a sotavento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120325,
@@ -247,7 +703,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una embarcación de práctico."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una embarcación de remo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un buque remolcando."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un buque remolcado."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120326,
@@ -257,7 +732,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Amarilla de las mismas características que la luz de alcance."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Amarilla de las mismas características que la luz de tope."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Blanca de las mismas características que la luz todo horizonte."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Blanca que muestra luz centelleante."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120327,
@@ -267,7 +761,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un trozo de lona de color naranja con un cuadrado negro y un círculo, u otro símbolo pertinente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una marca cónica adherida al casco de la embarcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una bandera cuadrada con un triángulo rojo superpuesto, colocada en la cubierta de la embarcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una luz roja centelleante dispuesta sobre la cubierta de la embarcación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120328,
@@ -277,7 +790,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Amarrar por seno."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Tomar vueltas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Acotar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Adujar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120329,
@@ -287,7 +819,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Dando avante poca, rueda a estribor y el esprín de proa firme."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Dando atrás poca y con el esprín de popa firme."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Sin emplear máquina ni timón, iremos lascando poco a poco el largo de popa."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Dando avante poca, rueda a estribor y el largo de popa firme."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120330,
@@ -297,7 +848,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Desnudar la zona afectada, limpiar la quemadura con agua fría, romper las ampollas y recortar con cuidado los tejidos muertos o desgarrados."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cubrir la quemadura, una vez limpia, con gasas grasas y un vendaje que comprima."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Inmovilizar la zona, si la quemadura afecta a una articulación y es al menos de 2º grado, y administrar un antibiótico para prevenir la infección."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Dar a beber al afectado, si está consciente, pequeños sorbos de una bebida estimulante para reponer los líquidos y un analgésico para calmar el dolor."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120331,
@@ -307,7 +877,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Siempre se ha de utilizar agua para apagarlo ya que es la forma más efectiva en el mar."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando se produce un incendio dentro de un local hay que abrir todas las puertas y aberturas para facilitar la ventilación y que salga el humo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando arde un combustible líquido siempre se ha de utilizar para apagarlo agua a presión."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La acción de los extintores de polvo seco consiste en separar o quitar el oxígeno del fuego deteniendo así la combustión."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120332,
@@ -317,7 +906,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Abandonaremos inmediatamente la embarcación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Navegaremos a toda máquina para llegar lo antes posible a puerto."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Pondremos en marcha todas las bombas de achique y mantendremos encendido el motor."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si ésta tiene grandes dimensiones, utilizaremos un espiche para taponarla y pararemos el motor."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120333,
@@ -327,7 +935,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Comúnmente se identifica con la brisa de tierra que sopla durante la noche desde la tierra hacia el mar al enfriarse la superficie de la tierra más rápidamente que la superficie del mar."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Sopla de manera regular de este a oeste desde las altas presiones subtropicales hacia las bajas presiones ecuatoriales."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Desciende desde las alturas hasta el fondo de los valles producido por el deslizamiento al ras de suelo del aire frío y denso desde los elementos del relieve más altos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Asciende desde las zonas más bajas hacia las más altas a medida que el sol calienta el relieve."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120334,
@@ -337,7 +964,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es una región donde la presión atmosférica es más alta que la del aire circundante."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El aire fluye hacia el interior de las borrascas y desciende desde allí, lo que produce formación de nubosidad y precipitaciones."
+      },
+      {
+        "answerId": "C",
+        "answerText": "A escala sinóptica el aire circula en torno a una depresión en sentido horario en el hemisferio norte."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El proceso de formación de una borrasca se denomina ciclogénesis."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120335,
@@ -347,7 +993,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Existen 100 divisiones entre el punto de congelación y ebullición del agua."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El punto de congelación del agua es el valor de referencia inferior."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cada grado está dividido en 100 unidades, por esto se conoce esta unidad como centígrada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El punto de ebullición del agua es el valor de referencia superior."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120336,
@@ -357,7 +1022,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando éste aumenta de intensidad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando éste rola de norte a sur."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando éste disminuye de intensidad."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando éste refresca y cae su temperatura."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120337,
@@ -367,7 +1051,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Rumbo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Marcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Demora."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Abatimiento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120338,
@@ -377,7 +1080,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En el Almanaque Náutico."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En el Anuario de Mareas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En el libro de faros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En los derroteros."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120339,
@@ -387,7 +1109,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Equivale a la longitud de un grado, medido en la escala de latitudes de las cartas mercatorianas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se puede medir directamente en la escala de longitudes de las cartas mercatorianas, para cualquier latitud."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Equivale a la longitud de un minuto de arco de círculo máximo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Equivale a 1825 metros."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120340,
@@ -397,7 +1138,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Declinación magnética."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Corrección total."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Desvío."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Rumbo verdadero."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120341,
@@ -407,7 +1167,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El viento sobre la obra muerta."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La corriente sobre la obra viva."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El viento sobre la obra viva."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las crestas de las olas sobre el casco de la embarcación produciendo un movimiento ascendente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120342,
@@ -417,7 +1196,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "6,67 metros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "6,22 metros."
+      },
+      {
+        "answerId": "C",
+        "answerText": "6,60 metros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "5,77 metros."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120343,
@@ -427,7 +1225,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "344,9º."
+      },
+      {
+        "answerId": "B",
+        "answerText": "350º."
+      },
+      {
+        "answerId": "C",
+        "answerText": "349,1º."
+      },
+      {
+        "answerId": "D",
+        "answerText": "356,9º."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120344,
@@ -437,7 +1254,26 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "35°55,8´N; 005°55,4´W y Hrb=16:28."
+      },
+      {
+        "answerId": "B",
+        "answerText": "35°54,6´N; 005°55,4´W y Hrb=16:48."
+      },
+      {
+        "answerId": "C",
+        "answerText": "35°56,6´N; 005°55,4´W y Hrb=16:18."
+      },
+      {
+        "answerId": "D",
+        "answerText": "35°57,0´N; 005°55,4´W y Hrb=16:08."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022120345,
@@ -447,6 +1283,25 @@
     "examYear": 2022,
     "examMonth": 12,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "5° (-)."
+      },
+      {
+        "answerId": "B",
+        "answerText": "4° (+)."
+      },
+      {
+        "answerId": "C",
+        "answerText": "4° (-)."
+      },
+      {
+        "answerId": "D",
+        "answerText": "5° (+)."
+      }
+    ],
+    "correctAnswerId": null
   }
 ]

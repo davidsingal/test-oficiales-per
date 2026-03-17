@@ -7,7 +7,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La diferencia entre el calado de popa y el de proa."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La distancia entre la parte más baja del barco y la línea de flotación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La dimensión vertical medida en la mitad de la eslora, desde la cara superior del trancanil hasta la cara inferior del casco en su intersección con la quilla."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La semisuma de los calados de proa y de popa."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070302,
@@ -17,7 +36,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Caña."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Mecha."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Limera."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Guardín."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070303,
@@ -27,7 +65,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La dimensión vertical medida en la mitad de la eslora, desde la cara superior del trancanil hasta la cara inferior del casco en su intersección con la quilla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La distancia medida verticalmente entre la línea de flotación en máxima carga y la cubierta."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Peso de la embarcación en el agua cargada al máximo permitido."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La distancia entre la parte más baja del barco y la línea de flotación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070304,
@@ -37,7 +94,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "A la prolongación de la quilla en dirección vertical inclinada por su parte de proa, de forma recta o curva según el tipo de barco."
+      },
+      {
+        "answerId": "B",
+        "answerText": "A la pieza vertical o con poca caída en que termina el barco por su parte de popa y que se une al extremo de popa de la quilla."
+      },
+      {
+        "answerId": "C",
+        "answerText": "A la parte superior de la borda en las embarcaciones."
+      },
+      {
+        "answerId": "D",
+        "answerText": "A la parte superior del costado de un buque."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070305,
@@ -47,7 +123,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Fondeo a la gira."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Círculo de borneo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Longitud de fondeo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Circulo de garreo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070306,
@@ -57,7 +152,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Unir dos cabos de la misma mena."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Encapillar un cabo a un noray."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Afirmar un cabo a una bita."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Afirmar el cabo de fondeo al ancla."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070307,
@@ -67,7 +181,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es un dispositivo electrónico que emite señales RADAR para ser detectado mejor por otros barcos."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Es un dispositivo electrónico que intensifica la señal recibida en nuestro receptor RADAR para detectar mejor a otros barcos."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Es un dispositivo que amplifica las señales RADAR para ser detectado mejor por otros barcos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Es un dispositivo pasivo o activo que evita las interferencias de otros equipos electrónicos con la señal RADAR."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070308,
@@ -77,7 +210,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En cualquier circunstancia todas las lumbreras deben cerrarse herméticamente durante la travesía."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Todos los grifos de fondo siempre deben estar cerrados en circunstancias de mal tiempo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Correr el temporal consiste en mantenerse proa a la mar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Capear el temporal consiste en aguantar el temporal amurado a la mar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070309,
@@ -87,7 +239,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El balance."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La escora."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El arrufo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El asiento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070310,
@@ -97,7 +268,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Parar máquinas y meter el timón a la misma banda que haya caído."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Parar máquinas y meter el timón a la banda contraria a la que haya caído."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Parar máquinas, y si es necesario meter toda atrás."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Con toda la máquina avante se mete la proa a la banda contraria donde haya caído."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070311,
@@ -107,7 +297,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cinco millas marinas de la tierra más próxima en el caso de desechos de alimentos que se hayan pasado por un desmenuzador o triturador."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuatro millas marinas de la tierra más próxima en el caso de desechos de alimentos que se hayan pasado por un desmenuzador o triturador."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Tres millas marinas de la tierra más próxima en el caso de desechos de alimentos que se hayan pasado por un desmenuzador o triturador."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Doce millas marinas de la tierra más próxima en el caso de desechos de alimentos que se hayan pasado por un desmenuzador o triturador."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070312,
@@ -117,7 +326,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Deberá depositarse en la Capitanía Marítima competente por razón del lugar donde se encuentre el amarre de la embarcación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Deberá comunicarse a la Dirección General de la Marina Mercante, a efectos de su registro."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Deberá obrar a bordo de la embarcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Deberá formalizarse ante Notario, mediante escritura pública."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070313,
@@ -127,7 +355,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Siguiendo un sentido u otro según se trate de la región A o B."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Siguiendo el sentido convencional de balizamiento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Siguiendo el sentido desde el interior hasta mar abierta."
+      },
+      {
+        "answerId": "D",
+        "answerText": "No hay ningún sentido establecido para todos los puertos, sino que cada uno lo numera según le convenga."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070314,
@@ -137,7 +384,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Isofase, de ocultaciones, un destello largo cada 10 segundos o la señal de Morse “A“."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Grupos de dos destellos GpD (2)."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Centelleante rápido continuo VQ."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cualquiera, excepto los ritmos establecidos para las Marcas Cardinales, para las Marcas de Peligro Aislado y para las Marcas de Aguas Navegables."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070315,
@@ -147,7 +413,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "NW-NE."
+      },
+      {
+        "answerId": "B",
+        "answerText": "NE-SE."
+      },
+      {
+        "answerId": "C",
+        "answerText": "SE-SW."
+      },
+      {
+        "answerId": "D",
+        "answerText": "SW-NW."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070316,
@@ -157,7 +442,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Las marcas utilizadas para llamar la atención sobre una configuración especial de un canal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las marcas utilizadas para indicar los límites de un área de fondeo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las marcas que definen los ejes de los canales y las marcas de centro de canal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las marcas que definen el sentido convencional del balizamiento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070317,
@@ -167,7 +471,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Exclusivamente en el sur de la boya."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Exclusivamente en el norte de la boya."
+      },
+      {
+        "answerId": "C",
+        "answerText": "A su alrededor."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Exclusivamente a babor de la boya."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070318,
@@ -177,7 +500,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Se mantendrá apartado de la derrota del buque alcanzado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Está obligado a caer a estribor de forma que pase por la banda de babor del otro."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Está obligado a caer a babor de forma que pase por la banda de estribor del otro."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Se aproxima viniendo desde una marcación menor de 22,5 grados a popa del través de este último."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070319,
@@ -187,7 +529,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una nave de vuelo rasante."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una moto náutica."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un hidroavión amarado."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un buque sin gobierno, un buque con capacidad de maniobra restringida y un buque dedicado a la pesca."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070320,
@@ -197,7 +558,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Emitirá a intervalos que no excedan de dos minutos cuatro pitadas consecutivas, a saber, una pitada corta seguida de tres largas. Cuando sea posible, esta señal se hará inmediatamente después de la señal efectuada por el buque remolcador."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Emitirá a intervalos que no excedan de dos minutos cuatro pitadas consecutivas, a saber, una pitada corta seguida de tres largas. Esta señal siempre se hará antes de la señal efectuada por el buque remolcador."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Emitirá a intervalos que no excedan de dos minutos cuatro pitadas consecutivas, a saber, una pitada larga seguida de tres cortas. Esta señal siempre se hará antes de la señal efectuada por el buque remolcador."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Emitirá a intervalos que no excedan de dos minutos cuatro pitadas consecutivas, a saber, una pitada larga seguida de tres cortas. Cuando sea posible, esta señal se hará inmediatamente después de la señal efectuada por el buque remolcador."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070321,
@@ -207,7 +587,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En la parte de proa, una luz blanca todo horizonte o una bola."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En la parte de proa, una luz verde todo horizonte o una bola."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En la parte de proa, una luz amarilla todo horizonte o una bola."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En la parte de proa, una luz roja todo horizonte o una bola."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070322,
@@ -217,7 +616,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando la longitud del remolque, medido desde la popa del buque que remolca hasta el extremo de popa del remolque, sea superior a 200 metros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando la longitud del remolque, medido desde la popa del buque que remolca hasta el extremo de popa del remolque, sea inferior a 100 metros."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando la longitud del remolque, medido desde la popa del buque que remolca hasta el extremo de popa del remolque, sea superior a 150 metros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando la longitud del remolque, medido desde la popa del buque que remolca hasta el extremo de popa del remolque, sea inferior a 150 metros."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070323,
@@ -227,7 +645,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ser sustituidos por cualquier otro equipo del mismo tamaño."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Ser sustituidos por otro equipo que tenga las mismas características acústicas respectivamente, a condición de que siempre sea posible hacer manualmente las señales acústicas prescritas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Ser sustituidos por otro equipo que tenga las mismas características acústicas respectivamente, a condición de que tenga programadas las señales prescritas y funcione como único modo en automático, evitando su posible manipulación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Ser intercambiados el uno por el otro indistintamente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070324,
@@ -237,7 +674,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una señal fumígena que produzca una densa humareda de color naranja."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La señal de peligro –NA- del Código Internacional de Señales."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una bengala de mano que produzca una luz amarilla."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una señal consistente en una bandera cuadrada que tenga encima o debajo de ella un rombo u objeto análogo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070325,
@@ -247,7 +703,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Las embarcaciones utilizadas como medio de transporte bajo el agua."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las embarcaciones sin desplazamiento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las embarcaciones que puedan ser utilizadas como medio de transporte sobre el agua."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las embarcaciones utilizadas como medio de transporte sobre el agua."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070326,
@@ -257,7 +732,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una luz roja todo horizonte visible a una distancia mínima de cinco millas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una luz blanca todo horizonte visible a una distancia mínima de cinco millas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una luz blanca todo horizonte visible a una distancia mínima de tres millas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una luz roja todo horizonte visible a una distancia mínima de tres millas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070327,
@@ -267,7 +761,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Está proyectado para maniobrar sobre las aguas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Está en alta mar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "No está ni fondeado, ni amarrado a tierra, ni varado."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Esté en aguas interiores que tengan comunicación con alta mar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070328,
@@ -277,7 +790,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "De seguridad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "De gobierno."
+      },
+      {
+        "answerId": "C",
+        "answerText": "De puerto."
+      },
+      {
+        "answerId": "D",
+        "answerText": "De crucero."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070329,
@@ -287,7 +819,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es lo mismo que manejar la rueda del timón."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Si se mete la caña a estribor, la pala del timón cae a babor y viceversa."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La pala cae a la misma banda de accionamiento de la rueda del timón."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si se mete la caña a babor, la pala del timón cae a babor y viceversa."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070330,
@@ -297,7 +848,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando ha quedado varado en seco."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando ha quedado varado en fondo fangoso."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando ha quedado varado en un fondo rocoso."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En cualquier situación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070331,
@@ -307,7 +877,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En las hemorragias arteriales la sangre mana de la herida de forma continua y en las hemorragias venosas hay que aplicar torniquetes por encima de la herida."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El síntoma más claro de las quemaduras de tercer grado es la aparición de vesículas o ampollas llenas de líquido."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En caso de insolación hay que mojar la cabeza del afectado aplicando compresas de agua fría en frente y nuca, e hidratarlo dándole pequeños sorbos de agua fresca."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El Centro Radio-Médico Español (CRME) depende del Instituto Social de Medicina Preventiva y en caso de necesidad, siempre deberemos contactar con él por teléfono."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070332,
@@ -317,7 +906,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Realizar una evaluación de los daños sufridos."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Abandonar la embarcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Lanzar una señal de socorro."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Dar atrás para separar las embarcaciones."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070333,
@@ -327,7 +935,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Virazón."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Terral."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Fetch."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Viento aparente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070334,
@@ -337,7 +964,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La temperatura."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La presión atmosférica."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La intensidad del viento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El estado de la mar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070335,
@@ -347,7 +993,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es una región donde la presión atmosférica es más alta que la del aire circundante."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El aire fluye hacia su exterior y asciende desde allí."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El aire fluye hacia su interior y desciende desde allí."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Es una región donde la presión atmosférica es más baja que la del aire circundante."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070336,
@@ -357,7 +1022,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Puede medir cualquier temperatura."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Sus valores están siempre dentro del intervalo entre 0 y 100."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Utiliza las temperaturas de referencia de fusión del hielo y ebullición del agua."
+      },
+      {
+        "answerId": "D",
+        "answerText": "También se denomina Celsius."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070337,
@@ -367,7 +1051,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Equivale a la longitud de arco de un segundo de meridiano terrestre y su valor es de 1.852 metros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se divide en 12 cables."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se divide en 10 cables y cada cable tiene una longitud de 185,2 metros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Equivale a la longitud de arco de un minuto de paralelo terrestre."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070338,
@@ -377,7 +1080,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Círculo menor, paralelo al ecuador, adoptado como origen de las longitudes, que pasa por el antiguo observatorio real de la ciudad de Greenwich."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Círculo máximo que pasa por los polos, también conocido como Línea Internacional de Cambio de Fecha."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Círculo máximo que pasa por los polos y por el antiguo observatorio real de la ciudad de Greenwich."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Círculo menor, paralelo al ecuador, adoptado como origen de las latitudes, que pasa por el antiguo observatorio real de la ciudad de Greenwich."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070339,
@@ -387,7 +1109,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El hemisferio norte y el hemisferio occidental."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El hemisferio sur y el hemisferio oriental."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El hemisferio norte y el hemisferio oriental."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El hemisferio sur y el hemisferio occidental."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070340,
@@ -397,7 +1138,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En cada lugar es diferente para cada barco ya que depende del rumbo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Permanece invariable en cada lugar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las cartas náuticas incluyen la declinación magnética y su variación anual."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Es el ángulo formado entre el norte verdadero y el meridiano geográfico."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070341,
@@ -407,7 +1167,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es la relación entre la velocidad aparente y la velocidad por corredera."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Es la relación entre la distancia verdadera y la velocidad por corredera."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se utiliza para el cálculo de la distancia verdadera navegada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Se utiliza para el cálculo de la distancia por corredera."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070342,
@@ -417,7 +1196,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "6,85 millas náuticas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "55 millas náuticas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "5,5 millas náuticas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "36,5 millas náuticas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070343,
@@ -427,7 +1225,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "3,93 metros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "3,85 metros."
+      },
+      {
+        "answerId": "C",
+        "answerText": "0,94 metros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "1,01 metros."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070344,
@@ -437,7 +1254,26 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "350º"
+      },
+      {
+        "answerId": "B",
+        "answerText": "352º"
+      },
+      {
+        "answerId": "C",
+        "answerText": "348º"
+      },
+      {
+        "answerId": "D",
+        "answerText": "349º"
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2021070345,
@@ -447,6 +1283,25 @@
     "examYear": 2021,
     "examMonth": 7,
     "examNumber": 3,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una marca cardinal Sureste."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una marca cardinal Norte."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una marca cardinal Este."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una marca cardinal Sur."
+      }
+    ],
+    "correctAnswerId": null
   }
 ]

@@ -7,7 +7,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Escotilla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Lumbrera."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Bañera."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Camarote."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060102,
@@ -17,7 +36,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Los baos."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las cuadernas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Los mamparos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los pasamanos."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060103,
@@ -27,7 +65,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Mecha."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Caña."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Guardín."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Limera."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060104,
@@ -37,7 +94,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Las hélices levógiras giran en el sentido horario para generar impulso hacia adelante."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las hélices dextrógiras giran en contra del sentido horario para generar impulso hacia adelante."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las hélices gemelas de giro al exterior compensan mutuamente la caída de la embarcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las hélices gemelas siempre tienen giro al exterior."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060105,
@@ -47,7 +123,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un noray es una pieza de metal o madera que, encorvada en sus extremos y fija por su punto medio en cubierta, sirve para amarrar los cabos."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La gaza es el arco o curvatura que forma el cabo entre los extremos cuando éste no trabaja o cuando se hace un nudo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El nudo llano sirve para unir por sus chicotes dos cabos de la misma mena."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El ballestrinque es un nudo que permite realizar una gaza no corrediza para encapillar un cabo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060106,
@@ -57,7 +152,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una embarcación de recreo de 6 metros de eslora tiene que llevar una línea de fondeo de 30 metros como mínimo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El círculo de borneo tiene un radio igual a la longitud de cadena filada."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Para mantener una buena vigilancia durante el fondeo se deben tomar referencias a tierra y vigilar la sonda."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Se dice que un ancla garrea cuando no se queda firme en el fondo, provocando un desplazamiento de la embarcación a sotavento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060107,
@@ -67,7 +181,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Todas las embarcaciones de recreo, independientemente de la zona de navegación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Ninguna embarcación de recreo está obligada, aunque es recomendable."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Todas las embarcaciones de recreo que naveguen en zonas 1, 2, 3 o 4 y las que naveguen por la noche en zonas 5, 6 y 7."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Todas las embarcaciones de recreo que naveguen en zonas 1, 2, 3 o 4."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060108,
@@ -77,7 +210,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ninguna está obligada, con independencia de su material de construcción."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las embarcaciones con casco de madera."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Las embarcaciones con casco de fibra."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las embarcaciones con casco metálico."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060109,
@@ -87,7 +239,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Mantenerse lo más quieto posible en posición fetal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Realizar movimientos rápidos para entrar en calor."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Nadar lo más rápido posible para mantener el calor."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Aumentar la frecuencia de respiración para que llegue mayor cantidad de oxígeno al cerebro."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060110,
@@ -97,7 +268,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando el periodo del balance coindice con el periodo de la ola se produce una situación de peligro que puede evitarse únicamente variando la velocidad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando el periodo de cabezada coincide con el periodo de la ola se produce una situación de peligro que puede evitarse atravesándose a la mar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando el periodo de balance o el de cabezada coinciden con el de la ola se produce una situación de peligro que puede evitarse variando el rumbo o la velocidad."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando el periodo del balance o el de cabezada coincide con el periodo de la ola no existirá peligro y será la situación más favorable de navegación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060111,
@@ -107,7 +297,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando la nacionalidad del patrón coincide con la del pabellón, deberá estar en posesión de la titulación requerida de acuerdo con la legislación del país de residencia del patrón."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando no coincidan la nacionalidad del patrón con la del pabellón, deberá estar en posesión de la titulación requerida de acuerdo con la legislación del país del pabellón, si éste pertenece a la Unión Europea. En caso contrario se exigirá la titulación española requerida de acuerdo con la legislación nacional."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando no coincidan la nacionalidad del patrón con la del pabellón, deberá estar en posesión de la titulación requerida de acuerdo con la legislación de la nacionalidad del patrón o, en su defecto, con la de su país de residencia."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando la nacionalidad del patrón coincide con la del pabellón, deberá estar en posesión de la titulación requerida de acuerdo con la legislación de la nacionalidad del patrón."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060112,
@@ -117,7 +326,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El patrón es responsable del pago de la multa que se imponga sólo en defecto del propietario o del naviero."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Serán solidariamente responsables para el pago de la multa que se imponga, el naviero, el propietario, el asegurador de la responsabilidad civil y el capitán o patrón, quedando además todos ellos obligados solidariamente a reparar el daño causado."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Serán responsables del pago de la multa el propietario o naviero y, subsidiariamente el asegurador de la responsabilidad civil. El patrón o capitán ejecutará a su costa las operaciones que, con carácter de urgencia, pudieran resultar necesarias para la preservación del medio marino."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Será responsable del pago de la multa la persona física o jurídica propietaria de la embarcación y, subsidiariamente su capitán o patrón."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060113,
@@ -127,7 +355,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Franjas verticales rojas y blancas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Franjas horizontales rojas y blancas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Franjas verticales azules y amarillas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Franjas horizontales azules y amarillas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060114,
@@ -137,7 +384,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La autoridad competente considera que el riesgo para la navegación resulta especialmente elevado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La zona de peligro señalada es superior a 25 metros de radio desde la Marca."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La zona de peligro señalada es superior a 50 metros de radio desde la Marca."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las Marcas de peligro aislado nunca pueden utilizarse por duplicado."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060115,
@@ -147,7 +413,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Color."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Forma."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Ritmo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Marca de tope."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060116,
@@ -157,7 +442,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Únicamente luces sincronizadas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Únicamente luces secuenciadas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se tendrá que elegir entre luces sincronizadas o luces secuenciales, no admitiéndose una combinación de ambas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Luces sincronizadas, luces secuenciadas o una combinación de ambas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060117,
@@ -167,7 +471,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Grupos de (2+1) destello."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Centelleante de grupos de seis centelleos Q (6) más 9 centelleos Q-(9) cada 15 segundos."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Centelleante de grupos de 3 centelleos Q-(3) cada 10 segundos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Grupos de dos destellos GpD (2)."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060118,
@@ -177,7 +500,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Estar combinadas en un solo farol llevado en el eje longitudinal del buque."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Estar combinadas en un solo farol llevado en el eje transversal del buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Sustituirse por una luz de remolque colocada lo más cerca posible de la popa."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Sustituirse por una luz de remolque colocada lo más cerca posible de la proa."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060119,
@@ -187,7 +529,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La densidad del tráfico."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El estado de la mar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El calado en relación con la profundidad disponible de agua."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las características, eficacia y limitaciones del equipo de la carta electrónica."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060120,
@@ -197,7 +558,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Dos conos unidos por sus vértices en línea vertical, uno sobre el otro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Dos conos unidos por sus bases en línea vertical, uno sobre el otro."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una marca cónica con el vértice hacia arriba."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una marca cónica con el vértice hacia abajo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060121,
@@ -207,7 +587,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Los buques de vela."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Las embarcaciones de recreo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Los buques en navegación que estén haciendo combustible."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los hidroaviones."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060122,
@@ -217,7 +616,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Se considerarán las suposiciones basadas en información insuficiente, especialmente la obtenida por radar."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se tendrá en cuenta la experiencia de la tripulación, en especial la del patrón."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En caso de abrigarse alguna duda respecto a si existe riesgo de abordaje, se considerará que existe."
+      },
+      {
+        "answerId": "D",
+        "answerText": "No se utilizará el equipo radar para determinar si existe riesgo de abordaje."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060123,
@@ -227,7 +645,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "120 o más centelleos por minuto."
+      },
+      {
+        "answerId": "B",
+        "answerText": "110 o más centelleos por minuto."
+      },
+      {
+        "answerId": "C",
+        "answerText": "100 o más centelleos por minuto."
+      },
+      {
+        "answerId": "D",
+        "answerText": "60 o más centelleos por minuto."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060124,
@@ -237,7 +674,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por babor se mantendrá apartado de la derrota del otro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando ambos reciban el viento por la misma banda, el buque que esté a sotavento se mantendrá apartado de la derrota del que esté a barlovento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cuando cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor se mantendrá apartado de la derrota del otro."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cuando cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por babor mantendrá el mismo rumbo y velocidad."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060125,
@@ -247,7 +703,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ejecutará la maniobra que mejor pueda ayudar a evitar el abordaje."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Siempre mantendrá rumbo y velocidad para no restar efectividad a la maniobra del otro buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Sujetará firmemente el timón esperando el abordaje."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Parará máquinas para evitar incendios por el abordaje."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060126,
@@ -257,7 +732,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "No podrá ceder el paso si existe riesgo de abordaje."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se realizará con antelación suficiente y de forma decidida para quedar bien franco del otro buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se cederá el paso solamente ante buques de mayor tonelaje."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Se cederá el paso solamente a los buques que vienen por babor."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060127,
@@ -267,7 +761,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una luz blanca todo horizonte visible a una distancia mínima de cinco millas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una luz blanca todo horizonte visible a una distancia mínima de dos millas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una luz verde todo horizonte visible a una distancia mínima de dos millas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una luz roja todo horizonte visible a una distancia mínima de cinco millas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060128,
@@ -277,7 +790,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Esprines."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Coderas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Traveses."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Largos."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060129,
@@ -287,7 +819,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Fase inicial, Fase variable y Fase uniforme."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Fase inicial, Fase de maniobra y Fase final."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Fase de maniobra, Fase variable y Fase final."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Fase de maniobra, Fase variable y Fase uniforme."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060130,
@@ -297,7 +848,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Los puntos de mayor riesgo para producirse una vía de agua son la bocina, la limera y los grifos de fondo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Si detecta agua en la sentina, apague el motor y ponga en marcha de inmediato todas las bombas de achique."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Si una válvula o pasa cascos falla, cierre o coloque un espiche cónico de madera a la medida."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si no puede detener la entrada de agua, haga una llamada de socorro, y mientras espera la ayuda, vacíe el depósito de agua dulce al mínimo imprescindible y arroje peso inútil por la borda."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060131,
@@ -307,7 +877,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Los de origen eléctrico."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Los provocados por un combustible sólido, como por ejemplo el caucho o la madera."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Los provocados por un combustible líquido como la gasolina o el aceite."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los provocados por un combustible gaseoso como el butano."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060132,
@@ -317,7 +906,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Si se realiza un torniquete, hay que aflojarlo cada 20 minutos para que circule la sangre por el resto del miembro, y si continua la hemorragia se volverá a comprimir transcurrido 1 minuto."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En las quemaduras que afectan a brazos y piernas, es importante elevar la extremidad para disminuir la inflamación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En caso de sufrir “mal de mar”, al afectado se le mantendrá quieto, caliente y en ayunas, en posición tumbada y a ser posible en un camarote situado a proa."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La asistencia médica del Centro Radio-Médico Español se realiza en español e inglés y se puede solicitar en el número de contacto directo 91 308 34 75."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060133,
@@ -327,7 +935,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Giran en sentido horario y descendente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Son de baja intensidad."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Giran en sentido antihorario y ascendente."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Desplazan el aire hacia la zona de altas presiones."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060134,
@@ -337,7 +964,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Aumenta con la altitud."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Aumenta al sumergirnos en el agua."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Es máxima a nivel del mar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Disminuye al sumergirnos en el agua."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060135,
@@ -347,7 +993,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Agencia Estatal de Meteorología (AEMET)."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Transmisiones radio en VHF por los Centros de Salvamento Marítimo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Capitanía Marítima del ámbito geográfico donde se encuentre."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Boletines informativos de RTVE."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060136,
@@ -357,7 +1022,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "10 nudos."
+      },
+      {
+        "answerId": "B",
+        "answerText": "5 nudos."
+      },
+      {
+        "answerId": "C",
+        "answerText": "0 nudos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "2 nudos."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060137,
@@ -367,7 +1051,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Estilo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Chapitel."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Mortero."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Domo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060138,
@@ -377,7 +1080,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "060º."
+      },
+      {
+        "answerId": "B",
+        "answerText": "030º."
+      },
+      {
+        "answerId": "C",
+        "answerText": "330º."
+      },
+      {
+        "answerId": "D",
+        "answerText": "300º."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060139,
@@ -387,7 +1109,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una enfilación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un veril."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una oposición."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una isóbata."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060140,
@@ -397,7 +1138,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Son cartas de navegación costera de escala comprendida entre 1/50.000 y 1/200.000, donde se facilitan diferentes derrotas recomendables."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Son publicaciones que muestran derrotas seguras en función de la variable calado/profundidad."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Son libros que describen la costa en detalle, indicando peligros para la navegación. Entre otra información se indican las radas y puertos de abrigo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Son libros en los que se identifican los faros y sus características. Entre otra información se indican las derrotas recomendables teniendo en cuenta el registro de agua bajo la quilla, deriva y abatimiento de una embarcación de recreo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060141,
@@ -407,7 +1167,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El arco de meridiano entre el ecuador y el paralelo que pasa por dicha posición."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El arco de ecuador entre el meridiano de Greenwich y el meridiano que pasa por dicha posición."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El arco de meridiano entre el meridiano de Greenwich y el meridiano que pasa por dicha posición."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El arco de ecuador medido entre el meridiano de Greenwich y el paralelo que pasa por dicha posición."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060142,
@@ -417,7 +1196,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Rv = 175,5º."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Rv = 168,5º."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Rv = 178º."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Rv = 172º."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060143,
@@ -427,7 +1225,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "36º 8,2´N 005º 16,8`W. Ra: 225º."
+      },
+      {
+        "answerId": "B",
+        "answerText": "36º 6,2´N 005º 16,8`W. Ra: 230º."
+      },
+      {
+        "answerId": "C",
+        "answerText": "36º 2,5´N 005º 16,8`W. Ra: 244º."
+      },
+      {
+        "answerId": "D",
+        "answerText": "36º 0,0´N 005º 16 W. Ra: 243º."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060144,
@@ -437,7 +1254,26 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "35° 50,7´N 005° 51,0´W."
+      },
+      {
+        "answerId": "B",
+        "answerText": "35° 50,7´N 005° 49,8´W."
+      },
+      {
+        "answerId": "C",
+        "answerText": "36° 53,9´N 005° 59,8´W."
+      },
+      {
+        "answerId": "D",
+        "answerText": "35° 53,8´N 005° 50,2´W."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2022060145,
@@ -447,6 +1283,25 @@
     "examYear": 2022,
     "examMonth": 6,
     "examNumber": 1,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "HRB= 00:23."
+      },
+      {
+        "answerId": "B",
+        "answerText": "HRB= 00:43."
+      },
+      {
+        "answerId": "C",
+        "answerText": "HRB= 01:13."
+      },
+      {
+        "answerId": "D",
+        "answerText": "HRB= 01:23."
+      }
+    ],
+    "correctAnswerId": null
   }
 ]

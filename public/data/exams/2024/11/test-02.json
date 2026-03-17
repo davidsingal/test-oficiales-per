@@ -7,7 +7,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cables o cabos que, sostenido por los candeleros, se colocan en las bandas para seguridad de la tripulación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Piezas en forma de «T» o «doble T» que suelen ir en cubierta para amarrar cabos ligeros o en un palo para amarrar las drizas de las banderas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Piezas dobles verticales o ligeramente inclinadas que van fijas a la cubierta y que sirven para amarrar las estachas y amarras en general en forma de ocho."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Claraboyas o tragaluces situadas sobre una cubierta para dar luz."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110202,
@@ -17,7 +36,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Pala."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Bocina."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Núcleo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Capacete."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110203,
@@ -27,7 +65,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Filar."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Levar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Zarpar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Librar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110204,
@@ -37,7 +94,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Enderezarse o ponerse vertical."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Inclinarse sobre uno de sus costados."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Hundir la proa y levantar la popa."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Hundir la popa y levantar la proa."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110205,
@@ -47,7 +123,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cornamusa."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Muerto."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Bita."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Orinque."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110206,
@@ -57,7 +152,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En el momento del fondeo se recomienda llevar una ligera arrancada atrás con objeto de que, al caer el ancla, la cadena se extienda correctamente por el fondo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "De forma general, la longitud de cadena para un fondeo con buen tiempo no será inferior a tres veces la sonda del lugar de fondeo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La aproximación al lugar de fondeo se hará a la velocidad máxima de la embarcación, dando la proa al viento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si se comprueba que la embarcación garrea, se recomienda virar el ancla y volver a fondear."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110207,
@@ -67,7 +181,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Librar al náufrago de la hélice, no perderle de vista y lanzarle ayudas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Librar al náufrago de la hélice, parar el motor, lanzarle ayudas y saltar al agua en su busca."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Dar atrás y acercarnos lentamente por la popa, sin perder de vista al náufrago, para evitar que la proa pueda dañarlo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Saltar al agua en su busca para evitar que se ahogue."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110208,
@@ -77,7 +210,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un sistema de detección de barcos que es obligatorio en cualquier tipo de embarcación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un elemento de ayuda para que las embarcaciones de casco no metálico produzcan ecos en las pantallas de radar de otros barcos."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un dispositivo destinado a evitar la detección de nuestra embarcación por el radar de otros barcos, por motivos de protección."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La antena del sistema de radar del barco, siendo obligatorio sólo en embarcaciones de fibra o madera."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110209,
@@ -87,7 +239,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Con la estación de radio, canal 70 VHF."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Con la estación de radio, canal 16 VHF."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Por teléfono, llamando al 900 200 200."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Por teléfono, llamando al 900 202 202."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110210,
@@ -97,7 +268,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Al capear el temporal debemos reducir la velocidad incluso parando la arrancada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Correr el temporal es una maniobra cómoda, pero, con mal tiempo, existe el problema de que pueden embarcar fuertes golpes de mar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Elegir capear o correr el temporal dependerá de la embarcación y del grado de fuerza del temporal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Para capear el temporal nos podemos ayudar mediante el uso de un ancla flotante."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110211,
@@ -107,7 +297,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cuando las basuras estén mezcladas con otras sustancias cuya descarga esté prohibida o para las que rijan distintas prescripciones de descarga, se aplicarán las prescripciones más rigurosas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Los aditivos de limpieza contenidos en las aguas de lavado podrán descargarse al mar, aunque sean perjudiciales para el medio marino."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La descarga de basuras en el mar fuera de las zonas especiales está prohibida sin excepciones."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Los restos de alimentos a descargar estarán desmenuzados de manera que puedan pasar por cribas con mallas de una abertura máxima de 25 cm."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110212,
@@ -117,7 +326,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Tres días hábiles."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Diez días hábiles."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cinco días hábiles."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Quince días hábiles."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110213,
@@ -127,7 +355,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Será de color blanco."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Será de color azul."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Será de color amarillo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Tendrá ritmo de grupos de 3 destellos."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110214,
@@ -137,7 +384,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Con los vértices hacia arriba."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Con los vértices hacia abajo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Opuestos por sus bases."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Opuestos por sus vértices."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110215,
@@ -147,7 +413,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Estructuras artificiales."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Zonas de recreo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Límites de las áreas de fondeo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La aproximación a un puerto o estuario."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110216,
@@ -157,7 +442,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Si tienen luz, es amarilla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Indican una zona o una configuración particular cuya naturaleza exacta está indicada en la carta u otro documento náutico."
+      },
+      {
+        "answerId": "C",
+        "answerText": "No señalan ningún peligro."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si tienen marca de tope es una única esfera verde."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110217,
@@ -167,7 +471,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Verde con una banda ancha horizontal roja."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Verde con una luz verde centelleante rápida continua."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Roja con una luz roja con ritmo de destello en grupos de 2+1."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Roja con una banda ancha horizontal verde."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110218,
@@ -177,7 +500,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Únicamente una campana."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un pito y una campana."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una campana y un gong."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Únicamente un pito."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110219,
@@ -187,7 +529,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un buque dedicado a la pesca, fondeado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una embarcación de prácticos, con arrancada, en servicio de practicaje."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un buque de eslora igual o superior a 100 metros, fondeado."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un buque remolcador que tenga restringida su maniobra."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110220,
@@ -197,7 +558,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Exhibirá luces que, por sus características y situación, sean lo más parecidas posible a las prescritas en dicha regla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Tendrá prohibida la navegación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Lo indicará colocando en el lugar más visible una luz amarilla de centelleos todo horizonte."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Las sustituirá todas por una única luz roja centelleante todo horizonte de gran intensidad."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110221,
@@ -207,7 +587,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Vuelta encontrada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Alcance."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cruce."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Buque de pesca faenando."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110222,
@@ -217,7 +616,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El resplandor de las luces de tierra siempre beneficiará la distinción de otros buques o marcas de balizamiento de noche."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un equipo radar funcionando correctamente nunca debe ser utilizado para determinar la velocidad de seguridad en condiciones de mala visibilidad."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En condiciones de mala visibilidad, se debe aumentar la velocidad al máximo para evitar pasar más tiempo de lo necesario expuestos a posibles peligros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La densidad de tráfico, incluidas las concentraciones de buques de pesca, condicionará la maniobra adecuada y eficaz para evitar un abordaje."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110223,
@@ -227,7 +645,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "A babor respecto a un buque situado a proa del través, salvo que el otro buque esté siendo alcanzado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "A estribor respecto a un buque situado a proa del través, especialmente si el otro buque está siendo alcanzado."
+      },
+      {
+        "answerId": "C",
+        "answerText": "A babor respecto a todo buque situado a popa del través."
+      },
+      {
+        "answerId": "D",
+        "answerText": "A estribor respecto a un buque situado a proa del través, si el otro buque no está siendo alcanzado."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110224,
@@ -237,7 +674,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Para evitar un peligro inmediato."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Exclusivamente cuando estén en ruta hacia un puerto dentro de la zona de navegación costera."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Por ser un buque menor de 30 metros de eslora puede utilizar la zona de navegación costera siempre que lo necesite."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Únicamente en el caso de que deba maniobrar a un buque que tenga preferencia de paso, y el ancho del dispositivo no sea suficiente para realizar la maniobra con seguridad."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110225,
@@ -247,7 +703,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Navegue a vela y no sea propulsado mecánicamente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Navegue a vela, no sea propulsado mecánicamente y se encuentre sin arrancada por falta de viento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Navegue a vela y también sea propulsado mecánicamente."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Navegue solo propulsado mecánicamente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110226,
@@ -257,7 +732,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Emitirá una señal acústica de al menos cinco pitadas cortas y rápidas y se maniobrará al buque de vela si fuera necesario para evitar el abordaje."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Hará sonar una pitada larga para indicar al otro buque que no entiendes sus intenciones y que está estorbando."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Cederá el paso al buque de vela, aun no existiendo riesgo de abordaje, ya que tienen la preferencia de tránsito por el canal al ir sin maquinaria propulsora."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Fondeará en el canal, en cualquier caso, hasta que el buque de vela termine de estorbar nuestro paso."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110227,
@@ -267,7 +761,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un aerodeslizador navegando a gran velocidad."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una nave de vuelo rasante, despegando, aterrizando o volando cerca de la superficie."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una nave de gran velocidad navegando a una velocidad superior a 30 nudos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un submarino navegando en superficie."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110228,
@@ -277,7 +790,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Dar máquina atrás hasta tener arrancada y aproximarnos a la boya popa al viento para facilitar el amarre."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Aproximarnos a la boya por su barlovento para facilitar el amarre."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Aproximarnos a la boya por su sotavento para facilitar el amarre."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Abortar la maniobra al no estar permitido en el RIPA el amarre a boyas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110229,
@@ -287,7 +819,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Embobinar."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Enroscar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Adujar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Ordenar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110230,
@@ -297,7 +848,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Lo primero que debemos hacer siempre, es, lo antes posible, separar las embarcaciones involucradas en el abordaje."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La evaluación de las averías sufridas debe realizarse durante la peritación de los daños una vez llegados a puerto."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Estamos obligados a prestar asistencia legal al patrón de la otra embarcación involucrada en caso de que lo necesite."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La evaluación de las averías sufridas debe realizarse a la mayor brevedad posible."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110231,
@@ -307,7 +877,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Inmediatamente después de emitir el mensaje de socorro MAYDAY por VHF."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Cuando tengamos la certeza de que puede ser avistado desde otra embarcación, unidad aérea o desde la costa cercana."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Sólo cuando sea de noche."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Inmediatamente después de embarcar en la balsa salvavidas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110232,
@@ -317,7 +906,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Sofocar el fuego mediante la eliminación del comburente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Poner la embarcación en la misma dirección que sopla el viento y a la misma velocidad para que el viento aparente sea cero."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Confinar el fuego para eliminar el combustible."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Neutralizar los radicales libres que actúan en la reacción en cadena."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110233,
@@ -327,7 +935,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es un centro de bajas presiones con vientos que circulan en sentido antihorario."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Es un centro de bajas presiones con vientos que circulan en sentido horario."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Es un centro de altas presiones con vientos que circulan en sentido antihorario."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Es un centro de altas presiones con vientos que circulan en sentido horario."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110234,
@@ -337,7 +964,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un aumento en la intensidad del viento."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un cambio en la dirección del viento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una disminución en la intensidad del viento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un cese completo en la intensidad del viento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110235,
@@ -347,7 +993,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Sirve para conocer la altura de las olas para un determinado grado."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Sirve para conocer el aspecto de la mar para un determinado grado."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Tiene relación o equivalencia en grados con la escala Beaufort."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Establece una relación entre sus grados y la velocidad en nudos del viento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110236,
@@ -357,7 +1022,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Transmisiones radio en VHF por los Centros de Salvamento Marítimo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Transmisiones radio en onda media y VHF por las Estaciones Radiocosteras."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Servicio telefónico de la Autoridad Portuaria Radiocostera."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Transmisiones por medio del sistema NAVTEX a través de los cuatro centros emisores de Salvamento Marítimo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110237,
@@ -367,7 +1051,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "4º(-)."
+      },
+      {
+        "answerId": "B",
+        "answerText": "4º(+)."
+      },
+      {
+        "answerId": "C",
+        "answerText": "2º(-)."
+      },
+      {
+        "answerId": "D",
+        "answerText": "2º(+)."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110238,
@@ -377,7 +1080,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Es el arco de meridiano contado desde el ecuador hasta el observador."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Es el círculo menor paralelo al ecuador."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Es el círculo máximo que pasando por los polos pasa por los diferentes lugares del observador."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Es el arco de ecuador contado desde el meridiano de Greenwich hasta el pie del meridiano que pasa por el lugar."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110239,
@@ -387,7 +1109,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Declinación magnética."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Desvío de aguja."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Corrección total."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Demora magnética."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110240,
@@ -397,7 +1138,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El ángulo formado por las líneas de posición respecto al norte verdadero."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La parte del buque respecto a la cual se miden ambas líneas de posición."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Los puntos de la costa respecto a los cuales se sitúa el buque."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La profundidad tomada como referencia para trazar las líneas de posición."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110241,
@@ -407,7 +1167,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Tenderá a llevarnos hacia barlovento."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Será directamente proporcional a la superficie de dicha obra muerta."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Será inversamente proporcional al cuadrado de la velocidad del viento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Será directamente proporcional a la superficie de la obra viva."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110242,
@@ -417,7 +1196,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "l= 36° 03,5´N; L= 005° 56,9´W."
+      },
+      {
+        "answerId": "B",
+        "answerText": "l= 36° 03,5´N; L= 005° 58,5´W."
+      },
+      {
+        "answerId": "C",
+        "answerText": "l= 36° 03,2´N; L= 005° 55,2´W."
+      },
+      {
+        "answerId": "D",
+        "answerText": "l= 35° 02,6´N; L= 005° 49,3´W."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110243,
@@ -427,7 +1225,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "l= 35º 53’N; L= 005º 44’W."
+      },
+      {
+        "answerId": "B",
+        "answerText": "l= 35º 54,1’N; L= 005º 41,3’W."
+      },
+      {
+        "answerId": "C",
+        "answerText": "l= 35º 54,5’N; L= 005º 43’W."
+      },
+      {
+        "answerId": "D",
+        "answerText": "l= 35º 53,2’N: L= 005º 40,8’W."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110244,
@@ -437,7 +1254,26 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ra = 293º; Hrb = 12:12."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Ra = 296º; Hrb = 12:17."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Ra = 301º; Hrb = 12:21."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Ra = 305º; Hrb = 12:26."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024110245,
@@ -447,6 +1283,25 @@
     "examYear": 2024,
     "examMonth": 11,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Pleamar: 7,15 m. / Bajamar: 8,38 m."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Pleamar: 3,22 m. / Bajamar: 4,45 m."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Pleamar: 8,58 m. / Bajamar: 7,35 m."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Pleamar: 8,38 m. / Bajamar: 7,15 m."
+      }
+    ],
+    "correctAnswerId": null
   }
 ]

@@ -7,7 +7,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Válvulas de achique."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Grifos de fondo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Sentinas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Imbornales."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060202,
@@ -17,7 +36,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Pala."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Bocina."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Núcleo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Capacete."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060203,
@@ -27,7 +65,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Emerge lo máximo posible disminuyendo la parte sumergida al mínimo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Está cargada al máximo y a punto de navegar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Alcanza su máxima velocidad."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Forma la máxima estela."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060204,
@@ -37,7 +94,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Las partes del barco que aún quedan sin acabar o construir."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La parte del casco que se encuentra sumergida."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La parte del casco desde la quilla hasta la cubierta principal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La parte del casco que está por encima de la línea de flotación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060205,
@@ -47,7 +123,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Colgar las defensas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Atar las escotas y brazas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Afirmar rápidamente un cabo a un palo, cáncamo o argolla."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Unir por sus chicotes dos cabos de una misma mena."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060206,
@@ -57,7 +152,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Se debe elegir siempre que sea posible un tenedero rocoso o con algas, para facilitar el agarre del ancla."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Se deben tomar referencias a tierra para asegurarnos que el ancla no garrea, y vigilar la sonda marcando un fondo mínimo con la alarma."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Si se opta por el fondeo a la gira, se utilizarán dos anclas de forma que las líneas de fondeo formen un ángulo de entre 90º y 120º."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Nuestra embarcación debe disponer de una línea de fondeo cuya longitud será tres veces la eslora."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060207,
@@ -67,7 +181,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Todos los grifos de fondo estén cerrados."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Todas las lumbreras están herméticamente cerradas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se ha comunicado el Plan de navegación a alguien en tierra."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La batería del móvil está cargada, para utilizarlo siempre como vía para realizar una llamada de emergencia."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060208,
@@ -77,7 +210,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Corriendo el temporal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Capeando el temporal."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Navegando a son de mar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Ciñendo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060209,
@@ -87,7 +239,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Deben colocarse en la proa sujetos por medios de fijación permanente."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Si pierde un aro salvavidas en el mar no debe tomar ninguna acción mientras siga teniendo aros salvavidas suficientes a bordo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "No deben ir identificados con el nombre de la embarcación, ya que deben cumplir un estándar igual para todos."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Deben colocarse en las bandas (aletas) o en popa y estibados de modo que sea posible soltarlos rápidamente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060210,
@@ -97,7 +268,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Llame por teléfono al 112."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Llame por teléfono al 900 202 202."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Realice una llamada de voz por el canal 70 de VHF."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Utilice los procedimientos internacionales reglamentados para ello."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060211,
@@ -107,7 +297,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "3 días hábiles."
+      },
+      {
+        "answerId": "B",
+        "answerText": "5 días hábiles."
+      },
+      {
+        "answerId": "C",
+        "answerText": "10 días hábiles."
+      },
+      {
+        "answerId": "D",
+        "answerText": "No hay plazo, puesto que la ausencia a bordo de la documentación motiva una sanción inmediata."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060212,
@@ -117,7 +326,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "A cualquier distancia de la tierra más próxima, siempre que los desechos puedan pasar por cribas con mallas de una abertura mínima de 50 mm."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Estando la embarcación en ruta al menos a tres millas marinas de la tierra más próxima y siempre que los desechos puedan pasar por cribas con mallas de una abertura máxima de 25 mm."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Si se realiza tan lejos como sea posible de la tierra más próxima, pero en ningún caso a menos de 12 millas marinas de la tierra más próxima."
+      },
+      {
+        "answerId": "D",
+        "answerText": "A cualquier distancia de la tierra más próxima, siempre que el buque esté en ruta."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060213,
@@ -127,7 +355,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Entrando en puerto por fuera del canal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Saliendo de puerto por dentro del canal."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Entrando en puerto por dentro del canal."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Bordeando una marca de peligro aislado."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060214,
@@ -137,7 +384,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Con los vértices hacia arriba."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Opuestos por sus bases."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Con los vértices hacia abajo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Opuestos por sus vértices."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060215,
@@ -147,7 +413,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Definir los ejes de los canales y las marcas de centro del canal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Indicar el canal principal."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Indicar el lado de la marca por el que se debe pasar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Señalizar los límites de las áreas de fondeo."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060216,
@@ -157,7 +442,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Negras, con una o más bandas anchas horizontales rojas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Amarillas, con una o más bandas anchas horizontales negras."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Negras, con una o más bandas anchas verticales amarillas."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Rojas, con una o más bandas anchas verticales negras."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060217,
@@ -167,7 +471,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Están destinadas a señalar canales u obstrucciones, al no ofrecer el IALA alternativas más apropiadas."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Pueden ir con letras o numeradas y, también, pueden incluir el uso de un pictograma para indicar su finalidad, usando la simbología de la Organización Hidrográfica Internacional (OIH), cuando proceda."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Se utilizan para señalizar una vía navegable."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Pueden llevar una marca de tope en forma de X, preferiblemente tridimensional, para ser visible en todas las direcciones y, si tuvieran luz, ésta será blanca."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060218,
@@ -177,7 +500,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Mantenernos a rumbo ya que en ningún caso debemos maniobrar por tener preferencia frente a un buque dedicado a la pesca."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Si es necesario, reducir la velocidad para estudiar la situación siempre que sea posible, y maniobrar preferiblemente de forma clara y con antelación suficiente."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Realizar pequeños cambios de rumbo y velocidad para avisar a la embarcación dedicada a la pesca de su obligación de mantenerse apartado de la derrota de nuestra embarcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cambiar de rumbo ligeramente para desviar nuestra derrota lo menos posible y evitar al mismo tiempo el abordaje, dado que esta situación exige la obligación de maniobrar por ser embarcación de propulsión mecánica."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060219,
@@ -187,7 +529,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un destello para indicar “caigo a babor”."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un destello de duración aproximada de un segundo para indicar “caigo a estribor”."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Dos destellos de aproximadamente un segundo de duración para indicar “estoy dando atrás”."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Dos destellos para indicar “caigo a estribor”."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060220,
@@ -197,7 +558,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Cada uno de nosotros caerá a babor de forma que pase por la banda de estribor del otro."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Hay que esperar a que el otro nos maniobre."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Acordaremos por radio que uno de nosotros caerá a estribor y el otro caerá a babor."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Cada uno de nosotros caerá a estribor de forma que pase por la banda de babor del otro."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060221,
@@ -207,7 +587,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "En un arco del horizonte de 110 grados, fijada de forma que sea visible en un arco de 55 grados, contados a partir de la popa hacia cada una de las bandas del buque."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En un arco del horizonte de 135 grados, fijada de forma que sea visible en un arco de 67,5 grados, contados a partir de la popa hacia cada una de las bandas del buque."
+      },
+      {
+        "answerId": "C",
+        "answerText": "En un arco del horizonte de 125 grados, fijada de forma que sea visible en un arco de 62,5 grados, contados a partir de la proa hacia cada una de las bandas del buque."
+      },
+      {
+        "answerId": "D",
+        "answerText": "En un arco del horizonte de 115 grados, fijada de forma que sea visible en un arco de 57,5 grados, contados a partir de la popa hacia cada una de las bandas del buque."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060222,
@@ -217,7 +616,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Dos luces todo horizonte en línea vertical, blanca la superior y verde la inferior, una luz de tope a popa y más elevada que la luz verde todo horizonte."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Dos luces todo horizonte en línea vertical, roja la superior y blanca la inferior, una luz de tope a popa y más elevada que la luz verde todo horizonte, luces de costado y una luz de alcance."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Dos luces todo horizonte en línea vertical, roja la superior y blanca la inferior, luces de costado y una luz de alcance."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Dos luces todo horizonte en línea vertical, verde la superior y blanca la inferior, una luz de tope a popa y más elevada que la luz verde todo horizonte, luces de costado y una luz de alcance."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060223,
@@ -227,7 +645,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Buque de vela."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Buque dedicado a operaciones de limpieza de minas."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Buque dedicado a dragados."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Buque en navegación haciendo combustible."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060224,
@@ -237,7 +674,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un buque de propulsión mecánica, con arrancada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un buque sin gobierno o con su capacidad de maniobra restringida."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Un buque fondeado."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un buque de propulsión mecánica en navegación, pero parado y sin arrancada."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060225,
@@ -247,7 +703,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Podría ser necesario apartarse de este Reglamento, para evitar un peligro inmediato, al tomar en consideración todos aquellos peligros de navegación y todas las circunstancias especiales."
+      },
+      {
+        "answerId": "B",
+        "answerText": "En ningún caso el propietario o capitán del buque podrá apartarse de las reglas estipuladas en el presente Reglamento incurriendo en la correspondiente responsabilidad."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El propietario o capitán del buque podrá apartarse de lo establecido en este Reglamento solamente cuando reciba una recomendación de un servicio de control de tráfico marítimo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El propietario o capitán de un buque sin gobierno estará exento de seguir lo estipulado en este"
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060226,
@@ -257,7 +732,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una embarcación pesquera que no sea de arrastre, que navega por el canal en el mismo sentido que nosotros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una embarcación pesquera de arrastre con arrancada avante."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una embarcación de prácticos que navega por el canal de vuelta encontrada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una embarcación sin gobierno, pero con arrancada avante."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060227,
@@ -267,7 +761,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El buque de propulsión mecánica en navegación."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El buque dedicado a la pesca."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El hidroavión amarado."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El buque de vela."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060228,
@@ -277,7 +790,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Tensarlo hasta que quede sin seno."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Aflojarlo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Soltarlo."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Recogerlo en adujas."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060229,
@@ -287,7 +819,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Al dar atrás con arrancada avante."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Al meter el timón completamente a una banda."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Al perder arrancada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Al poner el piloto automático."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060230,
@@ -297,7 +848,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Empapar la ropa con agua limpia o suero y desprenderla de un tirón, para desnudar la zona afectada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Recortar las ampollas de la quemadura que se hayan roto y cubrirlas con gasas grasas y un vendaje de compresión."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Evacuar inmediatamente a un centro hospitalario para su tratamiento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Inmovilizar la zona y administrar un antibiótico para prevenir la infección."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060231,
@@ -307,7 +877,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Manténgase en continuo movimiento para conservar el calor."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Beba agua del mar en pequeñas cantidades, a medida que lo necesite, para evitar la deshidratación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Adopte la postura fetal o flote abrazado a otros supervivientes, sin nadar."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Si hay varios supervivientes, quítense el chaleco salvavidas y permanezcan abrazados para mantener el calor corporal."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060232,
@@ -317,7 +906,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Trasladar pesos para cambiar el asiento."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Esperar al momento de la bajamar."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Balancear el barco para que se despegue del fondo, ya que el fango hace de ventosa."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Utilizar el servicio de un remolcador, si se considera necesario."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060233,
@@ -327,7 +935,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Un aumento en la intensidad del viento."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Un cambio en la dirección del viento."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una disminución de la intensidad del viento."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Un cese del viento."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060234,
@@ -337,7 +964,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El viento gira en sentido horario y la presión atmosférica es inferior a 1013 milibares."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El viento gira en sentido antihorario y la presión atmosférica es superior a 1013 milibares."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El viento gira en sentido horario y la presión atmosférica es superior a 1013 milibares."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El viento gira en sentido antihorario y la presión atmosférica es inferior a 1013 milibares."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060235,
@@ -347,7 +993,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Diferente valor de la presión en una superficie dada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Igual temperatura a lo largo de un periodo de tiempo determinado."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Igual valor de la presión en una superficie dada."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Diferente temperatura a lo largo de un periodo de tiempo determinado."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060236,
@@ -357,7 +1022,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "El viento real es el que percibimos cuando nuestra embarcación está parada."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El viento aparente no sufre alteración alguna con el movimiento de la propia embarcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "El viento relativo es la resultante del viento real y del rumbo de la embarcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "El viento real es el que medimos cuando nuestra embarcación está navegando con arrancada y con viento presente."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060237,
@@ -367,7 +1051,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Estilo."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Chapitel."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Suspensión cardán."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Mortero."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060238,
@@ -377,7 +1080,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La desviación producida por el magnetismo terrestre."
+      },
+      {
+        "answerId": "B",
+        "answerText": "El error que producen los hierros a bordo."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La suma algebraica de la declinación magnética y el desvío."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La suma algebraica de la declinación magnética y la variación local."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060239,
@@ -387,7 +1109,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Una demora verdadera."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Una demora de aguja."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Una marcación."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Una enfilación."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060240,
@@ -397,7 +1138,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Abatimiento."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Obra muerta."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Intensidad de empuje en superficie."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Deriva."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060241,
@@ -407,7 +1167,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "La hora legal."
+      },
+      {
+        "answerId": "B",
+        "answerText": "La hora a bordo de nuestra embarcación."
+      },
+      {
+        "answerId": "C",
+        "answerText": "La hora legal +2."
+      },
+      {
+        "answerId": "D",
+        "answerText": "La hora a bordo de nuestra embarcación +2."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060242,
@@ -417,7 +1196,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "l= 35º25,4’N; L= 005º52,4’W."
+      },
+      {
+        "answerId": "B",
+        "answerText": "l= 35º52,4’N; L= 005º52,4’W."
+      },
+      {
+        "answerId": "C",
+        "answerText": "l= 35º51,4’N; L= 005º52,0’W."
+      },
+      {
+        "answerId": "D",
+        "answerText": "l= 35º52,4’N; L= 006º52,4’W."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060243,
@@ -427,7 +1225,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "Ra = 100º; Hrb = 12:35."
+      },
+      {
+        "answerId": "B",
+        "answerText": "Ra = 102º; Hrb = 12:40."
+      },
+      {
+        "answerId": "C",
+        "answerText": "Ra = 099º; Hrb = 12:30."
+      },
+      {
+        "answerId": "D",
+        "answerText": "Ra = 104º; Hrb = 12:33."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060244,
@@ -437,7 +1254,26 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "l= 36º00,5’N; L= 005º58,6’W."
+      },
+      {
+        "answerId": "B",
+        "answerText": "l= 35º54,8’N; L= 005º31,2’W."
+      },
+      {
+        "answerId": "C",
+        "answerText": "l= 35º58,7’N; L= 005º33,4’W."
+      },
+      {
+        "answerId": "D",
+        "answerText": "l= 36º02,3’N; L= 005º35,0’W."
+      }
+    ],
+    "correctAnswerId": null
   },
   {
     "id": 2024060245,
@@ -447,6 +1283,25 @@
     "examYear": 2024,
     "examMonth": 6,
     "examNumber": 2,
-    "explanation": null
+    "explanation": null,
+    "answerOptions": [
+      {
+        "answerId": "A",
+        "answerText": "10,20 metros / 12,57 metros."
+      },
+      {
+        "answerId": "B",
+        "answerText": "10,15 metros / 12,52 metros."
+      },
+      {
+        "answerId": "C",
+        "answerText": "10,10 metros / 12,47 metros."
+      },
+      {
+        "answerId": "D",
+        "answerText": "7,90 metros / 5,53 metros."
+      }
+    ],
+    "correctAnswerId": null
   }
 ]
