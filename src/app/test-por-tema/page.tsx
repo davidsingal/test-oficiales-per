@@ -1,24 +1,7 @@
 import { BackButton } from "@/components/back-button";
-import { Button } from "@/components/ui/button";
-import { readFile } from "node:fs/promises";
-import path from "node:path";
-
-type Topic = {
-  id: number;
-  name: string;
-  description: string;
-};
-
-async function getTopics(): Promise<Topic[]> {
-  const topicsPath = path.join(process.cwd(), "public", "data", "topics.json");
-  const file = await readFile(topicsPath, "utf-8");
-  const parsed = JSON.parse(file) as Topic[];
-  return parsed;
-}
+import TopicsList from "@/components/topics";
 
 export default async function TestPorTemaPage() {
-  const topics = await getTopics();
-
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
@@ -33,19 +16,11 @@ export default async function TestPorTemaPage() {
           <li>10 preguntas por intento</li>
           <li>10 minutos de tiempo límite</li>
           <li>Resultados al finalizar el intento</li>
+          <li>No incluye preguntas de Carta de navegación</li>
         </ul>
       </section>
 
-      <section className="space-y-4 rounded-md border p-4">
-        <h2 className="text-lg font-medium">Temas disponibles</h2>
-        <div className="flex flex-wrap gap-2">
-          {topics.map((topic) => (
-            <Button key={topic.id} type="button" variant="outline">
-              {topic.name}
-            </Button>
-          ))}
-        </div>
-      </section>
+      <TopicsList />
     </main>
   );
 }

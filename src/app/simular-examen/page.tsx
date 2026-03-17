@@ -232,6 +232,7 @@ export default function SimularExamenPage() {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
+        <BackButton />
         <h1 className="text-3xl font-semibold">
           Selecciona convocatoria, fecha y modelo
         </h1>
@@ -239,7 +240,11 @@ export default function SimularExamenPage() {
           Datos de ejemplo para definir el flujo real. Cada simulación está
           ajustada a 45 preguntas y 45 minutos.
         </p>
-        <BackButton />
+        <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+          <li>{modelData.name}</li>
+          <li>45 preguntas tipo test</li>
+          <li>Tiempo total: 45 minutos</li>
+        </ul>
       </section>
 
       <section className="grid gap-4 lg:grid-cols-[1.2fr_1.3fr_1fr]">
@@ -317,12 +322,6 @@ export default function SimularExamenPage() {
               </Button>
             ))}
           </div>
-
-          <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
-            <li>{modelData.name}</li>
-            <li>45 preguntas tipo test</li>
-            <li>Tiempo total: 45 minutos</li>
-          </ul>
 
           <Button type="button">Comenzar simulación</Button>
         </aside>
