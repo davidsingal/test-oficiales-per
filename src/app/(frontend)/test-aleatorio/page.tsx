@@ -1,12 +1,4 @@
 import { BackButton } from "@/components/back-button";
-import { Button } from "@/components/ui/button";
-
-const randomModes = [
-  "Dificultad mixta",
-  "Solo preguntas nuevas",
-  "Reforzar falladas",
-  "Modo contrarreloj",
-];
 
 export default function TestAleatorioPage() {
   return (
@@ -25,16 +17,7 @@ export default function TestAleatorioPage() {
         </ul>
       </section>
 
-      <section className="space-y-4 rounded-md border p-4">
-        <h2 className="text-lg font-medium">Configuraciones rápidas</h2>
-        <div className="flex flex-wrap gap-2">
-          {randomModes.map((mode) => (
-            <Button key={mode} type="button" variant="outline">
-              {mode}
-            </Button>
-          ))}
-        </div>
-      </section>
+      <section className="space-y-4 rounded-md border p-4"></section>
     </main>
   );
 }
