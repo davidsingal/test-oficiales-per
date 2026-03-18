@@ -9,14 +9,13 @@ import config from "../src/payload.config";
 
 type CsvRow = {
   id: string;
-  question: string;
-  category: string;
+  question_text: string;
+  topic: string;
   exam_year: string;
   exam_month: string;
   exam_number: string;
   question_number: string;
-  image: string;
-  explanation: string;
+  explanation?: string;
 };
 
 type ExistingQuestion = {
@@ -170,6 +169,15 @@ function rowsToObjects(rows: string[][]): CsvRow[] {
   if (rows.length === 0) return [];
 
   const [headers, ...body] = rows;
+  const latestHeaders = [
+    "id",
+    "question_number",
+    "topic",
+    "question_text",
+    "exam_year",
+    "exam_month",
+    "exam_number",
+  ];
   const expectedHeaders = [
     "id",
     "question",
@@ -217,6 +225,9 @@ function rowsToObjects(rows: string[][]): CsvRow[] {
   const headersAreValid = expectedHeaders.every(
     (header, index) => headers[index] === header,
   );
+  const latestHeadersAreValid = latestHeaders.every(
+    (header, index) => headers[index] === header,
+  );
   const legacyHeadersAreValid = legacyHeaders.every(
     (header, index) => headers[index] === header,
   );
@@ -228,14 +239,28 @@ function rowsToObjects(rows: string[][]): CsvRow[] {
   );
 
   if (
+    !latestHeadersAreValid &&
     !headersAreValid &&
     !snakeOrCamelHeadersAreValid &&
     !midHeadersAreValid &&
     !legacyHeadersAreValid
   ) {
     throw new Error(
-      `Unexpected CSV headers. Received: ${headers.join(", ")}. Expected one of: ${expectedHeaders.join(", ")} OR ${snakeOrCamelHeaders.join(", ")} OR ${midHeaders.join(", ")} OR ${legacyHeaders.join(", ")}`,
+      `Unexpected CSV headers. Received: ${headers.join(", ")}. Expected one of: ${latestHeaders.join(", ")} OR ${expectedHeaders.join(", ")} OR ${snakeOrCamelHeaders.join(", ")} OR ${midHeaders.join(", ")} OR ${legacyHeaders.join(", ")}`,
     );
+  }
+
+  if (latestHeadersAreValid) {
+    return body.map((cells) => ({
+      id: cells[0] ?? "",
+      question_number: cells[1] ?? "",
+      topic: cells[2] ?? "",
+      question_text: cells[3] ?? "",
+      exam_year: cells[4] ?? "",
+      exam_month: cells[5] ?? "",
+      exam_number: cells[6] ?? "",
+      explanation: "",
+    }));
   }
 
   const activeHeaders = headersAreValid
@@ -259,6 +284,8 @@ function rowsToObjects(rows: string[][]): CsvRow[] {
       row.question_number = row.testIndex;
     }
     if (!("question_number" in row)) row.question_number = "";
+    if (!("question_text" in row)) row.question_text = row.question ?? "";
+    if (!("topic" in row)) row.topic = row.category ?? "";
 
     return row as CsvRow;
   });
@@ -357,8 +384,8 @@ async function main(): Promise<void> {
   }
 
   for (const row of csvRows) {
-    const questionText = normalizeText(row.question ?? "");
-    const category = normalizeText(row.category ?? "");
+    const questionText = normalizeText(row.question_text ?? "");
+    const category = normalizeText(row.topic ?? "");
     const year = Number(row.exam_year);
     const month = parseMonthValue(row.exam_month ?? "");
     const testNumber = Number(row.exam_number);

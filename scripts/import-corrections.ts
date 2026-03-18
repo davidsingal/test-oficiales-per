@@ -221,8 +221,11 @@ async function main(): Promise<void> {
     projectRoot,
     process.argv[2] ?? "data/outputs/corrections.csv",
   );
+  const modeArg = normalizeText(process.argv[3] ?? "merge").toLowerCase();
+  const mode: "merge" | "append" = modeArg === "append" ? "append" : "merge";
 
   console.log(`Reading corrections CSV: ${correctionsCsvPath}`);
+  console.log(`Import mode: ${mode}`);
 
   const csvContent = await fs.readFile(correctionsCsvPath, "utf8");
   const csvRows = rowsToCorrections(parseCSV(csvContent));
@@ -329,6 +332,11 @@ async function main(): Promise<void> {
       ? ["ANULADA"]
       : ANSWER_ORDER.filter((answerId) => answerIdsSet.has(answerId));
     const current = normalizeStoredCorrectAnswers(question.correctAnswers);
+
+    if (mode === "append" && current.length > 0) {
+      unchangedCount += 1;
+      continue;
+    }
 
     const isSame =
       desired.length === current.length &&

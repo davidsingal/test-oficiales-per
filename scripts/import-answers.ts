@@ -11,12 +11,12 @@ type AnswersCsvRow = {
   id: string;
   question_id: string;
   answer_id: string;
-  answer: string;
+  answer_text: string;
 };
 
 type QuestionsCsvRow = {
   id: string;
-  question: string;
+  question_text: string;
   exam_year: string;
   exam_month: string;
   exam_number: string;
@@ -194,6 +194,7 @@ function rowsToAnswers(rows: string[][]): AnswersCsvRow[] {
   if (rows.length === 0) return [];
 
   const [headers, ...body] = rows;
+  const latest = ["id", "question_id", "answer_id", "answer_text"];
   const expected = ["id", "question_id", "answer_id", "answer"];
   const expectedWithCorrect = [
     "id",
@@ -204,6 +205,7 @@ function rowsToAnswers(rows: string[][]): AnswersCsvRow[] {
   ];
   const legacy = ["id", "question_id", "answer"];
   const legacyWithCorrect = ["id", "question_id", "answer", "is_correct"];
+  const isLatest = latest.every((header, index) => headers[index] === header);
   const isExpected = expected.every((header, index) => headers[index] === header);
   const isExpectedWithCorrect = expectedWithCorrect.every(
     (header, index) => headers[index] === header,
@@ -212,10 +214,25 @@ function rowsToAnswers(rows: string[][]): AnswersCsvRow[] {
   const isLegacyWithCorrect = legacyWithCorrect.every(
     (header, index) => headers[index] === header,
   );
-  if (!isExpected && !isExpectedWithCorrect && !isLegacy && !isLegacyWithCorrect) {
+  if (
+    !isLatest &&
+    !isExpected &&
+    !isExpectedWithCorrect &&
+    !isLegacy &&
+    !isLegacyWithCorrect
+  ) {
     throw new Error(
-      `Unexpected answers CSV headers. Received: ${headers.join(", ")}. Expected: ${expected.join(", ")} OR ${expectedWithCorrect.join(", ")} OR ${legacy.join(", ")} OR ${legacyWithCorrect.join(", ")}`,
+      `Unexpected answers CSV headers. Received: ${headers.join(", ")}. Expected: ${latest.join(", ")} OR ${expected.join(", ")} OR ${expectedWithCorrect.join(", ")} OR ${legacy.join(", ")} OR ${legacyWithCorrect.join(", ")}`,
     );
+  }
+
+  if (isLatest) {
+    return body.map((cells) => ({
+      id: cells[0] ?? "",
+      question_id: cells[1] ?? "",
+      answer_id: cells[2] ?? "",
+      answer_text: cells[3] ?? "",
+    }));
   }
 
   if (isExpected || isExpectedWithCorrect) {
@@ -223,7 +240,7 @@ function rowsToAnswers(rows: string[][]): AnswersCsvRow[] {
       id: cells[0] ?? "",
       question_id: cells[1] ?? "",
       answer_id: cells[2] ?? "",
-      answer: cells[3] ?? "",
+      answer_text: cells[3] ?? "",
     }));
   }
 
@@ -231,7 +248,7 @@ function rowsToAnswers(rows: string[][]): AnswersCsvRow[] {
     id: cells[0] ?? "",
     question_id: cells[1] ?? "",
     answer_id: "",
-    answer: cells[2] ?? "",
+    answer_text: cells[2] ?? "",
   }));
 }
 
@@ -239,6 +256,15 @@ function rowsToQuestions(rows: string[][]): QuestionsCsvRow[] {
   if (rows.length === 0) return [];
 
   const [headers, ...body] = rows;
+  const latest = [
+    "id",
+    "question_number",
+    "topic",
+    "question_text",
+    "exam_year",
+    "exam_month",
+    "exam_number",
+  ];
   const expected = [
     "id",
     "question",
@@ -273,18 +299,30 @@ function rowsToQuestions(rows: string[][]): QuestionsCsvRow[] {
     "explanation",
   ];
 
+  const isLatest = latest.every((header, index) => headers[index] === header);
   const isExpected = expected.every((header, index) => headers[index] === header);
   const isCamel = camel.every((header, index) => headers[index] === header);
   const isLegacy = legacy.every((header, index) => headers[index] === header);
-  if (!isExpected && !isCamel && !isLegacy) {
+  if (!isLatest && !isExpected && !isCamel && !isLegacy) {
     throw new Error(
       `Unexpected questions CSV headers. Received: ${headers.join(", ")}`,
     );
   }
 
+  if (isLatest) {
+    return body.map((cells) => ({
+      id: cells[0] ?? "",
+      question_number: cells[1] ?? "",
+      question_text: cells[3] ?? "",
+      exam_year: cells[4] ?? "",
+      exam_month: cells[5] ?? "",
+      exam_number: cells[6] ?? "",
+    }));
+  }
+
   return body.map((cells) => ({
     id: cells[0] ?? "",
-    question: cells[1] ?? "",
+    question_text: cells[1] ?? "",
     exam_year: cells[3] ?? "",
     exam_month: cells[4] ?? "",
     exam_number: cells[5] ?? "",
@@ -324,7 +362,7 @@ async function main(): Promise<void> {
     const month = parseMonthValue(row.exam_month);
     const testNumber = Number(row.exam_number);
     const questionNumber = parseQuestionNumber(row.question_number);
-    const questionText = normalizeText(row.question);
+    const questionText = normalizeText(row.question_text);
 
     if (
       !Number.isFinite(sourceQuestionId) ||
@@ -445,7 +483,7 @@ async function main(): Promise<void> {
 
   for (const row of answersRows) {
     const sourceQuestionId = Number(row.question_id);
-    const answerText = normalizeText(row.answer);
+    const answerText = normalizeText(row.answer_text);
     if (!Number.isFinite(sourceQuestionId) || !answerText) {
       skippedInvalidCount += 1;
       continue;

@@ -13,9 +13,12 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "payload": "payload",
+    "create:topics": "payload run scripts/create-topics.ts",
     "import:questions": "payload run scripts/import-questions.ts",
     "import:answers": "payload run scripts/import-answers.ts",
     "import:corrections": "payload run scripts/import-corrections.ts",
+    "data:reset": "payload run scripts/data-reset.ts",
+    "data:update": "payload run scripts/data-update.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
