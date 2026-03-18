@@ -11,6 +11,7 @@ const TestPorTemaPage: NextPage = async () => {
   const topics = await payload.find({
     collection: "topics",
     pagination: false,
+    sort: ["createdAt"],
   });
 
   return (
