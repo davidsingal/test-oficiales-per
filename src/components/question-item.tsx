@@ -4,8 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import type { FC } from "react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useSetAtom } from "jotai";
 import type { Answer, Question } from "@/types/payload-types";
+import { setQuestionOutcomeAtom } from "@/store/test-progress";
 
 const isAnswer = (answer: number | Answer): answer is Answer =>
   typeof answer === "object" && answer !== null;
@@ -18,6 +21,9 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
     Answer["answerId"] | null
   >(null);
 
+  const pathname = usePathname();
+  const setQuestionOutcome = useSetAtom(setQuestionOutcomeAtom);
+
   const feedback = useMemo(() => {
     if (!selectedAnswer) return null;
 
@@ -27,6 +33,7 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
       return {
         text: "No hay corrección disponible para esta pregunta.",
         className: "text-amber-700",
+        outcome: "neutral" as const,
       };
     }
 
@@ -34,6 +41,7 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
       return {
         text: "Esta pregunta está ANULADA.",
         className: "text-amber-700",
+        outcome: "neutral" as const,
       };
     }
 
@@ -41,14 +49,25 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
       return {
         text: "Respuesta correcta.",
         className: "text-green-700",
+        outcome: "correct" as const,
       };
     }
 
     return {
       text: "Respuesta incorrecta.",
       className: "text-red-700",
+      outcome: "incorrect" as const,
     };
   }, [data.correctAnswers, selectedAnswer]);
+
+  useEffect(() => {
+    if (!feedback || !selectedAnswer) return;
+    setQuestionOutcome({
+      path: pathname,
+      questionId: data.id,
+      outcome: feedback.outcome,
+    });
+  }, [data.id, feedback, pathname, selectedAnswer, setQuestionOutcome]);
 
   return (
     <Card>

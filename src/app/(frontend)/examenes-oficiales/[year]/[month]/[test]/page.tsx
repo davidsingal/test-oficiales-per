@@ -2,6 +2,7 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import Report from "@/components/report";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
@@ -41,6 +42,7 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <BackButton />
       <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
+      <Report totalQuestions={questionsData.docs.length} />
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">

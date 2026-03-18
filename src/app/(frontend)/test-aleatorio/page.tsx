@@ -3,6 +3,7 @@ import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import Report from "@/components/report";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
@@ -62,6 +63,8 @@ const TestAleatorioPage: NextPage = async () => {
           <li>No incluye preguntas de Carta de navegación</li>
         </ul>
       </section>
+
+      <Report totalQuestions={questionsData.length} />
 
       <div className="space-y-10">
         {questionsData.map((question) => (
