@@ -1,11 +1,20 @@
+import Link from "next/link";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
-import { BackButton } from "@/components/back-button";
 import { monthLabels, monthOrder } from "@/lib/utils";
+import { BackButton } from "@/components/back-button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Item,
+  ItemContent,
+  ItemDescription,
+  ItemMedia,
+  ItemTitle,
+} from "@/components/ui/item";
+import { ClipboardIcon } from "lucide-react";
 import type { Question } from "@/types/payload-types";
 import type { NextPage } from "next";
-import Link from "next/link";
 
 const payload = await getPayload({ config });
 
@@ -85,35 +94,38 @@ const ExamenesOficialesPage: NextPage = async () => {
           <li>Tiempo total: 45 minutos</li>
         </ul>
       </section>
-      <section className="grid gap-4">
+      <section className="grid gap-4 grid-cols-1 md:grid-cols-2">
         {years.map((year) => (
-          <div key={`year-${year}`} className="rounded-md border p-3">
-            <p className="font-medium">{year}</p>
-
-            <ul className="mt-3 space-y-2">
+          <Card key={`card-${year}`}>
+            <CardHeader>
+              <CardTitle>{year}</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
               {monthOrder
                 .filter((month) => examsByYearAndMonth[year]?.[month])
                 .map((month) => (
-                  <li
-                    key={`${year}-${month}`}
-                    className="rounded-md border px-3 py-2 text-sm"
-                  >
-                    <p className="font-medium">{monthLabels[month]}</p>
-                    <div className="text-muted-foreground space-x-2">
-                      {[...examsByYearAndMonth[year][month]]
-                        .sort((a, b) => a - b)
-                        .map((examNumber) => (
-                          <Link
-                            key={`exam-${examNumber}`}
-                            href={`/examenes-oficiales/${year}/${month}/${examNumber}`}
-                            className="hover:underline"
-                          >{`Test 0${examNumber}`}</Link>
-                        ))}
-                    </div>
-                  </li>
+                  <Item key={`card-${year}-${month}`} variant="outline">
+                    <ItemMedia variant="icon">
+                      <ClipboardIcon />
+                    </ItemMedia>
+                    <ItemContent>
+                      <ItemTitle>{monthLabels[month]}</ItemTitle>
+                      <ItemDescription className="space-x-4">
+                        {[...examsByYearAndMonth[year][month]]
+                          .sort((a, b) => a - b)
+                          .map((examNumber) => (
+                            <Link
+                              key={`exam-${examNumber}`}
+                              href={`/examenes-oficiales/${year}/${month}/${examNumber}`}
+                              className="hover:underline"
+                            >{`Test 0${examNumber}`}</Link>
+                          ))}
+                      </ItemDescription>
+                    </ItemContent>
+                  </Item>
                 ))}
-            </ul>
-          </div>
+            </CardContent>
+          </Card>
         ))}
       </section>
     </main>
