@@ -3,8 +3,10 @@ import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import QuestionsLoader from "@/components/questions-loader";
 import Report from "@/components/report";
 import type { NextPage } from "next";
+import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
 type PageProps = {
@@ -13,10 +15,11 @@ type PageProps = {
 
 const payload = await getPayload({ config });
 
-const TopicPage: NextPage<PageProps> = async ({ params }) => {
-  const { topic: rawTopic } = await params;
-  const selectedTopicName = decodeURIComponent(rawTopic);
-
+const TopicQuestions = async ({
+  selectedTopicName,
+}: {
+  selectedTopicName: string;
+}) => {
   const randomIdsResult = await payload.db.drizzle.execute(sql`
     SELECT q."id"
     FROM "questions" q
@@ -52,9 +55,7 @@ const TopicPage: NextPage<PageProps> = async ({ params }) => {
   }
 
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
-      <BackButton />
-      <h1 className="text-3xl font-semibold">{selectedTopicName}</h1>
+    <>
       <Report totalQuestions={questionsData.length} />
       <div className="space-y-10">
         {questionsData.map((question) => (
@@ -67,6 +68,21 @@ const TopicPage: NextPage<PageProps> = async ({ params }) => {
           </div>
         ))}
       </div>
+    </>
+  );
+};
+
+const TopicPage: NextPage<PageProps> = async ({ params }) => {
+  const { topic: rawTopic } = await params;
+  const selectedTopicName = decodeURIComponent(rawTopic);
+
+  return (
+    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
+      <BackButton />
+      <h1 className="text-3xl font-semibold">{selectedTopicName}</h1>
+      <Suspense fallback={<QuestionsLoader />}>
+        <TopicQuestions selectedTopicName={selectedTopicName} />
+      </Suspense>
     </main>
   );
 };

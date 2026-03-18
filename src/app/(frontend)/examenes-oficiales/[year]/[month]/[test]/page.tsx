@@ -3,8 +3,10 @@ import config from "@payload-config";
 import Link from "next/link";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import QuestionsLoader from "@/components/questions-loader";
 import Report from "@/components/report";
 import type { NextPage } from "next";
+import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
 type PageProps = {
@@ -31,15 +33,15 @@ const monthToNumber: Record<string, string> = {
   diciembre: "12",
 };
 
-const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
-  const { year, month, test } = await params;
-  const selectedYear = Number(decodeURIComponent(year));
-  const selectedMonth = decodeURIComponent(month);
-  const selectedTest = Number(decodeURIComponent(test));
-  const monthNumber = monthToNumber[selectedMonth] ?? selectedMonth;
-  const formattedTest = String(selectedTest).padStart(2, "0");
-  const originalExamHref = `/examenes-oficiales/${selectedYear}_${monthNumber}_test_${formattedTest}.pdf`;
-
+const OfficialExamQuestions = async ({
+  selectedYear,
+  selectedMonth,
+  selectedTest,
+}: {
+  selectedYear: number;
+  selectedMonth: string;
+  selectedTest: number;
+}) => {
   const questionsData = await payload.find({
     collection: "questions",
     where: {
@@ -58,16 +60,8 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   });
 
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
-      <BackButton />
-      <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
-      <div className="text-sm text-muted-foreground">
-        <Link href={originalExamHref} target="_blank" rel="noopener noreferrer">
-          Ver examen original (PDF)
-        </Link>
-      </div>
+    <>
       <Report totalQuestions={questionsData.docs.length} />
-
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
@@ -78,6 +72,35 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
           </div>
         ))}
       </div>
+    </>
+  );
+};
+
+const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
+  const { year, month, test } = await params;
+  const selectedYear = Number(decodeURIComponent(year));
+  const selectedMonth = decodeURIComponent(month);
+  const selectedTest = Number(decodeURIComponent(test));
+  const monthNumber = monthToNumber[selectedMonth] ?? selectedMonth;
+  const formattedTest = String(selectedTest).padStart(2, "0");
+  const originalExamHref = `/examenes-oficiales/${selectedYear}_${monthNumber}_test_${formattedTest}.pdf`;
+
+  return (
+    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
+      <BackButton />
+      <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
+      <div className="text-sm text-muted-foreground">
+        <Link href={originalExamHref} target="_blank" rel="noopener noreferrer">
+          Ver examen original (PDF)
+        </Link>
+      </div>
+      <Suspense fallback={<QuestionsLoader />}>
+        <OfficialExamQuestions
+          selectedYear={selectedYear}
+          selectedMonth={selectedMonth}
+          selectedTest={selectedTest}
+        />
+      </Suspense>
     </main>
   );
 };

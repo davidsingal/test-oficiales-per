@@ -3,8 +3,10 @@ import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import QuestionsLoader from "@/components/questions-loader";
 import Report from "@/components/report";
 import type { NextPage } from "next";
+import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
 const payload = await getPayload({ config });
@@ -12,7 +14,7 @@ const payload = await getPayload({ config });
 const getTopicName = (topic: Question["topic"]) =>
   typeof topic === "object" && topic !== null ? topic.name : "Tema";
 
-const TestAleatorioPage: NextPage = async () => {
+const RandomQuestions = async () => {
   const randomIdsResult = await payload.db.drizzle.execute(sql`
     SELECT q."id"
     FROM "questions" q
@@ -49,6 +51,25 @@ const TestAleatorioPage: NextPage = async () => {
   }
 
   return (
+    <>
+      <Report totalQuestions={questionsData.length} />
+      <div className="space-y-10">
+        {questionsData.map((question) => (
+          <div key={`question-${question.id}`} className="space-y-2">
+            <div className="px-4 text-sm text-muted-foreground">
+              <span>{getTopicName(question.topic)}</span> · Convocatoria{" "}
+              {question.year} {question.month} - Test 0{question.testNumber}
+            </div>
+            <QuestionItem data={question} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+const TestAleatorioPage: NextPage = async () => {
+  return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
         <BackButton />
@@ -63,20 +84,9 @@ const TestAleatorioPage: NextPage = async () => {
           <li>No incluye preguntas de Carta de navegación</li>
         </ul>
       </section>
-
-      <Report totalQuestions={questionsData.length} />
-
-      <div className="space-y-10">
-        {questionsData.map((question) => (
-          <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-sm text-muted-foreground">
-              <span>{getTopicName(question.topic)}</span> · Convocatoria{" "}
-              {question.year} {question.month} - Test 0{question.testNumber}
-            </div>
-            <QuestionItem data={question} />
-          </div>
-        ))}
-      </div>
+      <Suspense fallback={<QuestionsLoader />}>
+        <RandomQuestions />
+      </Suspense>
     </main>
   );
 };
