@@ -20,7 +20,9 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
           {data.answers?.filter(isAnswer).map((answer) => (
             <div className="flex items-center gap-2" key={answer.id}>
               <RadioGroupItem value={answer.answerId} id={answer.answerId} />
-              <Label htmlFor={answer.answerId}>{answer.answerText}</Label>
+              <Label htmlFor={answer.answerId} className="leading-5">
+                {answer.answerText}
+              </Label>
             </div>
           ))}
         </RadioGroup>
