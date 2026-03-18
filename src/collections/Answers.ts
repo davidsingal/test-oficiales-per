@@ -2,6 +2,9 @@ import type { CollectionConfig } from "payload";
 
 export const Answers: CollectionConfig = {
   slug: "answers",
+  admin: {
+    useAsTitle: "answerText",
+  },
   fields: [
     {
       type: "row",

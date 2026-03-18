@@ -74,8 +74,9 @@ export const Questions: CollectionConfig = {
       required: false,
     },
     {
-      name: "correctAnswer",
-      label: "Respuesta correcta",
+      name: "correctAnswers",
+      label:
+        "Respuestas correctas (para preguntas anuladas, marcar como ANULADA)",
       type: "select",
       options: [
         { label: "A", value: "A" },

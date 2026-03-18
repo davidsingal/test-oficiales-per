@@ -157,7 +157,7 @@ export interface Question {
   topic: number | Topic;
   questionText: string;
   explanation?: string | null;
-  correctAnswer?: ('A' | 'B' | 'C' | 'D' | 'ANULADA')[] | null;
+  correctAnswers?: ('A' | 'B' | 'C' | 'D' | 'ANULADA')[] | null;
   answers?: (number | Answer)[] | null;
   updatedAt: string;
   createdAt: string;
@@ -303,7 +303,7 @@ export interface QuestionsSelect<T extends boolean = true> {
   topic?: T;
   questionText?: T;
   explanation?: T;
-  correctAnswer?: T;
+  correctAnswers?: T;
   answers?: T;
   updatedAt?: T;
   createdAt?: T;
