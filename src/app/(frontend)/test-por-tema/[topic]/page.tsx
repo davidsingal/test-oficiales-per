@@ -57,7 +57,7 @@ const TopicPage: NextPage<PageProps> = async ({ params }) => {
       <div className="space-y-10">
         {questionsData.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-xs text-muted-foreground">
+            <div className="px-4 text-sm text-muted-foreground">
               Convocatoria {question.year} {question.month} - Test 0
               {question.testNumber}
             </div>

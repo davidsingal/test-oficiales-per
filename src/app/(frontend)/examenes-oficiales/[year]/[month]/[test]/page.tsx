@@ -44,7 +44,7 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-xs text-muted-foreground">
+            <div className="px-4 text-sm text-muted-foreground">
               <span>{getTopicName(question.topic)}</span>
             </div>
             <QuestionItem data={question} />
