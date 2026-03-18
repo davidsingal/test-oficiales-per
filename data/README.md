@@ -19,7 +19,8 @@ command -v pdftotext
 - `outputs/`: generated CSV files
 - `extract-txt-from-pdf.sh`: converts PDFs to TXT
 - `generate-exams-csv.sh`: generates `questions.csv` and `answers.csv` from extracted exam TXT files
-- `run-data-pipeline.sh`: runs both steps in order
+- `generate-corrections-csv.sh`: generates `corrections.csv` from extracted answer-template TXT files
+- `run-data-pipeline.sh`: runs all steps in order
 
 ## Generate Data (Single Command)
 
@@ -32,9 +33,9 @@ From this `data/` folder:
 This will:
 
 1. Convert PDFs from `origin/` into TXT files under `extracted/`
-2. Generate:
-   - `outputs/questions.csv`
-   - `outputs/answers.csv`
+2. Generate `outputs/questions.csv`
+3. Generate `outputs/answers.csv`
+4. Generate `outputs/corrections.csv`
 
 ## Run Steps Manually
 
@@ -48,6 +49,12 @@ This will:
 
 ```bash
 ./generate-exams-csv.sh extracted/exams outputs/questions.csv outputs/answers.csv
+```
+
+3. Generate corrections CSV:
+
+```bash
+./generate-corrections-csv.sh extracted/answers outputs/corrections.csv
 ```
 
 ## Notes

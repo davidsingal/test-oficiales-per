@@ -157,7 +157,7 @@ export interface Question {
   topic: number | Topic;
   questionText: string;
   explanation?: string | null;
-  correctAnswer?: ('A' | 'B' | 'C' | 'D') | null;
+  correctAnswer?: ('A' | 'B' | 'C' | 'D' | 'ANULADA')[] | null;
   answers?: (number | Answer)[] | null;
   updatedAt: string;
   createdAt: string;

@@ -82,7 +82,9 @@ export const Questions: CollectionConfig = {
         { label: "B", value: "B" },
         { label: "C", value: "C" },
         { label: "D", value: "D" },
+        { label: "ANULADA", value: "ANULADA" },
       ],
+      hasMany: true,
       required: false,
     },
     {
