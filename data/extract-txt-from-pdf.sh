@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-INPUT_DIR="${1:-$SCRIPT_DIR/origin}"
+INPUT_DIR="${1:-$SCRIPT_DIR/../public}"
 OUTPUT_DIR="${2:-$SCRIPT_DIR/extracted}"
 
 if ! command -v pdftotext >/dev/null 2>&1; then

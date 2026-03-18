@@ -5,8 +5,8 @@
 .pnpm-debug.log*
 
 # data files
-/data/**/*.txt
-/data/**/*.pdf
+/data/extracted
+/data/outputs
 
 # next.js
 /.next/

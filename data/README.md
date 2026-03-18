@@ -14,11 +14,12 @@ command -v pdftotext
 
 ## Folder Structure
 
-- `origin/`: source PDFs
-- `extracted/`: generated `.txt` files (same structure as `origin/`)
+- `../public/examenes-oficiales/`: source exam PDFs
+- `../public/correcciones/`: source correction PDFs
+- `extracted/`: generated `.txt` files
 - `outputs/`: generated CSV files
 - `extract-txt-from-pdf.sh`: converts PDFs to TXT
-- `generate-exams-csv.sh`: generates `questions.csv` and `answers.csv` from extracted exam TXT files
+- `generate-exams-answers-csv.sh`: generates `questions.csv` and `answers.csv` from extracted exam TXT files
 - `generate-corrections-csv.sh`: generates `corrections.csv` from extracted answer-template TXT files
 - `run-data-pipeline.sh`: runs all steps in order
 
@@ -32,7 +33,7 @@ From this `data/` folder:
 
 This will:
 
-1. Convert PDFs from `origin/` into TXT files under `extracted/`
+1. Convert PDFs from `../public/` into TXT files under `extracted/`
 2. Generate `outputs/questions.csv`
 3. Generate `outputs/answers.csv`
 4. Generate `outputs/corrections.csv`
@@ -42,22 +43,21 @@ This will:
 1. Extract TXT:
 
 ```bash
-./extract-txt-from-pdf.sh origin extracted
+./extract-txt-from-pdf.sh ../public extracted
 ```
 
 2. Generate CSV:
 
 ```bash
-./generate-exams-csv.sh extracted/exams outputs/questions.csv outputs/answers.csv
+./generate-exams-answers-csv.sh extracted/examenes-oficiales outputs/questions.csv outputs/answers.csv
 ```
 
 3. Generate corrections CSV:
 
 ```bash
-./generate-corrections-csv.sh extracted/answers outputs/corrections.csv
+./generate-corrections-csv.sh extracted/correcciones outputs/corrections.csv
 ```
 
 ## Notes
 
-- `answers.csv` leaves `is_correct` empty on purpose.
 - Scripts overwrite output CSV files on each run.

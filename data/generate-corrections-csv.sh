@@ -57,8 +57,10 @@ while IFS= read -r file; do
     }
     function normalize_answer(raw, cleaned) {
       cleaned = toupper(trim(raw))
+      # Any explanatory text after ANULADA should still map to ANULADA.
+      if (cleaned ~ /^ANULADA[[:space:]]*(\(|$)/) return "ANULADA"
       gsub(/[[:space:]]+/, "", cleaned)
-      gsub(/[.,;:]/, "", cleaned)
+      gsub(/[.,;:()]/, "", cleaned)
       if (cleaned ~ /^[ABCD]$/) return cleaned
       if (cleaned ~ /^ANULADA/) return "ANULADA"
       if (cleaned ~ /^[ABCD]Y[ABCD]$/) return substr(cleaned, 1, 1) substr(cleaned, 3, 1)
