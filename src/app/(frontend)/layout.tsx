@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simulador de Exámenes PER",
-  description: "Aplicación para practicar exámenes tipo test",
+  title: "Exámenes oficiales PER",
+  description:
+    "Aplicación para Práctica de Exámenes de Patrón de Embarcaciones de Recreo (PER) en España",
 };
 
 export default function RootLayout({

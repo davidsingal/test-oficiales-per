@@ -91,7 +91,8 @@ const ExamenesOficialesPage: NextPage = async () => {
         </p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
           <li>45 preguntas tipo test</li>
-          <li>Tiempo total: 45 minutos</li>
+          <li>Corrección automática inmediata</li>
+          <li>Incluye ejercicios de Carta de navegación</li>
         </ul>
       </section>
       <section className="grid gap-4 grid-cols-1 md:grid-cols-2">

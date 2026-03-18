@@ -25,8 +25,7 @@ const TestPorTemaPage: NextPage = async () => {
         </p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
           <li>10 preguntas por intento</li>
-          <li>10 minutos de tiempo límite</li>
-          <li>Resultados al finalizar el intento</li>
+          <li>Corrección automática inmediata</li>
           <li>No incluye preguntas de Carta de navegación</li>
         </ul>
       </section>
