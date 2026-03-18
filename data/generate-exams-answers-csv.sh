@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-INPUT_DIR="${1:-extracted/examenes-oficiales}"
-QUESTIONS_CSV="${2:-outputs/questions.csv}"
-ANSWERS_CSV="${3:-outputs/answers.csv}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+INPUT_DIR="${1:-$SCRIPT_DIR/extracted/examenes-oficiales}"
+QUESTIONS_CSV="${2:-$SCRIPT_DIR/outputs/questions.csv}"
+ANSWERS_CSV="${3:-$SCRIPT_DIR/outputs/answers.csv}"
 
 if [[ ! -d "$INPUT_DIR" ]]; then
   echo "Error: input directory '$INPUT_DIR' does not exist." >&2
