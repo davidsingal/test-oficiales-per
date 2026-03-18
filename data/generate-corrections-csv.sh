@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-INPUT_DIR="${1:-$SCRIPT_DIR/extracted/answers}"
+INPUT_DIR="${1:-$SCRIPT_DIR/extracted/correcciones}"
 OUTPUT_CSV="${2:-$SCRIPT_DIR/outputs/corrections.csv}"
 
 if [[ ! -d "$INPUT_DIR" ]]; then
@@ -18,39 +18,19 @@ trap 'rm -f "$tmp_csv"' EXIT
 
 echo "question_number,answer_id,exam_year,exam_month,exam_number" > "$tmp_csv"
 
-month_to_number() {
-  local month="$1"
-  case "$month" in
-    enero) echo "01" ;;
-    febrero) echo "02" ;;
-    marzo) echo "03" ;;
-    abril) echo "04" ;;
-    mayo) echo "05" ;;
-    junio) echo "06" ;;
-    julio) echo "07" ;;
-    agosto) echo "08" ;;
-    septiembre|setiembre) echo "09" ;;
-    octubre) echo "10" ;;
-    noviembre) echo "11" ;;
-    diciembre) echo "12" ;;
-    *) echo "" ;;
-  esac
-}
-
 while IFS= read -r file; do
   base_name="$(basename "$file" .txt)"
 
-  if [[ "$base_name" =~ ^([^_]+)_([0-9]{4})_ ]]; then
-    month_token="${BASH_REMATCH[1]}"
-    exam_year="${BASH_REMATCH[2]}"
+  if [[ "$base_name" =~ ^([0-9]{4})_([0-9]{2})$ ]]; then
+    exam_year="${BASH_REMATCH[1]}"
+    exam_month="${BASH_REMATCH[2]}"
   else
     echo "WARN: skipping '$base_name.txt' (cannot extract month/year from filename)." >&2
     continue
   fi
 
-  exam_month="$(month_to_number "${month_token,,}")"
-  if [[ -z "$exam_month" ]]; then
-    echo "WARN: skipping '$base_name.txt' (unknown month token '$month_token')." >&2
+  if ((10#$exam_month < 1 || 10#$exam_month > 12)); then
+    echo "WARN: skipping '$base_name.txt' (invalid month '$exam_month')." >&2
     continue
   fi
 
@@ -82,6 +62,7 @@ while IFS= read -r file; do
       if (cleaned ~ /^[ABCD]$/) return cleaned
       if (cleaned ~ /^ANULADA/) return "ANULADA"
       if (cleaned ~ /^[ABCD]Y[ABCD]$/) return substr(cleaned, 1, 1) substr(cleaned, 3, 1)
+      if (cleaned ~ /^[ABCD][ABCD]$/) return cleaned
       return ""
     }
     function flush_exam(   i) {

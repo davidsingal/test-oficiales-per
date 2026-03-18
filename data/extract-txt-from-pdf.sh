@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-INPUT_DIR="${1:-origin}"
-OUTPUT_DIR="${2:-extracted}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+INPUT_DIR="${1:-$SCRIPT_DIR/origin}"
+OUTPUT_DIR="${2:-$SCRIPT_DIR/extracted}"
 
 if ! command -v pdftotext >/dev/null 2>&1; then
   echo "Error: pdftotext is not installed or not in PATH." >&2
