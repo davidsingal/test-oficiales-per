@@ -92,7 +92,7 @@ const QuestionItem: FC<{ data: Question }> = ({ data }) => {
                 id={`answer-${answer.id}`}
               />
               <Label htmlFor={`answer-${answer.id}`} className="leading-5">
-                {answer.answerText}
+                {answer.answerId}. {answer.answerText}
               </Label>
             </div>
           ))}
