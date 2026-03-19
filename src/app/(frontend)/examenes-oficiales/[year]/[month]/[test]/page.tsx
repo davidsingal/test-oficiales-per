@@ -1,12 +1,13 @@
+import { Suspense } from "react";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import Link from "next/link";
 import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
+import ShareQuestionButton from "@/components/share-question-button";
 import QuestionsLoader from "@/components/questions-loader";
 import Report from "@/components/report";
 import type { NextPage } from "next";
-import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
 type PageProps = {
@@ -65,8 +66,11 @@ const OfficialExamQuestions = async ({
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-sm text-muted-foreground">
-              <span>{getTopicName(question.topic)}</span>
+            <div className="px-4 text-sm text-muted-foreground flex justify-between items-center">
+              <div>{getTopicName(question.topic)}</div>
+              <div>
+                <ShareQuestionButton questionId={question.id} />
+              </div>
             </div>
             <QuestionItem data={question} />
           </div>
