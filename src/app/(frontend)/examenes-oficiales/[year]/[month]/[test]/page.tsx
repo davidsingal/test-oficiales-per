@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { LinkIcon } from "lucide-react";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import Link from "next/link";
@@ -93,8 +94,9 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <BackButton />
       <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
-      <div className="text-sm text-muted-foreground">
+      <div className="text-sm">
         <Link href={originalExamHref} target="_blank" rel="noopener noreferrer">
+          <LinkIcon className="h-4 w-4 inline-block mr-2" />
           Ver examen original (PDF)
         </Link>
       </div>

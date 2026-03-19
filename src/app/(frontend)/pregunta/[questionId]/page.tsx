@@ -1,7 +1,6 @@
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { notFound } from "next/navigation";
-import { BackButton } from "@/components/back-button";
 import QuestionItem from "@/components/question-item";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
