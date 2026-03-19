@@ -82,10 +82,19 @@ const Report = ({ totalQuestions, topicByQuestionId }: ReportProps) => {
           <div className="space-y-1 rounded-md border p-3">
             <p
               className={
-                officialEvaluation.passed ? "text-green-700" : "text-red-700"
+                officialEvaluation.passed
+                  ? stats.left === 0
+                    ? "text-green-700"
+                    : "text-amber-700"
+                  : "text-red-700"
               }
             >
-              Resultado oficial: {officialEvaluation.passed ? "APTO" : "NO APTO"}
+              Resultado oficial:{" "}
+              {officialEvaluation.passed
+                ? stats.left === 0
+                  ? "APTO"
+                  : "PENDIENTE"
+                : "NO APTO"}
             </p>
             <p>
               Total: {officialEvaluation.counts.total}/
