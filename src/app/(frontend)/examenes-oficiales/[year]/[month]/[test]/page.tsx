@@ -46,6 +46,7 @@ const OfficialExamQuestions = async ({
 }) => {
   const questionsData = await payload.find({
     collection: "questions",
+    depth: 1,
     where: {
       year: {
         equals: selectedYear,
@@ -61,9 +62,23 @@ const OfficialExamQuestions = async ({
     pagination: false,
   });
 
+  const topicByQuestionId = questionsData.docs.reduce<Record<number, string>>(
+    (acc, question) => {
+      if (typeof question.topic === "object" && question.topic !== null) {
+        acc[question.id] = question.topic.name;
+      }
+
+      return acc;
+    },
+    {},
+  );
+
   return (
     <>
-      <Report totalQuestions={questionsData.docs.length} />
+      <Report
+        totalQuestions={questionsData.docs.length}
+        topicByQuestionId={topicByQuestionId}
+      />
       <div className="space-y-10">
         {questionsData.docs.map((question) => (
           <div key={`question-${question.id}`} className="space-y-2">
@@ -93,7 +108,7 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <BackButton />
-      <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test ${selectedTest}`}</h1>
+      <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test 0${selectedTest}`}</h1>
       <div className="text-sm">
         <Link href={originalExamHref} target="_blank" rel="noopener noreferrer">
           <LinkIcon className="h-4 w-4 inline-block mr-2" />
