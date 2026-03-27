@@ -221,8 +221,8 @@ async function main(): Promise<void> {
     projectRoot,
     process.argv[2] ?? "data/outputs/corrections.csv",
   );
-  const modeArg = normalizeText(process.argv[3] ?? "merge").toLowerCase();
-  const mode: "merge" | "append" = modeArg === "append" ? "append" : "merge";
+  const modeArg = normalizeText(process.argv[3] ?? "replace").toLowerCase();
+  const mode: "replace" | "append" = modeArg === "append" ? "append" : "replace";
 
   console.log(`Reading corrections CSV: ${correctionsCsvPath}`);
   console.log(`Import mode: ${mode}`);
@@ -311,38 +311,39 @@ async function main(): Promise<void> {
     page += 1;
   }
 
-  let updatedCount = 0;
+  let replacedCount = 0;
   let unchangedCount = 0;
+  let clearedCount = 0;
   let missingQuestionCount = 0;
   let skippedDuplicateQuestionCount = 0;
 
-  for (const [questionKey, answerIdsSet] of desiredAnswersByQuestionKey.entries()) {
+  for (const [questionKey, question] of existingQuestionsByKey.entries()) {
     if (duplicatedQuestionKeys.has(questionKey)) {
       skippedDuplicateQuestionCount += 1;
       continue;
     }
 
-    const question = existingQuestionsByKey.get(questionKey);
-    if (!question) {
-      missingQuestionCount += 1;
-      continue;
-    }
-
-    const desired = answerIdsSet.has("ANULADA")
-      ? ["ANULADA"]
-      : ANSWER_ORDER.filter((answerId) => answerIdsSet.has(answerId));
+    const answerIdsSet = desiredAnswersByQuestionKey.get(questionKey);
     const current = normalizeStoredCorrectAnswers(question.correctAnswers);
 
-    if (mode === "append" && current.length > 0) {
-      unchangedCount += 1;
-      continue;
+    if (mode === "append") {
+      if (!answerIdsSet || current.length > 0) {
+        unchangedCount += 1;
+        continue;
+      }
     }
+
+    const desired = answerIdsSet
+      ? answerIdsSet.has("ANULADA")
+        ? ["ANULADA"]
+        : ANSWER_ORDER.filter((answerId) => answerIdsSet.has(answerId))
+      : [];
 
     const isSame =
       desired.length === current.length &&
       desired.every((value, index) => value === current[index]);
 
-    if (isSame) {
+    if (mode === "append" && isSame) {
       unchangedCount += 1;
       continue;
     }
@@ -355,13 +356,28 @@ async function main(): Promise<void> {
       },
     });
 
-    updatedCount += 1;
+    if (desired.length === 0) {
+      clearedCount += 1;
+    } else {
+      replacedCount += 1;
+    }
+  }
+
+  for (const questionKey of desiredAnswersByQuestionKey.keys()) {
+    if (duplicatedQuestionKeys.has(questionKey)) {
+      continue;
+    }
+
+    if (!existingQuestionsByKey.has(questionKey)) {
+      missingQuestionCount += 1;
+    }
   }
 
   console.log("Corrections import finished.");
   console.log(`- Total CSV rows: ${csvRows.length}`);
   console.log(`- Parsed question keys: ${desiredAnswersByQuestionKey.size}`);
-  console.log(`- Updated questions: ${updatedCount}`);
+  console.log(`- Replaced questions from CSV: ${replacedCount}`);
+  console.log(`- Cleared questions missing in CSV: ${clearedCount}`);
   console.log(`- Questions unchanged: ${unchangedCount}`);
   console.log(`- Missing questions in DB: ${missingQuestionCount}`);
   console.log(
