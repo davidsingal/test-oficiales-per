@@ -13,7 +13,6 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "payload": "payload",
-    "format:corrections": "bash ./data/format-corrections-txt.sh",
     "create:topics": "payload run scripts/create-topics.ts",
     "import:questions": "payload run scripts/import-questions.ts",
     "import:answers": "payload run scripts/import-answers.ts",
