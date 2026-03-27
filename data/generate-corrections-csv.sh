@@ -104,11 +104,11 @@ while IFS= read -r file; do
 
       if (line ~ /^[0-9][0-9]?$/) next
 
-      if (line ~ /^[0-9][0-9]?[[:space:]]*[[:alpha:]].*$/) {
+      if (line ~ /^[0-9][0-9]?[.]?[[:space:]]*[[:alpha:]].*$/) {
         qnum = line
         sub(/[^0-9].*$/, "", qnum)
         answer_raw = line
-        sub(/^[0-9][0-9]?[[:space:]]*/, "", answer_raw)
+        sub(/^[0-9][0-9]?[.]?[[:space:]]*/, "", answer_raw)
         answer_id = normalize_answer(answer_raw)
         if (answer_id != "") {
           push_answer(qnum + 0, answer_id)

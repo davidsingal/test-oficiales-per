@@ -19,6 +19,7 @@ command -v pdftotext
 - `extracted/`: generated `.txt` files
 - `outputs/`: generated CSV files
 - `extract-txt-from-pdf.sh`: converts PDFs to TXT
+- `format-corrections-txt.sh`: rewrites correction TXT files into `N. ANSWER` format
 - `generate-exams-answers-csv.sh`: generates `questions.csv` and `answers.csv` from extracted exam TXT files
 - `generate-corrections-csv.sh`: generates `corrections.csv` from extracted answer-template TXT files
 - `run-data-pipeline.sh`: runs all steps in order
@@ -52,7 +53,13 @@ This will:
 ./generate-exams-answers-csv.sh extracted/examenes-oficiales outputs/questions.csv outputs/answers.csv
 ```
 
-3. Generate corrections CSV:
+3. Normalize correction TXT files:
+
+```bash
+./format-corrections-txt.sh extracted/correcciones
+```
+
+4. Generate corrections CSV:
 
 ```bash
 ./generate-corrections-csv.sh extracted/correcciones outputs/corrections.csv
