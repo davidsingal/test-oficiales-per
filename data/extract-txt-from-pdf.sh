@@ -24,7 +24,7 @@ while IFS= read -r -d '' pdf_file; do
   out_dir="$(dirname "$out_file")"
 
   mkdir -p "$out_dir"
-  pdftotext "$pdf_file" "$out_file"
+  pdftotext -nopgbrk -raw -enc UTF-8 -eol unix "$pdf_file" "$out_file"
   count=$((count + 1))
 done < <(find "$INPUT_DIR" -type f -name '*.pdf' -print0)
 

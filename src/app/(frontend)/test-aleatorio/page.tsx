@@ -9,6 +9,8 @@ import type { NextPage } from "next";
 import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
+export const dynamic = "force-dynamic";
+
 const payload = await getPayload({ config });
 
 const getTopicName = (topic: Question["topic"]) =>
