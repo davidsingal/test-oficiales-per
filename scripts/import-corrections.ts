@@ -255,7 +255,10 @@ async function main(): Promise<void> {
     }
     const prevAnswers =
       (question.correctAnswers as string[] | null | undefined) ?? [];
-    const nextAnswers = row.answer_id.split("").filter(Boolean); // e.g. "BD" -> ["B", "D"]
+    const nextAnswers =
+      row.answer_id === "ANULADA"
+        ? ["ANULADA"]
+        : row.answer_id.split("").filter(Boolean); // e.g. "BD" -> ["B", "D"]
 
     const prevSorted = [...prevAnswers].sort().join("");
     const nextSorted = [...nextAnswers].sort().join("");
@@ -278,7 +281,7 @@ async function main(): Promise<void> {
       await payload.update({
         collection: "questions",
         id: question.id,
-        data: { correctAnswer: nextAnswers },
+        data: { correctAnswers: nextAnswers },
       });
       updatedCount += 1;
       reportLines.push(
