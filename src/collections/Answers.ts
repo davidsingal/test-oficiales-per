@@ -2,6 +2,11 @@ import type { CollectionConfig } from "payload";
 
 export const Answers: CollectionConfig = {
   slug: "answers",
+  // Exam content is public: anyone can read it (the site and the REST API),
+  // only signed-in admins can change it.
+  access: {
+    read: () => true,
+  },
   admin: {
     useAsTitle: "answerText",
   },

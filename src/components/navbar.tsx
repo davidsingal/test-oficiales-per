@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="border-b">
       <nav
         className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between"
-        aria-label="Navegacion principal"
+        aria-label="Navegación principal"
       >
         <Link href="/" className="text-sm font-semibold">
           PER

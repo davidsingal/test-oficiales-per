@@ -7,7 +7,7 @@ const Loading = () => {
         aria-live="polite"
       >
         <span className="size-4 animate-spin rounded-full border-2 border-muted-foreground/25 border-t-foreground" />
-        <span>Cargando página...</span>
+        <span>Cargando…</span>
       </div>
     </main>
   );

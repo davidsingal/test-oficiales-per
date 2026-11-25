@@ -34,7 +34,7 @@ const ShareQuestionButton = ({ questionId }: { questionId: number }) => {
   return (
     <Button size="sm" variant="outline" onClick={handleShare}>
       <ShareIcon />
-      {isCopied ? "Copiado" : "Compartir"}
+      {isCopied ? "Enlace copiado" : "Compartir"}
     </Button>
   );
 };

@@ -69,7 +69,7 @@ const QuizResults = ({
     >
       <div className="space-y-1">
         <h2 id="quiz-results-title" className="text-sm text-muted-foreground">
-          {timedOut ? "Se acabó el tiempo · Resultado" : "Resultado"}
+          {timedOut ? "Tiempo agotado · Resultado" : "Resultado"}
         </h2>
         {evaluation ? (
           <p
@@ -85,14 +85,14 @@ const QuizResults = ({
         ) : (
           <p className="text-3xl font-semibold">
             {summary.correct} de {scored}{" "}
-            {scored === 1 ? "correcta" : "correctas"}
+            {scored === 1 ? "acierto" : "aciertos"}
           </p>
         )}
         <p className="text-sm text-muted-foreground">
           {[
-            countLabel(summary.correct, "correcta", "correctas"),
-            countLabel(summary.incorrect, "fallada", "falladas"),
-            summary.unanswered > 0 && `${summary.unanswered} sin responder`,
+            countLabel(summary.correct, "acierto", "aciertos"),
+            countLabel(summary.incorrect, "fallo", "fallos"),
+            summary.unanswered > 0 && `${summary.unanswered} en blanco`,
             summary.neutral > 0 &&
               countLabel(summary.neutral, "anulada", "anuladas"),
           ]
@@ -133,7 +133,7 @@ const QuizResults = ({
           </table>
           {summary.unanswered > 0 && (
             <p className="text-xs text-muted-foreground">
-              Las preguntas sin responder cuentan como fallos.
+              Las preguntas en blanco cuentan como fallos.
             </p>
           )}
         </div>
@@ -160,7 +160,7 @@ const QuizResults = ({
             onClick={onNewTest}
             disabled={isLoadingNewTest}
           >
-            {isLoadingNewTest ? "Cargando…" : "Nuevo test"}
+            {isLoadingNewTest ? "Cargando…" : "Otro test"}
           </Button>
         )}
       </div>

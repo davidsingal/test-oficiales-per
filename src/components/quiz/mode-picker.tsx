@@ -3,15 +3,28 @@
 import { ClipboardCheckIcon, TimerIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { QuizMode } from "@/lib/quiz";
+import type { ExamResult } from "@/lib/progress-store";
 
 type ModePickerProps = {
   recommended: QuizMode;
   /** Minutes allowed in simulacro mode, when the test is timed. */
   timeLimitMinutes?: number;
+  /** The previous attempt at this test, if any. */
+  lastResult?: ExamResult;
   onPick: (mode: QuizMode) => void;
 };
 
-const ModePicker = ({ recommended, timeLimitMinutes, onPick }: ModePickerProps) => {
+const dateFormatter = new Intl.DateTimeFormat("es-ES", {
+  day: "numeric",
+  month: "long",
+});
+
+const ModePicker = ({
+  recommended,
+  timeLimitMinutes,
+  lastResult,
+  onPick,
+}: ModePickerProps) => {
   const modes: {
     mode: QuizMode;
     title: string;
@@ -22,21 +35,38 @@ const ModePicker = ({ recommended, timeLimitMinutes, onPick }: ModePickerProps) 
       mode: "practica",
       title: "Práctica",
       description:
-        "Ves si aciertas nada más responder cada pregunta, con la respuesta correcta.",
+        "Sabes al momento si has acertado y cuál es la respuesta correcta.",
       Icon: ClipboardCheckIcon,
     },
     {
       mode: "simulacro",
-      title: "Simulacro",
+      title: "Simulación",
       description: timeLimitMinutes
-        ? `Como el examen real: ${timeLimitMinutes} minutos, puedes cambiar respuestas y ves el resultado al entregar.`
-        : "Como el examen real: puedes cambiar respuestas y ves el resultado al entregar.",
+        ? `Como el día del examen: ${timeLimitMinutes} minutos, puedes cambiar las respuestas y no ves la corrección hasta que entregas.`
+        : "Como el día del examen: puedes cambiar las respuestas y no ves la corrección hasta que entregas.",
       Icon: TimerIcon,
     },
   ];
 
   return (
     <section aria-labelledby="mode-picker-title" className="space-y-3">
+      {lastResult && (
+        <p className="text-sm text-muted-foreground">
+          La última vez ({dateFormatter.format(lastResult.at)},{" "}
+          {lastResult.mode === "simulacro" ? "simulación" : "práctica"}):{" "}
+          <span
+            className={cn(
+              "font-medium",
+              lastResult.passed
+                ? "text-green-700 dark:text-green-400"
+                : "text-red-700 dark:text-red-400",
+            )}
+          >
+            {lastResult.passed ? "APTO" : "NO APTO"}
+          </span>
+          , con {lastResult.errors} {lastResult.errors === 1 ? "fallo" : "fallos"}.
+        </p>
+      )}
       <h2 id="mode-picker-title" className="text-lg font-medium">
         ¿Cómo quieres hacer el test?
       </h2>
@@ -56,7 +86,7 @@ const ModePicker = ({ recommended, timeLimitMinutes, onPick }: ModePickerProps) 
               {title}
               {mode === recommended && (
                 <span className="rounded-full bg-primary px-2 py-0.5 text-xs text-primary-foreground">
-                  Recomendado
+                  Recomendada
                 </span>
               )}
             </span>

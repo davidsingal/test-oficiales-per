@@ -6,7 +6,7 @@ import config from "@payload-config";
 import { BackButton } from "@/components/back-button";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
-import { formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
+import { examKey, formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
 import { monthOrder } from "@/lib/utils";
 import {
   OFFICIAL_EXAM_DURATION_MINUTES,
@@ -68,6 +68,7 @@ const OfficialExamQuestions = async ({
         recommendedMode="simulacro"
         official
         timeLimitMinutes={OFFICIAL_EXAM_DURATION_MINUTES}
+        examKey={examKey(selectedYear, selectedMonth, selectedTest)}
         showTopic
       />
     </>
@@ -96,12 +97,11 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
           Examen oficial · {formatSessionLabel(selectedYear, selectedMonth, selectedTest)}
         </h1>
         <p className="text-muted-foreground">
-          45 preguntas. Para aprobar puedes fallar como máximo{" "}
-          {OFFICIAL_EXAM_ERROR_LIMITS.total}, y no más de{" "}
-          {OFFICIAL_EXAM_ERROR_LIMITS.ripa} de Reglamento (RIPA),{" "}
-          {OFFICIAL_EXAM_ERROR_LIMITS.balizamiento} de Balizamiento ni{" "}
-          {OFFICIAL_EXAM_ERROR_LIMITS.cartaDeNavegacion} de Carta de navegación. En
-          el examen real tienes {OFFICIAL_EXAM_DURATION_MINUTES} minutos.
+          45 preguntas y {OFFICIAL_EXAM_DURATION_MINUTES} minutos. Apruebas con{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.total} fallos como máximo, sin pasar de{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.ripa} en Reglamento (RIPA),{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.balizamiento} en Balizamiento y{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.cartaDeNavegacion} en Carta de navegación.
         </p>
       </section>
       <Suspense fallback={<QuestionsLoader />}>

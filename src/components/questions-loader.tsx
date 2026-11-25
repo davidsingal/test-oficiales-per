@@ -1,4 +1,4 @@
-const QuestionsLoader = ({ message = "Cargando preguntas..." }) => {
+const QuestionsLoader = ({ message = "Cargando preguntas…" }) => {
   return (
     <div
       className="flex items-center justify-center rounded-lg border bg-card px-4 py-6 text-sm text-muted-foreground"

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Exámenes oficiales PER",
   description:
-    "Aplicación para Práctica de Exámenes de Patrón de Embarcaciones de Recreo (PER) en España",
+    "Practica con los exámenes oficiales del Patrón de Embarcaciones de Recreo (PER): por convocatoria, por tema o al azar.",
 };
 
 export default function RootLayout({

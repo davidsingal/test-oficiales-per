@@ -1,20 +1,21 @@
 import Link from "next/link";
+import ProgressOverview from "@/components/progress/progress-overview";
 
 const options = [
   {
     href: "/examenes-oficiales",
     title: "Exámenes oficiales",
-    description: "Selecciona convocatorias anteriores por año, fecha y modelo.",
+    description: "Haz un examen completo de una convocatoria anterior.",
   },
   {
     href: "/test-por-tema",
     title: "Test por tema",
-    description: "Practica por bloques y refuerza contenidos concretos.",
+    description: "Practica un tema concreto, como el RIPA o el balizamiento.",
   },
   {
     href: "/test-aleatorio",
     title: "Test aleatorio",
-    description: "Entrena con combinaciones rápidas y variadas.",
+    description: "10 preguntas al azar para un repaso rápido.",
   },
 ];
 
@@ -23,10 +24,11 @@ export default function HomePage() {
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
         <h1 className="text-3xl font-semibold">
-          Elige tu modalidad de entrenamiento
+          ¿Cómo quieres practicar?
         </h1>
         <p className="text-muted-foreground">
-          Navega por las tres opciones para preparar tu examen.
+          Prepara el examen teórico del PER con las preguntas de los exámenes
+          oficiales.
         </p>
       </section>
 
@@ -45,6 +47,8 @@ export default function HomePage() {
           </Link>
         ))}
       </section>
+
+      <ProgressOverview />
     </main>
   );
 }
