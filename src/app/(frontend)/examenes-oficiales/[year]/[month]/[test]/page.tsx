@@ -45,8 +45,6 @@ const OfficialExamQuestions = async ({
     pagination: false,
   });
 
-  if (questionsData.docs.length === 0) notFound();
-
   const questions = questionsData.docs.map(toQuizQuestion);
   const sourceUrl = questions.find((question) => question.sourceUrl)?.sourceUrl;
 
@@ -88,6 +86,18 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   ) {
     notFound();
   }
+
+  // Checked before the Suspense boundary below: once the question list starts
+  // streaming, a missing exam could only render the 404 page with status 200.
+  const { totalDocs } = await payload.count({
+    collection: "questions",
+    where: {
+      year: { equals: selectedYear },
+      month: { equals: selectedMonth },
+      testNumber: { equals: selectedTest },
+    },
+  });
+  if (totalDocs === 0) notFound();
 
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">

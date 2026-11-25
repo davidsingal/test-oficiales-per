@@ -16,6 +16,33 @@ docker compose down -v       # stop and wipe the local database
 
 Schema changes go through Payload migrations (`pnpm payload migrate:create`, then `pnpm payload migrate`).
 
+Checks:
+
+```bash
+pnpm test     # unit tests (Vitest): scoring and pass/fail rules
+pnpm lint
+```
+
+## The app
+
+Three ways to practise, all with the official answer key:
+
+- **Exámenes oficiales:** a full past exam (45 questions). Two modes, chosen at the
+  start: *Práctica* corrects each answer as you go; *Simulación* works like the real
+  exam (90 minutes, answers can change, correction when you hand in). The result
+  applies the official rules: at most 13 errors in total, 5 in RIPA, 2 in
+  Balizamiento and 2 in Carta de navegación (`src/lib/official-exam-evaluation.ts`).
+- **Test por tema:** 10 random questions from one topic, in Práctica mode. Carta de
+  navegación questions link to the original PDF, since they need the printed chart.
+- **Test aleatorio:** 10 random questions from every topic except Carta de navegación.
+
+Progress lives only in the browser (`localStorage`, see `src/lib/progress-store.ts`):
+unfinished exams can be resumed, exams keep their last result, and `/repaso` builds a
+test from the questions last answered wrong. It can be cleared from the home page.
+
+`/repaso` loads its questions through Payload's REST API, so `questions`, `answers`
+and `topics` are readable without signing in. Writing still requires an admin user.
+
 ## Data pipeline
 
 Fills the database with every PER exam since 2020, its questions, options and correct answers.
