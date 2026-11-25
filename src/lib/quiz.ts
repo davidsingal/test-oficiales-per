@@ -33,6 +33,10 @@ export const formatSessionLabel = (
   testNumber: number,
 ) => `${monthLabels[month]} ${year} · Test ${testNumber}`;
 
+/** Identifies an official test, e.g. "2026/abril/1". Used as the progress key. */
+export const examKey = (year: number, month: string, testNumber: number) =>
+  `${year}/${month}/${testNumber}`;
+
 export const toQuizQuestion = (question: Question): QuizQuestion => ({
   id: question.id,
   number: question.questionNumber,

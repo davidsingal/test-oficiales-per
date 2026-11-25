@@ -54,7 +54,7 @@ const TopicQuestions = async ({ topicName }: { topicName: string }) => {
 
   return (
     <QuizSession
-      // A new draw remounts the session, so "Nuevo test" starts clean.
+      // A new draw remounts the session, so "Otro test" starts clean.
       key={randomIds.join("-")}
       questions={questionsData.map(toQuizQuestion)}
       recommendedMode="practica"
@@ -85,7 +85,7 @@ const TopicPage: NextPage<PageProps> = async ({ params }) => {
         <h1 className="text-3xl font-semibold">{topic.name}</h1>
         <p className="text-muted-foreground">
           {topic.description ||
-            `${QUESTIONS_PER_TEST} preguntas al azar de este tema, sacadas de los exámenes oficiales.`}
+            `${QUESTIONS_PER_TEST} preguntas al azar de este tema, sacadas de exámenes oficiales.`}
         </p>
       </section>
       <Suspense fallback={<QuestionsLoader />}>

@@ -51,7 +51,7 @@ const RandomQuestions = async () => {
 
   return (
     <QuizSession
-      // A new draw remounts the session, so "Nuevo test" starts clean.
+      // A new draw remounts the session, so "Otro test" starts clean.
       key={randomIds.join("-")}
       questions={questionsData.map(toQuizQuestion)}
       recommendedMode="practica"
@@ -70,8 +70,7 @@ const TestAleatorioPage: NextPage = async () => {
         <h1 className="text-3xl font-semibold">Test aleatorio</h1>
         <p className="text-muted-foreground">
           {QUESTIONS_PER_TEST} preguntas al azar de todos los exámenes oficiales,
-          para repasar de forma rápida. No incluye preguntas de Carta de
-          navegación.
+          para un repaso rápido. No incluye la carta de navegación.
         </p>
       </section>
       <Suspense fallback={<QuestionsLoader />}>

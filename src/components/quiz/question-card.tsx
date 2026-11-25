@@ -28,10 +28,12 @@ type QuestionCardProps = {
 const isAnswerLetter = (value: unknown): value is AnswerLetter =>
   value === "A" || value === "B" || value === "C" || value === "D";
 
-const formatLetters = (letters: string[]) =>
-  letters.length > 1
-    ? `${letters.slice(0, -1).join(", ")} y ${letters.at(-1)}`
-    : letters[0];
+/** "La correcta era la A." / "Valían la A y la C." */
+const describeCorrect = (letters: string[]) => {
+  const named = letters.map((letter) => `la ${letter}`);
+  if (named.length === 1) return `La correcta era ${named[0]}.`;
+  return `Valían ${named.slice(0, -1).join(", ")} y ${named.at(-1)}.`;
+};
 
 const Feedback = ({
   question,
@@ -41,32 +43,29 @@ const Feedback = ({
   selected: AnswerLetter | undefined;
 }) => {
   const outcome = getOutcome(question, selected);
-  const correct = formatLetters(question.correctAnswers);
-  const plural = question.correctAnswers.length > 1;
+  const correct = describeCorrect(question.correctAnswers);
 
   switch (outcome) {
     case "correct":
-      return <p className="font-medium text-green-700 dark:text-green-400">Correcta.</p>;
+      return <p className="font-medium text-green-700 dark:text-green-400">¡Correcto!</p>;
     case "incorrect":
       return (
         <p className="font-medium text-red-700 dark:text-red-400">
-          Incorrecta. La respuesta correcta es{" "}
-          {plural ? `${correct} (cualquiera vale)` : `la ${correct}`}.
+          Incorrecto. {correct}
         </p>
       );
     case "unanswered":
       return (
         <p className="font-medium text-amber-700 dark:text-amber-400">
-          Sin responder. La respuesta correcta es{" "}
-          {plural ? `${correct} (cualquiera vale)` : `la ${correct}`}.
+          En blanco. {correct}
         </p>
       );
     case "neutral":
       return (
         <p className="font-medium text-amber-700 dark:text-amber-400">
           {question.correctAnswers.includes("ANULADA")
-            ? "Pregunta anulada por el tribunal: no cuenta para el resultado."
-            : "Esta pregunta no tiene corrección oficial."}
+            ? "Pregunta anulada: no cuenta para el resultado."
+            : "Esta pregunta no tiene respuesta oficial."}
         </p>
       );
   }
