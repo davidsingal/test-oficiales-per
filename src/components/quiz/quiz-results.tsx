@@ -76,8 +76,8 @@ const QuizResults = ({
             className={cn(
               "text-3xl font-semibold",
               evaluation.passed
-                ? "text-green-700 dark:text-green-400"
-                : "text-red-700 dark:text-red-400",
+                ? "text-success"
+                : "text-destructive",
             )}
           >
             {evaluation.passed ? "APTO" : "NO APTO"}
@@ -120,7 +120,7 @@ const QuizResults = ({
                     <td
                       className={cn(
                         "py-1.5 text-right tabular-nums",
-                        exceeded && "font-medium text-red-700 dark:text-red-400",
+                        exceeded && "font-medium text-destructive",
                       )}
                     >
                       {row.errors} / {row.limit}

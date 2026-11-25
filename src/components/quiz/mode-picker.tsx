@@ -58,8 +58,8 @@ const ModePicker = ({
             className={cn(
               "font-medium",
               lastResult.passed
-                ? "text-green-700 dark:text-green-400"
-                : "text-red-700 dark:text-red-400",
+                ? "text-success"
+                : "text-destructive",
             )}
           >
             {lastResult.passed ? "APTO" : "NO APTO"}

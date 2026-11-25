@@ -2,50 +2,60 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+/* Dark mode follows the system setting (Tailwind's default `dark` variant). */
 
+/* Neutrals carry a faint tint of the sea-blue accent (hue 250). */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  color-scheme: light;
+  --background: oklch(0.985 0.004 250);
+  --foreground: oklch(0.17 0.02 255);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.17 0.02 255);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.17 0.02 255);
   /* Accent: deep sea blue (white text on it passes WCAG AA). */
   --primary: oklch(0.45 0.13 250);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --secondary: oklch(0.955 0.01 250);
+  --secondary-foreground: oklch(0.22 0.03 255);
+  --muted: oklch(0.955 0.01 250);
+  --muted-foreground: oklch(0.5 0.025 255);
+  --accent: oklch(0.955 0.01 250);
+  --accent-foreground: oklch(0.22 0.03 255);
+  /* Status colours, dark enough to use as text on the background (AA). */
+  --success: oklch(0.527 0.154 150);
+  --warning: oklch(0.555 0.163 49);
+  --destructive: oklch(0.505 0.213 27.5);
+  --border: oklch(0.91 0.012 250);
+  --input: oklch(0.91 0.012 250);
   --ring: oklch(0.62 0.12 250);
   --radius: 0.625rem;
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.74 0.11 245);
-  --primary-foreground: oklch(0.2 0.03 250);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.6 0.1 245);
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --background: oklch(0.16 0.015 255);
+    --foreground: oklch(0.97 0.005 250);
+    --card: oklch(0.205 0.02 255);
+    --card-foreground: oklch(0.97 0.005 250);
+    --popover: oklch(0.205 0.02 255);
+    --popover-foreground: oklch(0.97 0.005 250);
+    --primary: oklch(0.74 0.11 245);
+    --primary-foreground: oklch(0.2 0.03 250);
+    --secondary: oklch(0.27 0.02 255);
+    --secondary-foreground: oklch(0.97 0.005 250);
+    --muted: oklch(0.27 0.02 255);
+    --muted-foreground: oklch(0.72 0.02 250);
+    --accent: oklch(0.27 0.02 255);
+    --accent-foreground: oklch(0.97 0.005 250);
+    --success: oklch(0.792 0.18 151.7);
+    --warning: oklch(0.828 0.17 84.4);
+    --destructive: oklch(0.704 0.191 22.2);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.6 0.1 245);
+  }
 }
 
 @theme inline {
@@ -64,6 +74,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
   --color-destructive: var(--destructive);
   --color-border: var(--border);
   --color-input: var(--input);
