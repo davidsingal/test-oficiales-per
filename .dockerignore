@@ -10,3 +10,4 @@ data/outputs
 Dockerfile
 docker-compose.yml
 backups
+pipeline

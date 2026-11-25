@@ -20,21 +20,6 @@ const payload = await getPayload({ config });
 const getTopicName = (topic: Question["topic"]) =>
   typeof topic === "object" && topic !== null ? topic.name : "Tema";
 
-const monthToNumber: Record<string, string> = {
-  enero: "01",
-  febrero: "02",
-  marzo: "03",
-  abril: "04",
-  mayo: "05",
-  junio: "06",
-  julio: "07",
-  agosto: "08",
-  septiembre: "09",
-  octubre: "10",
-  noviembre: "11",
-  diciembre: "12",
-};
-
 const OfficialExamQuestions = async ({
   selectedYear,
   selectedMonth,
@@ -73,8 +58,18 @@ const OfficialExamQuestions = async ({
     {},
   );
 
+  const sourceUrl = questionsData.docs.find((question) => question.sourceUrl)?.sourceUrl;
+
   return (
     <>
+      {sourceUrl && (
+        <div className="text-sm">
+          <Link href={sourceUrl} target="_blank" rel="noopener noreferrer">
+            <LinkIcon className="h-4 w-4 inline-block mr-2" />
+            Ver examen original (PDF)
+          </Link>
+        </div>
+      )}
       <Report
         totalQuestions={questionsData.docs.length}
         topicByQuestionId={topicByQuestionId}
@@ -101,20 +96,11 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   const selectedYear = Number(decodeURIComponent(year));
   const selectedMonth = decodeURIComponent(month);
   const selectedTest = Number(decodeURIComponent(test));
-  const monthNumber = monthToNumber[selectedMonth] ?? selectedMonth;
-  const formattedTest = String(selectedTest).padStart(2, "0");
-  const originalExamHref = `/examenes-oficiales/${selectedYear}_${monthNumber}_test_${formattedTest}.pdf`;
 
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <BackButton />
       <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test 0${selectedTest}`}</h1>
-      <div className="text-sm">
-        <Link href={originalExamHref} target="_blank" rel="noopener noreferrer">
-          <LinkIcon className="h-4 w-4 inline-block mr-2" />
-          Ver examen original (PDF)
-        </Link>
-      </div>
       <Suspense fallback={<QuestionsLoader />}>
         <OfficialExamQuestions
           selectedYear={selectedYear}

@@ -5,8 +5,8 @@
 .pnpm-debug.log*
 
 # data files
-/data/extracted
 /data/outputs
+/data/cache
 
 # next.js
 /.next/
@@ -31,3 +31,6 @@ next-env.d.ts
 
 # local database dumps
 /backups
+
+# python
+__pycache__/
