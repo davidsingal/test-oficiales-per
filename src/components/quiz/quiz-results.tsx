@@ -27,6 +27,9 @@ const TRACKED_TOPICS: OfficialExamTrackedTopic[] = [
   "cartaDeNavegacion",
 ];
 
+const countLabel = (count: number, singular: string, plural: string) =>
+  `${count} ${count === 1 ? singular : plural}`;
+
 const QuizResults = ({
   summary,
   timedOut,
@@ -81,15 +84,17 @@ const QuizResults = ({
           </p>
         ) : (
           <p className="text-3xl font-semibold">
-            {summary.correct} de {scored} correctas
+            {summary.correct} de {scored}{" "}
+            {scored === 1 ? "correcta" : "correctas"}
           </p>
         )}
         <p className="text-sm text-muted-foreground">
           {[
-            `${summary.correct} correctas`,
-            `${summary.incorrect} falladas`,
+            countLabel(summary.correct, "correcta", "correctas"),
+            countLabel(summary.incorrect, "fallada", "falladas"),
             summary.unanswered > 0 && `${summary.unanswered} sin responder`,
-            summary.neutral > 0 && `${summary.neutral} anuladas`,
+            summary.neutral > 0 &&
+              countLabel(summary.neutral, "anulada", "anuladas"),
           ]
             .filter(Boolean)
             .join(" · ")}
