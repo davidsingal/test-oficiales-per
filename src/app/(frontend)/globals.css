@@ -97,7 +97,14 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply flex flex-col bg-background text-foreground font-sans;
+    /* A soft sea-blue glow behind the top of every page. */
+    background-image: radial-gradient(
+      ellipse 80% 320px at 50% 0,
+      color-mix(in oklch, var(--primary) 10%, transparent),
+      transparent
+    );
+    background-repeat: no-repeat;
   }
 
   /* Geist reads loose at display sizes; balance avoids one-word last lines. */
@@ -114,4 +121,19 @@
   p {
     text-wrap: pretty;
   }
+}
+
+/* A panel that sits on the page: cards, lists, the progress box. */
+@utility surface {
+  @apply rounded-xl border bg-card text-card-foreground shadow-xs;
+}
+
+/* A whole panel that is a link or button. */
+@utility surface-link {
+  @apply surface transition-[border-color,box-shadow] outline-none hover:border-primary/40 hover:shadow-sm focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+/* The tinted square behind a tile's icon. */
+@utility icon-badge {
+  @apply inline-flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary [&_svg]:size-4.5;
 }

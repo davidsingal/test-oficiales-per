@@ -41,7 +41,7 @@ const ProgressOverview = () => {
     .sort(([, a], [, b]) => (b.inProgress?.updatedAt ?? 0) - (a.inProgress?.updatedAt ?? 0));
 
   return (
-    <section aria-labelledby="progress-title" className="space-y-4 rounded-xl border p-4">
+    <section aria-labelledby="progress-title" className="surface space-y-4 p-4 sm:p-5">
       <div className="space-y-1">
         <h2 id="progress-title" className="text-lg font-semibold">
           Tu progreso

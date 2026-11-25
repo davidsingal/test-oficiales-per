@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, FileTextIcon, LayersIcon, ShuffleIcon } from "lucide-react";
 import ProgressOverview from "@/components/progress/progress-overview";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { getExamSessions } from "@/lib/exam-sessions";
@@ -12,16 +12,19 @@ const modes = [
     href: "/examenes-oficiales",
     title: "Exámenes oficiales",
     description: "Haz un examen completo de una convocatoria anterior.",
+    Icon: FileTextIcon,
   },
   {
     href: "/test-por-tema",
     title: "Test por tema",
     description: "Practica un tema concreto, como el RIPA o el balizamiento.",
+    Icon: LayersIcon,
   },
   {
     href: "/test-aleatorio",
     title: "Test aleatorio",
     description: "10 preguntas al azar para un repaso rápido.",
+    Icon: ShuffleIcon,
   },
 ];
 
@@ -30,13 +33,16 @@ export default async function HomePage() {
   const latestTest = latest?.testNumbers[0];
 
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-10 px-4 py-8">
-      <section className="space-y-4">
-        <div className="space-y-2">
-          <h1 className="text-3xl font-semibold sm:text-4xl">
+    <main className="mx-auto w-full max-w-5xl space-y-10 px-4 py-8 sm:py-12">
+      <section className="space-y-5">
+        <div className="space-y-3">
+          <p className="text-sm font-medium text-primary">
+            Patrón de Embarcaciones de Recreo
+          </p>
+          <h1 className="text-3xl font-semibold sm:text-5xl">
             Prepara el examen teórico del PER
           </h1>
-          <p className="max-w-2xl text-muted-foreground">
+          <p className="max-w-2xl text-lg text-muted-foreground">
             Practica con las preguntas de los exámenes oficiales del Patrón de
             Embarcaciones de Recreo, con la corrección oficial y las mismas
             reglas para aprobar.
@@ -65,15 +71,18 @@ export default async function HomePage() {
             <li key={mode.href}>
               <Link
                 href={mode.href}
-                className="group flex h-full items-start justify-between gap-3 rounded-xl border p-4 transition-colors hover:bg-muted"
+                className="group surface-link flex h-full items-start gap-3 p-4"
               >
-                <span className="space-y-1">
+                <span className="icon-badge">
+                  <mode.Icon />
+                </span>
+                <span className="flex-1 space-y-1">
                   <span className="block font-medium">{mode.title}</span>
                   <span className="block text-sm text-muted-foreground">
                     {mode.description}
                   </span>
                 </span>
-                <ChevronRightIcon className="mt-0.5 size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+                <ChevronRightIcon className="mt-0.5 size-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary" />
               </Link>
             </li>
           ))}

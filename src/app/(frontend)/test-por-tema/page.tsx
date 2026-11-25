@@ -47,7 +47,7 @@ const TestPorTemaPage: NextPage = async () => {
           <li key={topic.id}>
             <Link
               href={`/test-por-tema/${encodeURIComponent(topic.name)}`}
-              className="group flex h-full items-center justify-between gap-3 rounded-xl border p-4 transition-colors hover:bg-muted"
+              className="group surface-link flex h-full items-center justify-between gap-3 p-4"
             >
               <span className="space-y-1">
                 <span className="block font-medium">{topic.name}</span>
@@ -61,7 +61,7 @@ const TestPorTemaPage: NextPage = async () => {
                   </span>
                 )}
               </span>
-              <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+              <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-primary" />
             </Link>
           </li>
         ))}

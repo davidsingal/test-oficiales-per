@@ -28,6 +28,12 @@ export default function RootLayout({
       >
         <Navbar />
         <Providers>{children}</Providers>
+        <footer className="mx-auto mt-auto w-full max-w-5xl px-4 pt-6 pb-10 text-sm text-muted-foreground">
+          <p className="border-t pt-6">
+            Preguntas y respuestas de los exámenes oficiales publicados por el
+            Ministerio de Transportes. Tu progreso solo se guarda en este navegador.
+          </p>
+        </footer>
       </body>
       {process.env.NODE_ENV === "production" && (
         <GoogleAnalytics
