@@ -2,11 +2,6 @@
 # Source code is bind-mounted by docker-compose.yml, so only deps are baked in.
 FROM node:26-slim
 
-# poppler-utils provides `pdftotext`, needed by the data/ pipeline scripts.
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends poppler-utils ca-certificates \
-  && rm -rf /var/lib/apt/lists/*
-
 # Corepack is no longer bundled with Node 25+, so install pnpm directly.
 RUN npm install -g pnpm@12.23.0
 

@@ -89,6 +89,16 @@ export const Questions: CollectionConfig = {
       required: false,
     },
     {
+      name: "sourceUrl",
+      label: "PDF original del examen (URL)",
+      type: "text",
+      required: false,
+      admin: {
+        description:
+          "Enlace al PDF oficial, abierto en la página del test. Lo rellena el pipeline de datos.",
+      },
+    },
+    {
       name: "answers",
       label: "Respuestas",
       type: "relationship",

@@ -158,6 +158,10 @@ export interface Question {
   questionText: string;
   explanation?: string | null;
   correctAnswers?: ('A' | 'B' | 'C' | 'D' | 'ANULADA')[] | null;
+  /**
+   * Enlace al PDF oficial, abierto en la página del test. Lo rellena el pipeline de datos.
+   */
+  sourceUrl?: string | null;
   answers?: (number | Answer)[] | null;
   updatedAt: string;
   createdAt: string;
@@ -305,6 +309,7 @@ export interface QuestionsSelect<T extends boolean = true> {
   questionText?: T;
   explanation?: T;
   correctAnswers?: T;
+  sourceUrl?: T;
   answers?: T;
   updatedAt?: T;
   createdAt?: T;
