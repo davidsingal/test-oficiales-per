@@ -23,8 +23,8 @@ const ExamStatus = ({ examKey }: { examKey: string }) => {
       className={cn(
         "rounded-full px-2 py-0.5 text-xs font-medium",
         record.last.passed
-          ? "bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-400"
-          : "bg-red-50 text-red-700 dark:bg-red-950/40 dark:text-red-400",
+          ? "bg-success/10 text-success"
+          : "bg-destructive/10 text-destructive",
       )}
     >
       {record.last.passed ? "APTO" : "NO APTO"}

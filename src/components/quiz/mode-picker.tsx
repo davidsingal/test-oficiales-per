@@ -1,6 +1,6 @@
 "use client";
 
-import { ClipboardCheckIcon, TimerIcon } from "lucide-react";
+import { ArrowRightIcon, ClipboardCheckIcon, TimerIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { QuizMode } from "@/lib/quiz";
 import type { ExamResult } from "@/lib/progress-store";
@@ -58,8 +58,8 @@ const ModePicker = ({
             className={cn(
               "font-medium",
               lastResult.passed
-                ? "text-green-700 dark:text-green-400"
-                : "text-red-700 dark:text-red-400",
+                ? "text-success"
+                : "text-destructive",
             )}
           >
             {lastResult.passed ? "APTO" : "NO APTO"}
@@ -67,7 +67,7 @@ const ModePicker = ({
           , con {lastResult.errors} {lastResult.errors === 1 ? "fallo" : "fallos"}.
         </p>
       )}
-      <h2 id="mode-picker-title" className="text-lg font-medium">
+      <h2 id="mode-picker-title" className="text-lg font-semibold">
         ¿Cómo quieres hacer el test?
       </h2>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -77,22 +77,25 @@ const ModePicker = ({
             type="button"
             onClick={() => onPick(mode)}
             className={cn(
-              "flex flex-col gap-2 rounded-xl border p-4 text-left transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50",
-              mode === recommended && "border-primary",
+              "group surface-link flex flex-col gap-2 p-4 text-left",
+              mode === recommended && "border-primary/60 ring-1 ring-primary/20",
             )}
           >
-            <span className="flex items-center gap-2 font-medium">
-              <Icon className="size-4" />
+            <span className="flex items-center gap-3 font-medium">
+              <span className="icon-badge">
+                <Icon />
+              </span>
               {title}
               {mode === recommended && (
-                <span className="rounded-full bg-primary px-2 py-0.5 text-xs text-primary-foreground">
+                <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
                   Recomendada
                 </span>
               )}
             </span>
             <span className="text-sm text-muted-foreground">{description}</span>
-            <span className="mt-auto pt-1 text-sm font-medium underline underline-offset-4">
+            <span className="mt-auto inline-flex items-center gap-1 pt-1 text-sm font-medium text-primary">
               Empezar
+              <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-0.5" />
             </span>
           </button>
         ))}

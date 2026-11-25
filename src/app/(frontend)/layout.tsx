@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Navbar } from "@/components/navbar";
 import "./globals.css";
@@ -7,11 +7,6 @@ import Providers from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -29,10 +24,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         <Navbar />
         <Providers>{children}</Providers>
+        <footer className="mx-auto mt-auto w-full max-w-5xl px-4 pt-6 pb-10 text-sm text-muted-foreground">
+          <p className="border-t pt-6">
+            Preguntas y respuestas de los exámenes oficiales publicados por el
+            Ministerio de Transportes. Tu progreso solo se guarda en este navegador.
+          </p>
+        </footer>
       </body>
       {process.env.NODE_ENV === "production" && (
         <GoogleAnalytics

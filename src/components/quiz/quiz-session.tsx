@@ -117,7 +117,7 @@ const ProgressBar = ({
             </span>{" "}
             <span className="text-muted-foreground">· {status}</span>
             {isOverLimit && (
-              <span className="font-medium text-red-700 dark:text-red-400">
+              <span className="font-medium text-destructive">
                 {" "}
                 · ya sería NO APTO
               </span>
@@ -132,7 +132,7 @@ const ProgressBar = ({
                   <span
                     className={cn(
                       item.errors > item.limit &&
-                        "font-medium text-red-700 dark:text-red-400",
+                        "font-medium text-destructive",
                     )}
                   >
                     {item.label && `${item.label} `}
@@ -151,8 +151,8 @@ const ProgressBar = ({
               aria-label="Tiempo restante"
               className={cn(
                 "inline-flex items-center gap-1 font-medium tabular-nums",
-                remainingMs < 10 * 60_000 && "text-amber-700 dark:text-amber-400",
-                remainingMs < 5 * 60_000 && "text-red-700 dark:text-red-400",
+                remainingMs < 10 * 60_000 && "text-warning",
+                remainingMs < 5 * 60_000 && "text-destructive",
               )}
             >
               <TimerIcon className="size-4" />

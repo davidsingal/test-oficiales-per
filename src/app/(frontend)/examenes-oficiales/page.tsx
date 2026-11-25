@@ -33,10 +33,10 @@ const ExamenesOficialesPage: NextPage = async () => {
 
       {[...sessionsByYear].map(([year, yearSessions]) => (
         <section key={year} aria-labelledby={`year-${year}`} className="space-y-3">
-          <h2 id={`year-${year}`} className="text-xl font-semibold">
+          <h2 id={`year-${year}`} className="text-lg font-semibold">
             {year}
           </h2>
-          <ul className="divide-y rounded-xl border">
+          <ul className="surface divide-y">
             {yearSessions.map((session) => (
               <li
                 key={session.month}
@@ -50,7 +50,7 @@ const ExamenesOficialesPage: NextPage = async () => {
                     <li key={testNumber}>
                       <Link
                         href={`/examenes-oficiales/${year}/${session.month}/${testNumber}`}
-                        className="inline-flex h-10 items-center gap-2 rounded-lg border px-3 text-sm font-medium transition-colors hover:bg-muted"
+                        className="inline-flex h-10 items-center gap-2 rounded-lg border bg-background px-3 text-sm font-medium transition-colors hover:border-primary/40 hover:text-primary"
                       >
                         Test {testNumber}
                         <ExamStatus examKey={examKey(year, session.month, testNumber)} />

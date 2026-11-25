@@ -48,22 +48,22 @@ const Feedback = ({
 
   switch (outcome) {
     case "correct":
-      return <p className="font-medium text-green-700 dark:text-green-400">¡Correcto!</p>;
+      return <p className="font-medium text-success">¡Correcto!</p>;
     case "incorrect":
       return (
-        <p className="font-medium text-red-700 dark:text-red-400">
+        <p className="font-medium text-destructive">
           Incorrecto. {correct}
         </p>
       );
     case "unanswered":
       return (
-        <p className="font-medium text-amber-700 dark:text-amber-400">
+        <p className="font-medium text-warning">
           En blanco. {correct}
         </p>
       );
     case "neutral":
       return (
-        <p className="font-medium text-amber-700 dark:text-amber-400">
+        <p className="font-medium text-warning">
           {question.correctAnswers.includes("ANULADA")
             ? "Pregunta anulada: no cuenta para el resultado."
             : "Esta pregunta no tiene respuesta oficial."}
@@ -96,7 +96,7 @@ const QuestionCard = ({
           <p>{meta.join(" · ")}</p>
           <ShareQuestionButton questionId={question.id} />
         </div>
-        <h2 id={headingId} className="text-base leading-snug font-medium">
+        <h2 id={headingId} className="text-lg leading-snug font-medium">
           {question.text}
         </h2>
         {(showSourceLink || needsChart(question.topicName)) && question.sourceUrl && (
@@ -130,17 +130,17 @@ const QuestionCard = ({
               <label
                 key={option.id}
                 className={cn(
-                  "flex items-start gap-3 rounded-lg border p-3 text-sm leading-5 transition-colors",
+                  "flex items-start gap-3 rounded-lg border p-3 text-base leading-6 transition-colors",
                   locked ? "cursor-default" : "cursor-pointer hover:bg-muted",
                   isSelected && !revealed && "border-primary bg-muted",
                   showCorrect &&
-                    "border-green-600 bg-green-50 dark:border-green-500 dark:bg-green-950/40",
+                    "border-success bg-success/10",
                   showWrong &&
-                    "border-red-600 bg-red-50 dark:border-red-500 dark:bg-red-950/40",
+                    "border-destructive bg-destructive/10",
                   revealed && !showCorrect && !showWrong && "opacity-70",
                 )}
               >
-                <RadioGroupItem value={option.letter} className="mt-0.5" />
+                <RadioGroupItem value={option.letter} className="mt-1" />
                 <span className="flex-1">
                   <span className="font-medium">{option.letter}.</span>{" "}
                   {option.text}
@@ -148,13 +148,13 @@ const QuestionCard = ({
                 {showCorrect && (
                   <CheckIcon
                     aria-label="Respuesta correcta"
-                    className="size-4 shrink-0 text-green-700 dark:text-green-400"
+                    className="mt-1 size-4 shrink-0 text-success"
                   />
                 )}
                 {showWrong && (
                   <XIcon
                     aria-label="Tu respuesta, incorrecta"
-                    className="size-4 shrink-0 text-red-700 dark:text-red-400"
+                    className="mt-1 size-4 shrink-0 text-destructive"
                   />
                 )}
               </label>
