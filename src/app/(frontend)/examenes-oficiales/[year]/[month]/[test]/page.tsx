@@ -3,7 +3,7 @@ import { FileTextIcon } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
-import { BackButton } from "@/components/back-button";
+import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
 import { examKey, formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
@@ -92,7 +92,12 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <BackButton />
+        <Breadcrumbs
+          items={[
+            { label: "Exámenes oficiales", href: "/examenes-oficiales" },
+            { label: formatSessionLabel(selectedYear, selectedMonth, selectedTest) },
+          ]}
+        />
         <h1 className="text-3xl font-semibold">
           Examen oficial · {formatSessionLabel(selectedYear, selectedMonth, selectedTest)}
         </h1>

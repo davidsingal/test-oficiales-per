@@ -1,89 +1,28 @@
 import Link from "next/link";
-import { getPayload } from "payload";
-import config from "@payload-config";
-import { sql } from "@payloadcms/db-vercel-postgres";
-import { monthLabels, monthOrder } from "@/lib/utils";
-import { BackButton } from "@/components/back-button";
+import Breadcrumbs from "@/components/breadcrumbs";
 import ExamStatus from "@/components/progress/exam-status";
+import { getExamSessions, type ExamSession } from "@/lib/exam-sessions";
 import { examKey } from "@/lib/quiz";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item";
-import { ClipboardIcon } from "lucide-react";
-import type { Question } from "@/types/payload-types";
+import { monthLabels } from "@/lib/utils";
 import type { NextPage } from "next";
 
-const payload = await getPayload({ config });
-
-type DistinctExamRow = {
-  year: number;
-  month: Question["month"];
-  test_number: number;
-};
+export const dynamic = "force-dynamic";
 
 const ExamenesOficialesPage: NextPage = async () => {
-  let distinctExamRows: DistinctExamRow[] = [];
+  const sessions = await getExamSessions();
 
-  try {
-    // Pull only unique exam calls instead of all question rows.
-    const result = await payload.db.drizzle.execute(sql`
-      SELECT DISTINCT "year", "month", "test_number"
-      FROM "questions"
-    `);
-
-    distinctExamRows = result.rows as DistinctExamRow[];
-  } catch {
-    // Fallback to Local API if SQL shape/table naming differs in some env.
-    const exams = await payload.find({
-      collection: "questions",
-      pagination: false,
-      sort: ["-year", "month", "testNumber"],
-      select: {
-        year: true,
-        month: true,
-        testNumber: true,
-      },
-    });
-
-    distinctExamRows = exams.docs.map((exam) => ({
-      year: exam.year,
-      month: exam.month,
-      test_number: exam.testNumber,
-    }));
-  }
-
-  const examsByYearAndMonth = distinctExamRows.reduce<
-    Record<number, Record<Question["month"], Set<number>>>
-  >((acc, row) => {
-    const year = row.year;
-    const month = row.month;
-    const examNumber = row.test_number;
-
-    if (!acc[year]) {
-      acc[year] = {} as Record<Question["month"], Set<number>>;
-    }
-
-    if (!acc[year][month]) {
-      acc[year][month] = new Set<number>();
-    }
-
-    acc[year][month].add(examNumber);
-    return acc;
-  }, {});
-
-  const years = Object.keys(examsByYearAndMonth)
-    .map((year) => Number(year))
-    .sort((a, b) => b - a);
+  const sessionsByYear = sessions.reduce<Map<number, ExamSession[]>>(
+    (acc, session) => {
+      acc.set(session.year, [...(acc.get(session.year) ?? []), session]);
+      return acc;
+    },
+    new Map(),
+  );
 
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
+    <main className="mx-auto w-full max-w-5xl space-y-8 px-4 py-6">
       <section className="space-y-2">
-        <BackButton />
+        <Breadcrumbs items={[{ label: "Exámenes oficiales" }]} />
         <h1 className="text-3xl font-semibold">Exámenes oficiales</h1>
         <p className="text-muted-foreground">
           Los exámenes de convocatorias anteriores, tal como salieron y con la
@@ -91,45 +30,39 @@ const ExamenesOficialesPage: NextPage = async () => {
           incluida.
         </p>
       </section>
-      <section className="grid gap-4 grid-cols-1 md:grid-cols-2">
-        {years.map((year) => (
-          <Card key={`card-${year}`}>
-            <CardHeader>
-              <CardTitle>{year}</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {monthOrder
-                .filter((month) => examsByYearAndMonth[year]?.[month])
-                .map((month) => (
-                  <Item key={`card-${year}-${month}`} variant="outline">
-                    <ItemMedia variant="icon">
-                      <ClipboardIcon />
-                    </ItemMedia>
-                    <ItemContent>
-                      <ItemTitle>{monthLabels[month]}</ItemTitle>
-                      <ItemDescription className="flex flex-wrap gap-x-4 gap-y-1">
-                        {[...examsByYearAndMonth[year][month]]
-                          .sort((a, b) => a - b)
-                          .map((examNumber) => (
-                            <span
-                              key={`exam-${examNumber}`}
-                              className="inline-flex items-center gap-1.5"
-                            >
-                              <Link
-                                href={`/examenes-oficiales/${year}/${month}/${examNumber}`}
-                                className="hover:underline"
-                              >{`Test ${examNumber}`}</Link>
-                              <ExamStatus examKey={examKey(year, month, examNumber)} />
-                            </span>
-                          ))}
-                      </ItemDescription>
-                    </ItemContent>
-                  </Item>
-                ))}
-            </CardContent>
-          </Card>
-        ))}
-      </section>
+
+      {[...sessionsByYear].map(([year, yearSessions]) => (
+        <section key={year} aria-labelledby={`year-${year}`} className="space-y-3">
+          <h2 id={`year-${year}`} className="text-xl font-semibold">
+            {year}
+          </h2>
+          <ul className="divide-y rounded-xl border">
+            {yearSessions.map((session) => (
+              <li
+                key={session.month}
+                className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center"
+              >
+                <h3 className="font-medium sm:w-28 sm:shrink-0">
+                  {monthLabels[session.month]}
+                </h3>
+                <ul className="flex flex-wrap gap-2">
+                  {session.testNumbers.map((testNumber) => (
+                    <li key={testNumber}>
+                      <Link
+                        href={`/examenes-oficiales/${year}/${session.month}/${testNumber}`}
+                        className="inline-flex h-10 items-center gap-2 rounded-lg border px-3 text-sm font-medium transition-colors hover:bg-muted"
+                      >
+                        Test {testNumber}
+                        <ExamStatus examKey={examKey(year, session.month, testNumber)} />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </main>
   );
 };

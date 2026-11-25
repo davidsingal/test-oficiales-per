@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
-import { BackButton } from "@/components/back-button";
+import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
 import { toQuizQuestion } from "@/lib/quiz";
@@ -66,7 +66,7 @@ const TestAleatorioPage: NextPage = async () => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <BackButton />
+        <Breadcrumbs items={[{ label: "Test aleatorio" }]} />
         <h1 className="text-3xl font-semibold">Test aleatorio</h1>
         <p className="text-muted-foreground">
           {QUESTIONS_PER_TEST} preguntas al azar de todos los exámenes oficiales,
