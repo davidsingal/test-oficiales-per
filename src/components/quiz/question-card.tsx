@@ -96,7 +96,7 @@ const QuestionCard = ({
           <p>{meta.join(" · ")}</p>
           <ShareQuestionButton questionId={question.id} />
         </div>
-        <h2 id={headingId} className="text-base leading-snug font-medium">
+        <h2 id={headingId} className="text-lg leading-snug font-medium">
           {question.text}
         </h2>
         {(showSourceLink || needsChart(question.topicName)) && question.sourceUrl && (
@@ -130,7 +130,7 @@ const QuestionCard = ({
               <label
                 key={option.id}
                 className={cn(
-                  "flex items-start gap-3 rounded-lg border p-3 text-sm leading-5 transition-colors",
+                  "flex items-start gap-3 rounded-lg border p-3 text-base leading-6 transition-colors",
                   locked ? "cursor-default" : "cursor-pointer hover:bg-muted",
                   isSelected && !revealed && "border-primary bg-muted",
                   showCorrect &&
@@ -140,7 +140,7 @@ const QuestionCard = ({
                   revealed && !showCorrect && !showWrong && "opacity-70",
                 )}
               >
-                <RadioGroupItem value={option.letter} className="mt-0.5" />
+                <RadioGroupItem value={option.letter} className="mt-1" />
                 <span className="flex-1">
                   <span className="font-medium">{option.letter}.</span>{" "}
                   {option.text}
@@ -148,13 +148,13 @@ const QuestionCard = ({
                 {showCorrect && (
                   <CheckIcon
                     aria-label="Respuesta correcta"
-                    className="size-4 shrink-0 text-success"
+                    className="mt-1 size-4 shrink-0 text-success"
                   />
                 )}
                 {showWrong && (
                   <XIcon
                     aria-label="Tu respuesta, incorrecta"
-                    className="size-4 shrink-0 text-destructive"
+                    className="mt-1 size-4 shrink-0 text-destructive"
                   />
                 )}
               </label>

@@ -35,7 +35,7 @@ const ResumePrompt = ({
       className="space-y-3 rounded-xl border border-primary p-4"
     >
       <div className="space-y-1">
-        <h2 id="resume-title" className="text-lg font-medium">
+        <h2 id="resume-title" className="text-lg font-semibold">
           Tienes este examen a medias
         </h2>
         <p className="text-sm text-muted-foreground">{details.join(" · ")}</p>

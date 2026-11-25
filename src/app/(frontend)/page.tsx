@@ -57,7 +57,7 @@ export default async function HomePage() {
       </section>
 
       <section aria-labelledby="modes-title" className="space-y-3">
-        <h2 id="modes-title" className="text-lg font-medium">
+        <h2 id="modes-title" className="text-lg font-semibold">
           ¿Cómo quieres practicar?
         </h2>
         <ul className="grid gap-3 md:grid-cols-3">

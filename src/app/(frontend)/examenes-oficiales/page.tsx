@@ -33,7 +33,7 @@ const ExamenesOficialesPage: NextPage = async () => {
 
       {[...sessionsByYear].map(([year, yearSessions]) => (
         <section key={year} aria-labelledby={`year-${year}`} className="space-y-3">
-          <h2 id={`year-${year}`} className="text-xl font-semibold">
+          <h2 id={`year-${year}`} className="text-lg font-semibold">
             {year}
           </h2>
           <ul className="divide-y rounded-xl border">

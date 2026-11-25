@@ -99,4 +99,19 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+
+  /* Geist reads loose at display sizes; balance avoids one-word last lines. */
+  h1 {
+    @apply tracking-tight;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
 }

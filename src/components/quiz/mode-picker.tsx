@@ -67,7 +67,7 @@ const ModePicker = ({
           , con {lastResult.errors} {lastResult.errors === 1 ? "fallo" : "fallos"}.
         </p>
       )}
-      <h2 id="mode-picker-title" className="text-lg font-medium">
+      <h2 id="mode-picker-title" className="text-lg font-semibold">
         ¿Cómo quieres hacer el test?
       </h2>
       <div className="grid gap-3 sm:grid-cols-2">

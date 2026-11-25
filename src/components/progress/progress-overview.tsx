@@ -43,7 +43,7 @@ const ProgressOverview = () => {
   return (
     <section aria-labelledby="progress-title" className="space-y-4 rounded-xl border p-4">
       <div className="space-y-1">
-        <h2 id="progress-title" className="text-lg font-medium">
+        <h2 id="progress-title" className="text-lg font-semibold">
           Tu progreso
         </h2>
         <p className="text-sm text-muted-foreground">
