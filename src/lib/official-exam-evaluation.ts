@@ -30,12 +30,24 @@ const normalizeTopicName = (value: string) =>
     .toLowerCase()
     .trim();
 
+export const OFFICIAL_EXAM_TOPIC_LABELS: Record<OfficialExamTrackedTopic, string> =
+  {
+    ripa: "Reglamento (RIPA)",
+    balizamiento: "Balizamiento",
+    cartaDeNavegacion: "Carta de navegación",
+  };
+
+/** Official exam duration, in minutes. */
+export const OFFICIAL_EXAM_DURATION_MINUTES = 90;
+
 export const getTrackedOfficialExamTopic = (
   topicName: string,
 ): OfficialExamTrackedTopic | null => {
   const normalizedTopic = normalizeTopicName(topicName);
 
-  if (normalizedTopic === "ripa") return "ripa";
+  // The RIPA topic is stored as "Reglamento (RIPA)", so match the acronym as a
+  // whole word rather than the exact name.
+  if (/\bripa\b/.test(normalizedTopic)) return "ripa";
   if (normalizedTopic === "balizamiento") return "balizamiento";
   if (normalizedTopic === "carta de navegacion") return "cartaDeNavegacion";
 

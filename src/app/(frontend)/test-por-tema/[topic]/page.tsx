@@ -1,13 +1,18 @@
+import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import { BackButton } from "@/components/back-button";
-import QuestionItem from "@/components/question-item";
 import QuestionsLoader from "@/components/questions-loader";
-import Report from "@/components/report";
+import QuizSession from "@/components/quiz/quiz-session";
+import { toQuizQuestion } from "@/lib/quiz";
 import type { NextPage } from "next";
-import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
+
+export const dynamic = "force-dynamic";
+
+const QUESTIONS_PER_TEST = 10;
 
 type PageProps = {
   params: Promise<{ topic: string }>;
@@ -15,18 +20,14 @@ type PageProps = {
 
 const payload = await getPayload({ config });
 
-const TopicQuestions = async ({
-  selectedTopicName,
-}: {
-  selectedTopicName: string;
-}) => {
+const TopicQuestions = async ({ topicName }: { topicName: string }) => {
   const randomIdsResult = await payload.db.drizzle.execute(sql`
     SELECT q."id"
     FROM "questions" q
     INNER JOIN "topics" t ON t."id" = q."topic_id"
-    WHERE t."name" = ${selectedTopicName}
+    WHERE t."name" = ${topicName}
     ORDER BY RANDOM()
-    LIMIT 10
+    LIMIT ${QUESTIONS_PER_TEST}
   `);
 
   const randomIds = (randomIdsResult.rows as { id: number }[]).map(
@@ -38,11 +39,8 @@ const TopicQuestions = async ({
   if (randomIds.length > 0) {
     const questions = await payload.find({
       collection: "questions",
-      where: {
-        id: {
-          in: randomIds,
-        },
-      },
+      depth: 1,
+      where: { id: { in: randomIds } },
       pagination: false,
     });
 
@@ -55,33 +53,43 @@ const TopicQuestions = async ({
   }
 
   return (
-    <>
-      <Report totalQuestions={questionsData.length} />
-      <div className="space-y-10">
-        {questionsData.map((question) => (
-          <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-sm text-muted-foreground">
-              Convocatoria {question.year} {question.month} - Test 0
-              {question.testNumber}
-            </div>
-            <QuestionItem data={question} />
-          </div>
-        ))}
-      </div>
-    </>
+    <QuizSession
+      // A new draw remounts the session, so "Nuevo test" starts clean.
+      key={randomIds.join("-")}
+      questions={questionsData.map(toQuizQuestion)}
+      recommendedMode="practica"
+      allowSimulacro={false}
+      showSession
+      allowNewTest
+    />
   );
 };
 
 const TopicPage: NextPage<PageProps> = async ({ params }) => {
   const { topic: rawTopic } = await params;
-  const selectedTopicName = decodeURIComponent(rawTopic);
+  const topicName = decodeURIComponent(rawTopic);
+
+  const topics = await payload.find({
+    collection: "topics",
+    where: { name: { equals: topicName } },
+    limit: 1,
+  });
+  const topic = topics.docs[0];
+
+  if (!topic) notFound();
 
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
-      <BackButton />
-      <h1 className="text-3xl font-semibold">{selectedTopicName}</h1>
+      <section className="space-y-2">
+        <BackButton />
+        <h1 className="text-3xl font-semibold">{topic.name}</h1>
+        <p className="text-muted-foreground">
+          {topic.description ||
+            `${QUESTIONS_PER_TEST} preguntas al azar de este tema, sacadas de los exámenes oficiales.`}
+        </p>
+      </section>
       <Suspense fallback={<QuestionsLoader />}>
-        <TopicQuestions selectedTopicName={selectedTopicName} />
+        <TopicQuestions topicName={topic.name} />
       </Suspense>
     </main>
   );

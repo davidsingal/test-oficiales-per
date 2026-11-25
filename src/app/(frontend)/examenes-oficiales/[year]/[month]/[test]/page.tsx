@@ -1,13 +1,17 @@
 import { Suspense } from "react";
-import { LinkIcon } from "lucide-react";
+import { FileTextIcon } from "lucide-react";
+import { notFound } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
-import Link from "next/link";
 import { BackButton } from "@/components/back-button";
-import QuestionItem from "@/components/question-item";
-import ShareQuestionButton from "@/components/share-question-button";
 import QuestionsLoader from "@/components/questions-loader";
-import Report from "@/components/report";
+import QuizSession from "@/components/quiz/quiz-session";
+import { formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
+import { monthOrder } from "@/lib/utils";
+import {
+  OFFICIAL_EXAM_DURATION_MINUTES,
+  OFFICIAL_EXAM_ERROR_LIMITS,
+} from "@/lib/official-exam-evaluation";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
@@ -17,8 +21,8 @@ type PageProps = {
 
 const payload = await getPayload({ config });
 
-const getTopicName = (topic: Question["topic"]) =>
-  typeof topic === "object" && topic !== null ? topic.name : "Tema";
+const isMonth = (value: string): value is Question["month"] =>
+  (monthOrder as string[]).includes(value);
 
 const OfficialExamQuestions = async ({
   selectedYear,
@@ -26,67 +30,46 @@ const OfficialExamQuestions = async ({
   selectedTest,
 }: {
   selectedYear: number;
-  selectedMonth: string;
+  selectedMonth: Question["month"];
   selectedTest: number;
 }) => {
   const questionsData = await payload.find({
     collection: "questions",
     depth: 1,
     where: {
-      year: {
-        equals: selectedYear,
-      },
-      month: {
-        equals: selectedMonth,
-      },
-      testNumber: {
-        equals: selectedTest,
-      },
+      year: { equals: selectedYear },
+      month: { equals: selectedMonth },
+      testNumber: { equals: selectedTest },
     },
     sort: ["questionNumber"],
     pagination: false,
   });
 
-  const topicByQuestionId = questionsData.docs.reduce<Record<number, string>>(
-    (acc, question) => {
-      if (typeof question.topic === "object" && question.topic !== null) {
-        acc[question.id] = question.topic.name;
-      }
+  if (questionsData.docs.length === 0) notFound();
 
-      return acc;
-    },
-    {},
-  );
-
-  const sourceUrl = questionsData.docs.find((question) => question.sourceUrl)?.sourceUrl;
+  const questions = questionsData.docs.map(toQuizQuestion);
+  const sourceUrl = questions.find((question) => question.sourceUrl)?.sourceUrl;
 
   return (
     <>
       {sourceUrl && (
-        <div className="text-sm">
-          <Link href={sourceUrl} target="_blank" rel="noopener noreferrer">
-            <LinkIcon className="h-4 w-4 inline-block mr-2" />
-            Ver examen original (PDF)
-          </Link>
-        </div>
+        <a
+          href={sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4"
+        >
+          <FileTextIcon className="size-4" />
+          Ver examen original (PDF)
+        </a>
       )}
-      <Report
-        totalQuestions={questionsData.docs.length}
-        topicByQuestionId={topicByQuestionId}
+      <QuizSession
+        questions={questions}
+        recommendedMode="simulacro"
+        official
+        timeLimitMinutes={OFFICIAL_EXAM_DURATION_MINUTES}
+        showTopic
       />
-      <div className="space-y-10">
-        {questionsData.docs.map((question) => (
-          <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-sm text-muted-foreground flex justify-between items-center">
-              <div>{getTopicName(question.topic)}</div>
-              <div>
-                <ShareQuestionButton questionId={question.id} />
-              </div>
-            </div>
-            <QuestionItem data={question} />
-          </div>
-        ))}
-      </div>
     </>
   );
 };
@@ -97,10 +80,30 @@ const OficialExamPage: NextPage<PageProps> = async ({ params }) => {
   const selectedMonth = decodeURIComponent(month);
   const selectedTest = Number(decodeURIComponent(test));
 
+  if (
+    !Number.isInteger(selectedYear) ||
+    !Number.isInteger(selectedTest) ||
+    !isMonth(selectedMonth)
+  ) {
+    notFound();
+  }
+
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
-      <BackButton />
-      <h1 className="text-3xl font-semibold">{`Examen Oficial ${selectedYear} ${selectedMonth} - Test 0${selectedTest}`}</h1>
+      <section className="space-y-2">
+        <BackButton />
+        <h1 className="text-3xl font-semibold">
+          Examen oficial · {formatSessionLabel(selectedYear, selectedMonth, selectedTest)}
+        </h1>
+        <p className="text-muted-foreground">
+          45 preguntas. Para aprobar puedes fallar como máximo{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.total}, y no más de{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.ripa} de Reglamento (RIPA),{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.balizamiento} de Balizamiento ni{" "}
+          {OFFICIAL_EXAM_ERROR_LIMITS.cartaDeNavegacion} de Carta de navegación. En
+          el examen real tienes {OFFICIAL_EXAM_DURATION_MINUTES} minutos.
+        </p>
+      </section>
       <Suspense fallback={<QuestionsLoader />}>
         <OfficialExamQuestions
           selectedYear={selectedYear}

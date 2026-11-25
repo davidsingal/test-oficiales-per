@@ -1,29 +1,30 @@
+import { Suspense } from "react";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import { BackButton } from "@/components/back-button";
-import QuestionItem from "@/components/question-item";
 import QuestionsLoader from "@/components/questions-loader";
-import Report from "@/components/report";
+import QuizSession from "@/components/quiz/quiz-session";
+import { toQuizQuestion } from "@/lib/quiz";
 import type { NextPage } from "next";
-import { Suspense } from "react";
 import type { Question } from "@/types/payload-types";
 
 export const dynamic = "force-dynamic";
 
+const QUESTIONS_PER_TEST = 10;
+
 const payload = await getPayload({ config });
 
-const getTopicName = (topic: Question["topic"]) =>
-  typeof topic === "object" && topic !== null ? topic.name : "Tema";
-
 const RandomQuestions = async () => {
+  // Carta de navegación questions need the printed chart, so they stay out of
+  // random tests.
   const randomIdsResult = await payload.db.drizzle.execute(sql`
     SELECT q."id"
     FROM "questions" q
     INNER JOIN "topics" t ON t."id" = q."topic_id"
     WHERE t."name" <> 'Carta de navegación'
     ORDER BY RANDOM()
-    LIMIT 10
+    LIMIT ${QUESTIONS_PER_TEST}
   `);
 
   const randomIds = (randomIdsResult.rows as { id: number }[]).map(
@@ -36,11 +37,7 @@ const RandomQuestions = async () => {
     const questions = await payload.find({
       collection: "questions",
       depth: 1,
-      where: {
-        id: {
-          in: randomIds,
-        },
-      },
+      where: { id: { in: randomIds } },
       pagination: false,
     });
 
@@ -53,20 +50,15 @@ const RandomQuestions = async () => {
   }
 
   return (
-    <>
-      <Report totalQuestions={questionsData.length} />
-      <div className="space-y-10">
-        {questionsData.map((question) => (
-          <div key={`question-${question.id}`} className="space-y-2">
-            <div className="px-4 text-sm text-muted-foreground">
-              <span>{getTopicName(question.topic)}</span> · Convocatoria{" "}
-              {question.year} {question.month} - Test 0{question.testNumber}
-            </div>
-            <QuestionItem data={question} />
-          </div>
-        ))}
-      </div>
-    </>
+    <QuizSession
+      // A new draw remounts the session, so "Nuevo test" starts clean.
+      key={randomIds.join("-")}
+      questions={questionsData.map(toQuizQuestion)}
+      recommendedMode="practica"
+      showTopic
+      showSession
+      allowNewTest
+    />
   );
 };
 
@@ -75,16 +67,12 @@ const TestAleatorioPage: NextPage = async () => {
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
         <BackButton />
-        <h1 className="text-3xl font-semibold">Practica dinámica y variada</h1>
+        <h1 className="text-3xl font-semibold">Test aleatorio</h1>
         <p className="text-muted-foreground">
-          Genera tests combinados para entrenar reflejos y consolidar conceptos.
-          Ideal como test de repaso o para practicar de forma rápida y efectiva.
+          {QUESTIONS_PER_TEST} preguntas al azar de todos los exámenes oficiales,
+          para repasar de forma rápida. No incluye preguntas de Carta de
+          navegación.
         </p>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
-          <li>10 preguntas por ronda</li>
-          <li>Corrección automática inmediata</li>
-          <li>No incluye preguntas de Carta de navegación</li>
-        </ul>
       </section>
       <Suspense fallback={<QuestionsLoader />}>
         <RandomQuestions />
