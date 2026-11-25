@@ -63,6 +63,11 @@ export const toQuizQuestion = (question: Question): QuizQuestion => ({
     })),
 });
 
+/** Carta de navegación questions need the printed chart and the original PDF. */
+export const needsChart = (topicName: string | null) =>
+  topicName !== null &&
+  getTrackedOfficialExamTopic(topicName) === "cartaDeNavegacion";
+
 /** True when the question can't be scored: annulled, or without an answer key. */
 export const isUnscored = (question: QuizQuestion) =>
   question.correctAnswers.length === 0 ||

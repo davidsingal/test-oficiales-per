@@ -7,6 +7,7 @@ import ShareQuestionButton from "@/components/share-question-button";
 import { cn } from "@/lib/utils";
 import {
   getOutcome,
+  needsChart,
   type AnswerLetter,
   type QuizQuestion,
 } from "@/lib/quiz";
@@ -21,7 +22,7 @@ type QuestionCardProps = {
   locked: boolean;
   showTopic?: boolean;
   showSession?: boolean;
-  /** Link to the official PDF, for questions that need the printed chart. */
+  /** Link to the official PDF. Always on for Carta de navegación questions. */
   showSourceLink?: boolean;
 };
 
@@ -98,7 +99,7 @@ const QuestionCard = ({
         <h2 id={headingId} className="text-base leading-snug font-medium">
           {question.text}
         </h2>
-        {showSourceLink && question.sourceUrl && (
+        {(showSourceLink || needsChart(question.topicName)) && question.sourceUrl && (
           <a
             href={question.sourceUrl}
             target="_blank"

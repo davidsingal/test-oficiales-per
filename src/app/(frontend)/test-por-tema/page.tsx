@@ -1,11 +1,14 @@
 import Link from "next/link";
+import { ChevronRightIcon } from "lucide-react";
 import { getPayload } from "payload";
 import { sql } from "@payloadcms/db-vercel-postgres";
 import config from "@payload-config";
-import { BackButton } from "@/components/back-button";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import Breadcrumbs from "@/components/breadcrumbs";
 import TopicStats from "@/components/progress/topic-stats";
+import { needsChart } from "@/lib/quiz";
 import type { NextPage } from "next";
+
+export const dynamic = "force-dynamic";
 
 const payload = await getPayload({ config });
 
@@ -31,40 +34,38 @@ const TestPorTemaPage: NextPage = async () => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <BackButton />
+        <Breadcrumbs items={[{ label: "Test por tema" }]} />
         <h1 className="text-3xl font-semibold">Test por tema</h1>
         <p className="text-muted-foreground">
           Elige un tema y practica con 10 preguntas de exámenes oficiales. Viene
-          bien para reforzar lo que más te cuesta. Por ahora no incluye la carta
-          de navegación.
+          bien para reforzar lo que más te cuesta.
         </p>
       </section>
 
-      <section className="space-y-4">
-        <h2 className="font-medium">Temas</h2>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
-          {topics.docs
-            ?.filter((d) => d.name !== "Carta de navegación") // Excluimos este tema por ahora
-            .map((d) => (
-              <Card key={`card-${d.id}`}>
-                <CardHeader>
-                  <CardTitle>
-                    <Link
-                      href={`/test-por-tema/${encodeURIComponent(d.name)}`}
-                      passHref
-                    >
-                      {d.name}
-                    </Link>
-                  </CardTitle>
-                  <TopicStats
-                    topicName={d.name}
-                    total={countByTopicId.get(d.id) ?? 0}
-                  />
-                </CardHeader>
-              </Card>
-            ))}
-        </div>
-      </section>
+      <ul className="grid gap-3 md:grid-cols-2">
+        {topics.docs.map((topic) => (
+          <li key={topic.id}>
+            <Link
+              href={`/test-por-tema/${encodeURIComponent(topic.name)}`}
+              className="group flex h-full items-center justify-between gap-3 rounded-xl border p-4 transition-colors hover:bg-muted"
+            >
+              <span className="space-y-1">
+                <span className="block font-medium">{topic.name}</span>
+                <TopicStats
+                  topicName={topic.name}
+                  total={countByTopicId.get(topic.id) ?? 0}
+                />
+                {needsChart(topic.name) && (
+                  <span className="block text-xs text-muted-foreground">
+                    Necesitas la carta náutica impresa, como en el examen.
+                  </span>
+                )}
+              </span>
+              <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 };

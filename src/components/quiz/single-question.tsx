@@ -16,7 +16,6 @@ const SingleQuestion = ({ question }: { question: QuizQuestion }) => {
       revealed={Boolean(selected)}
       locked={Boolean(selected)}
       showTopic
-      showSession
       showSourceLink
     />
   );

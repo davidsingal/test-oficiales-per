@@ -3,10 +3,10 @@ import { notFound } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
-import { BackButton } from "@/components/back-button";
+import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
-import { toQuizQuestion } from "@/lib/quiz";
+import { needsChart, toQuizQuestion } from "@/lib/quiz";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
@@ -81,11 +81,18 @@ const TopicPage: NextPage<PageProps> = async ({ params }) => {
   return (
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
-        <BackButton />
+        <Breadcrumbs
+          items={[
+            { label: "Test por tema", href: "/test-por-tema" },
+            { label: topic.name },
+          ]}
+        />
         <h1 className="text-3xl font-semibold">{topic.name}</h1>
         <p className="text-muted-foreground">
           {topic.description ||
             `${QUESTIONS_PER_TEST} preguntas al azar de este tema, sacadas de exámenes oficiales.`}
+          {needsChart(topic.name) &&
+            " Necesitas la carta náutica impresa, como en el examen: cada pregunta enlaza al PDF original con el enunciado completo."}
         </p>
       </section>
       <Suspense fallback={<QuestionsLoader />}>
