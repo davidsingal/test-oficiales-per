@@ -1,0 +1,51 @@
+# Local development stack: Postgres + Next.js/Payload dev server.
+#
+#   docker compose up --build              # app on http://localhost:3000 (admin at /admin)
+#   docker compose exec app pnpm create:topics
+#   docker compose down -v                 # stop and wipe the local database
+#
+# Note: @payloadcms/db-vercel-postgres only uses the plain `pg` driver when the
+# DATABASE_URL host is `localhost`/`127.0.0.1`; any other host goes through the
+# Vercel/Neon driver, which can't talk to a regular Postgres. So the app shares
+# the db container's network namespace and reaches Postgres on localhost:5432.
+# Because of that, the app's port 3000 is published on the `db` service.
+
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: test_per
+    ports:
+      - "${DB_PORT:-5432}:5432"
+      - "${APP_PORT:-3000}:3000"
+    volumes:
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d test_per"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    network_mode: "service:db"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      # These take precedence over any .env file Next or dotenv would load.
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_per
+      PAYLOAD_SECRET: ${PAYLOAD_SECRET:-local-dev-secret-change-me}
+      NODE_ENV: development
+      WATCHPACK_POLLING: "true"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - next_cache:/app/.next
+
+volumes:
+  pgdata:
+  node_modules:
+  next_cache:

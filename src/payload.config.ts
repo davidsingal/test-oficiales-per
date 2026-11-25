@@ -17,6 +17,9 @@ export default buildConfig({
   secret: process.env.PAYLOAD_SECRET || "",
   // Whichever Database Adapter you're using should go here
   db: vercelPostgresAdapter({
+    // Schema changes go through migrations only (`payload migrate:create` + `payload migrate`).
+    // Dev-mode push marks the DB as "dev" and makes `payload migrate` refuse to run.
+    push: false,
     pool: {
       connectionString: process.env.DATABASE_URL,
     },

@@ -28,3 +28,6 @@
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local database dumps
+/backups
