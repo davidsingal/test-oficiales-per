@@ -206,9 +206,6 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
-      jotai:
-        specifier: 3.0.2
-        version: 3.0.2(@types/react@19.3.0)(react@19.3.1)
       lucide-react:
         specifier: 1.78.0
         version: 1.78.0(@types/react@19.3.0)(react@19.3.1)
@@ -2969,18 +2966,6 @@ packages:
 
   jose@5.10.0:
     resolution: {integrity: sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==}
-
-  jotai@3.0.2:
-    resolution: {integrity: sha512-1h+H6BQN+D048zv8hRGVeNxghxRLFZCB+l2WhFe7RhRiF0JlC8516G2BtRUXhPvMQTGB9OHst2N/BW9aNpp5aA==}
-    engines: {node: '>=22.12.0'}
-    peerDependencies:
-      '@types/react': '>=18.0.0'
-      react: '>=18.0.0'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react:
-        optional: true
 
   joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
@@ -6921,11 +6906,6 @@ snapshots:
   jiti@2.7.0: {}
 
   jose@5.10.0: {}
-
-  jotai@3.0.2(@types/react@19.3.0)(react@19.3.1):
-    optionalDependencies:
-      '@types/react': 19.3.0
-      react: 19.3.1
 
   joycon@3.1.1: {}
 
