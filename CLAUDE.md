@@ -20,8 +20,14 @@ apply before changing behaviour, and follow its workflow:
 
 ## Working here
 
-- Everything runs in Docker (`docker compose up`). Run checks inside the app container:
-  `docker compose exec -T app pnpm test` / `pnpm lint` / `npx tsc --noEmit -p .`.
+- Everything runs in Docker (`docker compose up`). Checks:
+  - `docker compose exec -T app pnpm test` / `pnpm lint` / `npx tsc --noEmit -p .`
+  - `docker compose run --rm -T e2e` (Playwright, against the running app)
+  - `docker compose run --rm -T --entrypoint python pipeline -m pytest`
+- New behaviour gets a test named after its requirement ID (`test("EXAM-5: …")`), in
+  the suite that fits: Vitest for logic, `e2e/` for pages, `pipeline/tests/` for data.
+- After changing dependencies, rebuild the containers instead of installing into the
+  running dev server (it can end up with two copies of Next and fail at random).
 - Licences are defined once in `src/lib/licences.ts`. Pages are shared views in
   `src/views/` that take a licence; route files are thin wrappers. PER URLs and PER
   progress keys must not change (LIC-2, PROG-4).

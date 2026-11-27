@@ -71,7 +71,25 @@ services:
     entrypoint: ["pnpm", "data:ingest"]
     command: []
 
+  # End-to-end tests (Playwright) against the running app (`docker compose up` first):
+  #   docker compose run --rm e2e                 # all specs
+  #   docker compose run --rm e2e e2e/quiz.spec.ts
+  # Shares the db network namespace, so the app is on localhost:3000.
+  e2e:
+    profiles: ["test"]
+    build:
+      context: .
+      dockerfile: e2e/Dockerfile
+    network_mode: "service:db"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - e2e_node_modules:/app/node_modules
+
 volumes:
   pgdata:
   node_modules:
   next_cache:
+  e2e_node_modules:

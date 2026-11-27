@@ -19,12 +19,21 @@ Schema changes go through Payload migrations (`pnpm payload migrate:create`, the
 In production they apply themselves: `prodMigrations` in `src/payload.config.ts` runs any
 pending migration when Payload starts with `NODE_ENV=production`, i.e. on each deploy.
 
-Checks:
+Checks (each test names the `SPECS.md` requirement it covers):
 
 ```bash
-pnpm test     # unit tests (Vitest): scoring and pass/fail rules
-pnpm lint
+docker compose exec app pnpm test        # unit tests (Vitest): scoring, keys, helpers
+docker compose exec app pnpm lint
+docker compose run --rm e2e              # end-to-end (Playwright), needs `docker compose up`
+docker compose run --rm e2e e2e/quiz.spec.ts -g QUIZ-2   # one file / one requirement
+docker compose run --rm --entrypoint python pipeline -m pytest   # pipeline (pytest)
 ```
+
+The e2e tests run against the dev app and the local database, so ingest the data first.
+They read answer keys from the REST API, so new sessions don't break them. After
+changing dependencies, rebuild (`docker compose up --build`, and `docker compose build
+e2e`): installing into the running dev server can leave two copies of Next in its cache
+and make pages fail at random.
 
 ## SEO
 
