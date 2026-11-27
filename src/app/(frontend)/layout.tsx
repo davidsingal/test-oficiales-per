@@ -14,7 +14,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Exámenes oficiales PER con respuestas | Test PER",
+    default: `Exámenes oficiales PER con respuestas | ${SITE_NAME}`,
     template: `%s | ${SITE_NAME}`,
   },
   description:

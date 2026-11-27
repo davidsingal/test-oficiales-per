@@ -1,4 +1,4 @@
-"""Parse the answers of one PER answer-key section.
+"""Parse the answers of one answer-key section (PER or Patrón de Yate).
 
 The ministry publishes later rectifications (annulled questions, extra valid
 answers) as FreeText annotations drawn on top of the original answer, so the
@@ -12,7 +12,7 @@ import re
 
 import pdfplumber
 
-from common import QUESTIONS_PER_TEST, Issues
+from common import Issues
 
 ANSWER_PATTERN = r"A\s*NULADA\b.*|[A-D](?:\s*(?:y|,)?\s*[A-D])*"
 # "8 B y D", "32C", "12. A", "30 ANULADA (Todas las respuestas ...)", "40 A nulada (...)"
@@ -50,7 +50,9 @@ def parse_override(raw: str | None) -> re.Match[str] | None:
     return OVERRIDE_RE.match(text) or OVERRIDE_RE.match(redecoded)
 
 
-def parse_answers(pages: list[pdfplumber.page.Page], where: str, issues: Issues) -> tuple[Answers, int]:
+def parse_answers(
+    pages: list[pdfplumber.page.Page], questions: int, where: str, issues: Issues
+) -> tuple[Answers, int]:
     """Returns the answers of the section and how many annotation overrides were applied."""
     answers: Answers = {}
     overrides = 0
@@ -63,7 +65,7 @@ def parse_answers(pages: list[pdfplumber.page.Page], where: str, issues: Issues)
             if not match:
                 continue
             number = int(match["number"])
-            if not 1 <= number <= QUESTIONS_PER_TEST:
+            if not 1 <= number <= questions:
                 continue
             if number in answers:
                 issues.warn(where, f"q{number}: duplicate answer line '{text}'")
@@ -93,7 +95,7 @@ def parse_answers(pages: list[pdfplumber.page.Page], where: str, issues: Issues)
     return answers, overrides
 
 
-def check_complete(answers: Answers, where: str, issues: Issues) -> None:
-    missing = [n for n in range(1, QUESTIONS_PER_TEST + 1) if n not in answers]
+def check_complete(answers: Answers, questions: int, where: str, issues: Issues) -> None:
+    missing = [n for n in range(1, questions + 1) if n not in answers]
     if missing:
         issues.error(where, f"missing answers for questions {missing}")

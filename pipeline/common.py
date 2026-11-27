@@ -21,31 +21,58 @@ MONTHS = {
     12: "diciembre",
 }
 
-QUESTIONS_PER_TEST = 45
+@dataclass(frozen=True)
+class Licence:
+    """One licence whose exams are extracted, with its official exam layout."""
 
-# Canonical topics and the question numbers they cover in the official exam layout.
-# Used as a fallback when a topic heading can't be read from the PDF, and to
-# cross-check the headings that are found.
-TOPICS: list[tuple[str, range]] = [
-    ("Nomenclatura náutica", range(1, 5)),
-    ("Elementos de amarre y fondeo", range(5, 7)),
-    ("Seguridad", range(7, 11)),
-    ("Legislación", range(11, 13)),
-    ("Balizamiento", range(13, 18)),
-    ("Reglamento (RIPA)", range(18, 28)),
-    ("Maniobra y navegación", range(28, 30)),
-    ("Emergencias en la mar", range(30, 33)),
-    ("Meteorología", range(33, 37)),
-    ("Teoría de la navegación", range(37, 42)),
-    ("Carta de navegación", range(42, 46)),
-]
+    code: str  # as detected in the section header ("PER", "PY")
+    slug: str  # as stored in the dataset and the database ("per", "py")
+    questions: int  # questions in a full test
+    # Canonical topics and the question numbers they cover. Used as a fallback
+    # when a topic heading can't be read from the PDF, and to cross-check the
+    # headings that are found.
+    topics: tuple[tuple[str, range], ...]
+
+    def topic_for_question(self, number: int) -> str | None:
+        for name, numbers in self.topics:
+            if number in numbers:
+                return name
+        return None
 
 
-def topic_for_question(number: int) -> str | None:
-    for name, numbers in TOPICS:
-        if number in numbers:
-            return name
-    return None
+PER = Licence(
+    code="PER",
+    slug="per",
+    questions=45,
+    topics=(
+        ("Nomenclatura náutica", range(1, 5)),
+        ("Elementos de amarre y fondeo", range(5, 7)),
+        ("Seguridad", range(7, 11)),
+        ("Legislación", range(11, 13)),
+        ("Balizamiento", range(13, 18)),
+        ("Reglamento (RIPA)", range(18, 28)),
+        ("Maniobra y navegación", range(28, 30)),
+        ("Emergencias en la mar", range(30, 33)),
+        ("Meteorología", range(33, 37)),
+        ("Teoría de la navegación", range(37, 42)),
+        ("Carta de navegación", range(42, 46)),
+    ),
+)
+
+# Patrón de Yate: 40 questions in four units of 10 (RD 875/2014, anexo II).
+PY = Licence(
+    code="PY",
+    slug="py",
+    questions=40,
+    topics=(
+        ("Seguridad en la mar", range(1, 11)),
+        ("Meteorología", range(11, 21)),
+        ("Teoría de navegación", range(21, 31)),
+        ("Navegación carta", range(31, 41)),
+    ),
+)
+
+LICENCES = {licence.code: licence for licence in (PER, PY)}
 
 
 def fold(text: str) -> str:

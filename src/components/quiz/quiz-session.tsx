@@ -14,7 +14,7 @@ import {
   type QuizQuestion,
   type QuizSummary,
 } from "@/lib/quiz";
-import { OFFICIAL_EXAM_ERROR_LIMITS } from "@/lib/official-exam-evaluation";
+import type { ExamRules } from "@/lib/licences";
 import {
   clearExamInProgress,
   recordOutcomes,
@@ -30,8 +30,8 @@ import QuizResults from "./quiz-results";
 type QuizSessionProps = {
   questions: QuizQuestion[];
   recommendedMode: QuizMode;
-  /** Apply the official pass/fail rules (total and per-topic error limits). */
-  official?: boolean;
+  /** Apply these official pass/fail rules (total and per-topic error limits). */
+  rules?: ExamRules;
   /** Countdown for simulacro mode, in minutes. */
   timeLimitMinutes?: number;
   showTopic?: boolean;
@@ -97,15 +97,13 @@ const ProgressBar = ({
   // Only práctica shows correctness while answering; simulacro waits for the hand-in.
   const showErrors = official && !finished && mode === "practica";
   const isOverLimit = showErrors && summary.evaluation?.passed === false;
-  const errorCounts = summary.evaluation?.counts;
-  const errorItems = errorCounts
-    ? [
-        { key: "total", label: null, errors: errorCounts.total, limit: OFFICIAL_EXAM_ERROR_LIMITS.total },
-        { key: "ripa", label: "RIPA", errors: errorCounts.ripa, limit: OFFICIAL_EXAM_ERROR_LIMITS.ripa },
-        { key: "balizamiento", label: "Balizamiento", errors: errorCounts.balizamiento, limit: OFFICIAL_EXAM_ERROR_LIMITS.balizamiento },
-        { key: "carta", label: "Carta de navegación", errors: errorCounts.cartaDeNavegacion, limit: OFFICIAL_EXAM_ERROR_LIMITS.cartaDeNavegacion },
-      ]
-    : [];
+  // The total has no label: "Fallos: 3/13 · RIPA 1/5 · …".
+  const errorItems = (summary.evaluation?.limits ?? []).map((limit) => ({
+    key: limit.key,
+    label: limit.key === "total" ? null : limit.label,
+    errors: limit.errors,
+    limit: limit.maxErrors,
+  }));
 
   return (
     <div className="sticky top-0 z-10 -mx-4 border-b bg-background/95 px-4 py-2 backdrop-blur supports-backdrop-filter:bg-background/80">
@@ -222,7 +220,7 @@ const ProgressBar = ({
 const QuizSession = ({
   questions,
   recommendedMode,
-  official = false,
+  rules,
   timeLimitMinutes,
   showTopic = false,
   showSession = false,
@@ -233,6 +231,7 @@ const QuizSession = ({
   onNewTest,
 }: QuizSessionProps) => {
   const router = useRouter();
+  const official = Boolean(rules);
   const progress = useProgress();
   const examRecord = examKey ? progress.exams[examKey] : undefined;
   const limitMs = timeLimitMinutes ? timeLimitMinutes * 60_000 : null;
@@ -256,8 +255,8 @@ const QuizSession = ({
 
   const finished = phase === "finished";
   const summary = useMemo(
-    () => summarizeQuiz(questions, answers, { finished, official }),
-    [questions, answers, finished, official],
+    () => summarizeQuiz(questions, answers, { finished, rules }),
+    [questions, answers, finished, rules],
   );
 
   const elapsedAt = (time: number) =>
@@ -282,7 +281,7 @@ const QuizSession = ({
     const finalAnswers = answersRef.current;
     const finalSummary = summarizeQuiz(questions, finalAnswers, {
       finished: true,
-      official,
+      rules,
     });
 
     if (mode === "simulacro") {
@@ -291,7 +290,14 @@ const QuizSession = ({
         questions.flatMap((question) => {
           const outcome = getOutcome(question, finalAnswers[question.id]);
           return outcome === "correct" || outcome === "incorrect"
-            ? [{ questionId: question.id, topicName: question.topicName, outcome }]
+            ? [
+                {
+                  questionId: question.id,
+                  licence: question.licence,
+                  topicName: question.topicName,
+                  outcome,
+                },
+              ]
             : [];
         }),
       );
@@ -388,7 +394,12 @@ const QuizSession = ({
       const outcome = question ? getOutcome(question, letter) : "neutral";
       if (question && (outcome === "correct" || outcome === "incorrect")) {
         recordOutcomes([
-          { questionId, topicName: question.topicName, outcome },
+          {
+            questionId,
+            licence: question.licence,
+            topicName: question.topicName,
+            outcome,
+          },
         ]);
       }
     }

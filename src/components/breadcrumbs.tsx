@@ -1,15 +1,21 @@
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import type { Licence } from "@/lib/licences";
 import { absoluteUrl } from "@/lib/seo";
 
 export type Crumb = { label: string; href?: string };
 
 /**
  * Where the page sits in the site, with real links up the tree. On small
- * screens only the parent is shown, as a back link.
+ * screens only the parent is shown, as a back link. Pages of a licence other
+ * than PER (which lives at the root) get its home as the second level.
  */
-const Breadcrumbs = ({ items }: { items: Crumb[] }) => {
-  const trail: Crumb[] = [{ label: "Inicio", href: "/" }, ...items];
+const Breadcrumbs = ({ items, licence }: { items: Crumb[]; licence?: Licence }) => {
+  const trail: Crumb[] = [
+    { label: "Inicio", href: "/" },
+    ...(licence?.basePath ? [{ label: licence.name, href: licence.basePath }] : []),
+    ...items,
+  ];
   const parent = [...trail].reverse().find((crumb, index) => index > 0 && crumb.href);
 
   const jsonLd = {

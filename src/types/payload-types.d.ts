@@ -127,6 +127,7 @@ export interface UserAuthOperations {
  */
 export interface Topic {
   id: number;
+  licence: 'per' | 'py';
   name: string;
   description?: string | null;
   updatedAt: string;
@@ -138,6 +139,7 @@ export interface Topic {
  */
 export interface Question {
   id: number;
+  licence: 'per' | 'py';
   year: number;
   month:
     | 'enero'
@@ -291,6 +293,7 @@ export interface PayloadMigration {
  * via the `definition` "topics_select".
  */
 export interface TopicsSelect<T extends boolean = true> {
+  licence?: T;
   name?: T;
   description?: T;
   updatedAt?: T;
@@ -301,6 +304,7 @@ export interface TopicsSelect<T extends boolean = true> {
  * via the `definition` "questions_select".
  */
 export interface QuestionsSelect<T extends boolean = true> {
+  licence?: T;
   year?: T;
   month?: T;
   testNumber?: T;

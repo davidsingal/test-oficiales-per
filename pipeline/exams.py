@@ -1,11 +1,11 @@
-"""Parse the questions of one PER exam section."""
+"""Parse the questions of one exam section (PER or Patrón de Yate)."""
 
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
 
-from common import QUESTIONS_PER_TEST, TOPICS, Issues, fold, squash, topic_for_question
+from common import PER, Issues, Licence, fold, squash
 
 QUESTION_RE = re.compile(r"^(?P<number>\d{1,2})\.?\s+(?P<text>\S.*)$")
 OPTION_RE = re.compile(r"^(?P<letter>[a-dA-D])\)\s*(?P<text>.*)$")
@@ -19,8 +19,6 @@ MAX_NUMBER_GAP = 10
 # PNB exams are questions 1-27; a "PER" section that ends there is a mislabelled PNB.
 PNB_LAST_QUESTION = 27
 
-TOPIC_HEADINGS = {fold(name): name for name, _ in TOPICS}
-
 
 @dataclass
 class Question:
@@ -32,6 +30,7 @@ class Question:
 
 @dataclass
 class Exam:
+    licence: Licence
     year: int
     month: int
     test: int
@@ -41,19 +40,21 @@ class Exam:
     questions: list[Question] = field(default_factory=list)
 
 
-def as_topic_heading(line: str) -> str | None:
+def as_topic_heading(line: str, licence: Licence) -> str | None:
     # Headings are capitalised; a wrapped option ending in e.g. "... y de\nseguridad." is not one.
     if not line[:1].isupper():
         return None
-    return TOPIC_HEADINGS.get(fold(line).rstrip(". "))
+    folded = fold(line).rstrip(". ")
+    return next((name for name, _ in licence.topics if fold(name) == folded), None)
 
 
 def is_noise(line: str) -> bool:
     return bool(PAGE_NUMBER_RE.match(line)) or fold(line).startswith(FOOTER_PREFIXES)
 
 
-def parse_questions(pages: list[list[str]], where: str, issues: Issues) -> list[Question]:
+def parse_questions(pages: list[list[str]], licence: Licence, where: str, issues: Issues) -> list[Question]:
     """Parses the text lines of a section's pages into questions."""
+    last = licence.questions
     questions: list[Question] = []
     heading_topic: str | None = None
     current: Question | None = None
@@ -65,7 +66,7 @@ def parse_questions(pages: list[list[str]], where: str, issues: Issues) -> list[
 
     for lines in pages:
         # Pages after the last question are annexes (charts, tables): stop there.
-        if current and current.number == QUESTIONS_PER_TEST and len(current.options) == 4:
+        if current and current.number == last and len(current.options) == 4:
             break
 
         # Everything before "Código de Test" on a section's first page is the letterhead.
@@ -75,7 +76,7 @@ def parse_questions(pages: list[list[str]], where: str, issues: Issues) -> list[
             if is_noise(line):
                 continue
 
-            topic = as_topic_heading(line)
+            topic = as_topic_heading(line, licence)
             if topic and at_question_boundary():
                 heading_topic = topic
                 continue
@@ -84,11 +85,11 @@ def parse_questions(pages: list[list[str]], where: str, issues: Issues) -> list[
             if question and at_question_boundary():
                 number = int(question["number"])
                 expected = current.number + 1 if current else 1
-                if expected <= number < expected + MAX_NUMBER_GAP and number <= QUESTIONS_PER_TEST:
+                if expected <= number < expected + MAX_NUMBER_GAP and number <= last:
                     if number != expected:
                         # Questions are missing from the PDF, so their topic heading may be too.
                         heading_topic = None
-                    fallback = topic_for_question(number)
+                    fallback = licence.topic_for_question(number)
                     if heading_topic and fallback and heading_topic != fallback:
                         issues.warn(
                             where, f"q{number}: heading topic '{heading_topic}' differs from expected '{fallback}'"
@@ -126,13 +127,16 @@ def parse_questions(pages: list[list[str]], where: str, issues: Issues) -> list[
     return questions
 
 
-def is_full_per_exam(questions: list[Question]) -> bool:
-    """True for a complete PER exam; False for the PNB-holders part (from q28) or a PNB-length one."""
-    return bool(questions) and questions[0].number == 1 and questions[-1].number > PNB_LAST_QUESTION
+def is_full_exam(questions: list[Question], licence: Licence) -> bool:
+    """True for a test that starts at q1. For PER, also False for the PNB-holders
+    part (from q28) and for a PNB-length test mislabelled as PER."""
+    if not questions or questions[0].number != 1:
+        return False
+    return licence != PER or questions[-1].number > PNB_LAST_QUESTION
 
 
 def check_complete(exam: Exam, where: str, issues: Issues) -> None:
     numbers = {q.number for q in exam.questions}
-    missing = [n for n in range(1, QUESTIONS_PER_TEST + 1) if n not in numbers]
+    missing = [n for n in range(1, exam.licence.questions + 1) if n not in numbers]
     if missing:
         issues.warn(where, f"missing questions {missing} (not present in the source PDF)")

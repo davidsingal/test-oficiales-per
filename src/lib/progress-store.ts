@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from "react";
+import type { LicenceId } from "@/lib/licences";
 import type { QuizAnswers, QuizMode } from "@/lib/quiz";
 
 /**
@@ -11,6 +12,8 @@ const STORAGE_VERSION = 1;
 
 export type QuestionRecord = {
   outcome: "correct" | "incorrect";
+  /** Missing in records saved before Patrón de Yate existed: those are all PER. */
+  licence?: LicenceId;
   topicName: string | null;
   /** Epoch ms of the latest answer. */
   at: number;
@@ -117,7 +120,12 @@ export const useProgress = () =>
   useSyncExternalStore(subscribe, read, () => EMPTY);
 
 export const recordOutcomes = (
-  entries: { questionId: number; topicName: string | null; outcome: QuestionRecord["outcome"] }[],
+  entries: {
+    questionId: number;
+    licence: LicenceId;
+    topicName: string | null;
+    outcome: QuestionRecord["outcome"];
+  }[],
 ) => {
   if (entries.length === 0) return;
   const at = Date.now();
@@ -126,6 +134,7 @@ export const recordOutcomes = (
     for (const entry of entries) {
       questions[entry.questionId] = {
         outcome: entry.outcome,
+        licence: entry.licence,
         topicName: entry.topicName,
         at,
       };

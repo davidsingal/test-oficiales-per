@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { licenceField } from "./licence-field";
 
 export const Topics: CollectionConfig = {
   slug: "topics",
@@ -11,6 +12,7 @@ export const Topics: CollectionConfig = {
     useAsTitle: "name",
   },
   fields: [
+    licenceField,
     {
       name: "name",
       type: "text",

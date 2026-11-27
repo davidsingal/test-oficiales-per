@@ -107,8 +107,29 @@
       "modifications": [
         {
           "url": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_diciembre_2021.pdf",
-          "sha256": "19b0fb878102219c44792153e74d158fd352ecaae23afa5d8710137471e21980",
-          "reviewed": true
+          "sha256": "19b0fb878102219c44792153e74d158fd352ecaae23afa5d8710137471e21980"
+        }
+      ],
+      "overrides": [
+        {
+          "licence": "PY",
+          "test": 1,
+          "question": 39,
+          "answers": [
+            "A",
+            "D"
+          ],
+          "source": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_diciembre_2021.pdf"
+        },
+        {
+          "licence": "PY",
+          "test": 3,
+          "question": 36,
+          "answers": [
+            "A",
+            "D"
+          ],
+          "source": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_diciembre_2021.pdf"
         }
       ]
     },
@@ -174,8 +195,27 @@
       "modifications": [
         {
           "url": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_y_cy_diciembre_2022.pdf",
-          "sha256": "dc55ebb8909cd61220ec4606e3dde8d9d5c8c9000b840ee57ee5f370fc5ed2dc",
-          "reviewed": true
+          "sha256": "dc55ebb8909cd61220ec4606e3dde8d9d5c8c9000b840ee57ee5f370fc5ed2dc"
+        }
+      ],
+      "overrides": [
+        {
+          "licence": "PY",
+          "test": 1,
+          "question": 37,
+          "answers": [
+            "ANULADA"
+          ],
+          "source": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_y_cy_diciembre_2022.pdf"
+        },
+        {
+          "licence": "PY",
+          "test": 2,
+          "question": 31,
+          "answers": [
+            "ANULADA"
+          ],
+          "source": "https://cdn.transportes.gob.es/portal-web-transportes/maritimo/examenes-teoricos/modificacion_plantilla_respuestas_examen_py_y_cy_diciembre_2022.pdf"
         }
       ]
     },
