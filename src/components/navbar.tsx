@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnchorIcon } from "lucide-react";
 import { LICENCES, licenceForPath } from "@/lib/licences";
+import { SITE_NAME } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
 const sections = [
@@ -24,12 +25,16 @@ export function Navbar() {
         className="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-4 py-2 sm:gap-3"
         aria-label="Navegación principal"
       >
-        <div className="flex shrink-0 items-center gap-2">
-          {/* The licence switch takes its place on small screens. */}
-          <Link href="/" aria-label="Inicio" className="hidden py-1 sm:block">
+        <div className="flex shrink-0 items-center gap-3">
+          {/* No room on small screens: the licence switch stands in for it there. */}
+          <Link
+            href="/"
+            className="hidden items-center gap-2 py-1 text-sm font-semibold sm:inline-flex"
+          >
             <span className="inline-flex size-7 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <AnchorIcon className="size-4" />
             </span>
+            {SITE_NAME}
           </Link>
           <ul aria-label="Titulación" className="flex items-center rounded-lg bg-muted p-0.5 text-sm font-semibold">
             {Object.values(LICENCES).map((licence) => (
