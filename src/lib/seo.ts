@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-export const SITE_NAME = "Test PER";
+/** Brand in page titles and Open Graph tags. Neutral, since it covers PER and Patrón de Yate. */
+export const SITE_NAME = "Test Náutico";
 
 /**
  * Public address of the site, for canonical URLs, the sitemap and robots.txt.
