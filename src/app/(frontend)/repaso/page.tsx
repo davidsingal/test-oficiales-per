@@ -3,7 +3,9 @@ import FailedReview from "@/components/quiz/failed-review";
 import type { Metadata, NextPage } from "next";
 
 export const metadata: Metadata = {
-  title: "Repasar mis fallos · Exámenes oficiales PER",
+  title: "Repasar mis fallos",
+  // Only shows the visitor's own progress: nothing to index.
+  robots: { index: false },
 };
 
 const RepasoPage: NextPage = () => (

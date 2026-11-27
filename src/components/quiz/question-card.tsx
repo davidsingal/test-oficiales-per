@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { CheckIcon, FileTextIcon, XIcon } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -24,6 +25,8 @@ type QuestionCardProps = {
   showSession?: boolean;
   /** Link to the official PDF. Always on for Carta de navegación questions. */
   showSourceLink?: boolean;
+  /** Link to the question's own page. */
+  showPageLink?: boolean;
 };
 
 const isAnswerLetter = (value: unknown): value is AnswerLetter =>
@@ -81,6 +84,7 @@ const QuestionCard = ({
   showTopic = false,
   showSession = false,
   showSourceLink = false,
+  showPageLink = false,
 }: QuestionCardProps) => {
   const headingId = `question-${question.id}-text`;
   const meta = [
@@ -170,6 +174,16 @@ const QuestionCard = ({
                 <p className="rounded-lg bg-muted p-3 whitespace-pre-line text-muted-foreground">
                   {question.explanation}
                 </p>
+              )}
+              {showPageLink && (
+                // A new tab, so the test in progress is not lost.
+                <Link
+                  href={`/pregunta/${question.id}`}
+                  target="_blank"
+                  className="inline-block text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+                >
+                  Abrir la página de esta pregunta
+                </Link>
               )}
             </>
           )}

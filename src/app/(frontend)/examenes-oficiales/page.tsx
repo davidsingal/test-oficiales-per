@@ -3,10 +3,18 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import ExamStatus from "@/components/progress/exam-status";
 import { getExamSessions, type ExamSession } from "@/lib/exam-sessions";
 import { examKey } from "@/lib/quiz";
+import { pageMetadata } from "@/lib/seo";
 import { monthLabels } from "@/lib/utils";
 import type { NextPage } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = pageMetadata({
+  title: "Exámenes oficiales PER de otras convocatorias",
+  description:
+    "Todos los exámenes oficiales del PER por convocatoria, con la corrección oficial y las mismas reglas para aprobar.",
+  path: "/examenes-oficiales",
+});
 
 const ExamenesOficialesPage: NextPage = async () => {
   const sessions = await getExamSessions();
