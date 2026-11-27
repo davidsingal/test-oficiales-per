@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Navbar } from "@/components/navbar";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 import Providers from "./providers";
 
@@ -11,9 +12,13 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Exámenes oficiales PER",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Exámenes oficiales PER con respuestas | Test PER",
+    template: `%s | ${SITE_NAME}`,
+  },
   description:
-    "Practica con los exámenes oficiales del Patrón de Embarcaciones de Recreo (PER): por convocatoria, por tema o al azar.",
+    "Exámenes reales del PER publicados por el Ministerio de Transportes, desde 2020, con la corrección oficial. Practica por convocatoria o por tema.",
 };
 
 export default function RootLayout({
@@ -32,6 +37,9 @@ export default function RootLayout({
           <p className="border-t pt-6">
             Preguntas y respuestas de los exámenes oficiales publicados por el
             Ministerio de Transportes. Tu progreso solo se guarda en este navegador.
+          </p>
+          <p className="pt-2">
+            Web independiente, no vinculada al Ministerio de Transportes.
           </p>
         </footer>
       </body>

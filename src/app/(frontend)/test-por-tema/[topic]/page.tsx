@@ -7,7 +7,8 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
 import { needsChart, toQuizQuestion } from "@/lib/quiz";
-import type { NextPage } from "next";
+import { pageMetadata } from "@/lib/seo";
+import type { Metadata, NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
 export const dynamic = "force-dynamic";
@@ -63,6 +64,25 @@ const TopicQuestions = async ({ topicName }: { topicName: string }) => {
       allowNewTest
     />
   );
+};
+
+export const generateMetadata = async ({
+  params,
+}: PageProps): Promise<Metadata> => {
+  const topicName = decodeURIComponent((await params).topic);
+  const { docs } = await payload.find({
+    collection: "topics",
+    where: { name: { equals: topicName } },
+    limit: 1,
+  });
+  const topic = docs[0];
+  if (!topic) return {};
+
+  return pageMetadata({
+    title: `Test PER de ${topic.name}`,
+    description: `Preguntas de ${topic.name} sacadas de exámenes oficiales del PER, con la corrección oficial.`,
+    path: `/test-por-tema/${encodeURIComponent(topic.name)}`,
+  });
 };
 
 const TopicPage: NextPage<PageProps> = async ({ params }) => {

@@ -488,6 +488,7 @@ const QuizSession = ({
               showTopic={showTopic}
               showSession={showSession}
               showSourceLink={showSourceLink}
+              showPageLink
             />
           );
         })}

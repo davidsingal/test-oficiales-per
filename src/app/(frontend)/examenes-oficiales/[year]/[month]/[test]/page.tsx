@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import { FileTextIcon } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getPayload } from "payload";
@@ -7,12 +8,13 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
 import { examKey, formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
-import { monthOrder } from "@/lib/utils";
+import { pageMetadata } from "@/lib/seo";
+import { monthLabels, monthOrder } from "@/lib/utils";
 import {
   OFFICIAL_EXAM_DURATION_MINUTES,
   OFFICIAL_EXAM_ERROR_LIMITS,
 } from "@/lib/official-exam-evaluation";
-import type { NextPage } from "next";
+import type { Metadata, NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
 type PageProps = {
@@ -69,8 +71,46 @@ const OfficialExamQuestions = async ({
         examKey={examKey(selectedYear, selectedMonth, selectedTest)}
         showTopic
       />
+      {/* Rendered on the server: the quiz shows no questions until a mode is
+          picked, so this is how search engines reach each question page. */}
+      <details className="surface p-4">
+        <summary className="cursor-pointer font-medium">
+          Preguntas de este examen
+        </summary>
+        <ol className="mt-3 space-y-2 text-sm">
+          {questions.map((question) => (
+            <li key={question.id}>
+              <Link href={`/pregunta/${question.id}`} className="hover:underline">
+                {question.number}. {question.text}
+              </Link>
+            </li>
+          ))}
+        </ol>
+      </details>
     </>
   );
+};
+
+export const generateMetadata = async ({
+  params,
+}: PageProps): Promise<Metadata> => {
+  const { year, month, test } = await params;
+  const selectedYear = Number(year);
+  const selectedTest = Number(test);
+  if (
+    !Number.isInteger(selectedYear) ||
+    !Number.isInteger(selectedTest) ||
+    !isMonth(month)
+  ) {
+    return {};
+  }
+
+  const session = `${monthLabels[month].toLowerCase()} ${selectedYear}`;
+  return pageMetadata({
+    title: `Examen PER ${session}, test ${selectedTest}, con respuestas`,
+    description: `Examen oficial del PER de ${session} (test ${selectedTest}): 45 preguntas con la corrección oficial y las reglas para aprobar.`,
+    path: `/examenes-oficiales/${examKey(selectedYear, month, selectedTest)}`,
+  });
 };
 
 const OficialExamPage: NextPage<PageProps> = async ({ params }) => {

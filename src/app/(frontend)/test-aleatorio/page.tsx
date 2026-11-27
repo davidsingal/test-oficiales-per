@@ -6,10 +6,18 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import QuestionsLoader from "@/components/questions-loader";
 import QuizSession from "@/components/quiz/quiz-session";
 import { toQuizQuestion } from "@/lib/quiz";
+import { pageMetadata } from "@/lib/seo";
 import type { NextPage } from "next";
 import type { Question } from "@/types/payload-types";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = pageMetadata({
+  title: "Test PER aleatorio",
+  description:
+    "Test rápido del PER con 10 preguntas al azar de exámenes oficiales y corrección al momento.",
+  path: "/test-aleatorio",
+});
 
 const QUESTIONS_PER_TEST = 10;
 

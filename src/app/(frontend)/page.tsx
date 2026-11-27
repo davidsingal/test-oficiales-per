@@ -4,8 +4,15 @@ import ProgressOverview from "@/components/progress/progress-overview";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { getExamSessions } from "@/lib/exam-sessions";
 import { formatSessionLabel } from "@/lib/quiz";
+import { SITE_NAME } from "@/lib/seo";
+import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "/", siteName: SITE_NAME, locale: "es_ES", type: "website" },
+};
 
 const modes = [
   {
@@ -40,12 +47,12 @@ export default async function HomePage() {
             Patrón de Embarcaciones de Recreo
           </p>
           <h1 className="text-3xl font-semibold sm:text-5xl">
-            Prepara el examen teórico del PER
+            Prepara el PER con exámenes oficiales
           </h1>
           <p className="max-w-2xl text-lg text-muted-foreground">
-            Practica con las preguntas de los exámenes oficiales del Patrón de
-            Embarcaciones de Recreo, con la corrección oficial y las mismas
-            reglas para aprobar.
+            Preguntas y respuestas tal como las publicó el Ministerio de
+            Transportes, con enlace al PDF original y las mismas reglas para
+            aprobar.
           </p>
         </div>
         {latest && latestTest !== undefined && (

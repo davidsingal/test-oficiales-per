@@ -6,9 +6,17 @@ import config from "@payload-config";
 import Breadcrumbs from "@/components/breadcrumbs";
 import TopicStats from "@/components/progress/topic-stats";
 import { needsChart } from "@/lib/quiz";
+import { pageMetadata } from "@/lib/seo";
 import type { NextPage } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = pageMetadata({
+  title: "Test PER por temas",
+  description:
+    "Practica el PER tema a tema, como RIPA o balizamiento, con preguntas de exámenes oficiales y su corrección.",
+  path: "/test-por-tema",
+});
 
 const payload = await getPayload({ config });
 

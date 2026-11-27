@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { absoluteUrl } from "@/lib/seo";
 
 export type Crumb = { label: string; href?: string };
 
@@ -11,8 +12,26 @@ const Breadcrumbs = ({ items }: { items: Crumb[] }) => {
   const trail: Crumb[] = [{ label: "Inicio", href: "/" }, ...items];
   const parent = [...trail].reverse().find((crumb, index) => index > 0 && crumb.href);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.label,
+      ...(crumb.href && { item: absoluteUrl(crumb.href) }),
+    })),
+  };
+
   return (
     <nav aria-label="Ruta de navegación" className="text-sm text-muted-foreground">
+      <script
+        type="application/ld+json"
+        // "<" is escaped so a label cannot close the script tag.
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       {parent?.href && (
         <Link
           href={parent.href}

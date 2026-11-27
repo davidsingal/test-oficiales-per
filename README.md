@@ -23,6 +23,13 @@ pnpm test     # unit tests (Vitest): scoring and pass/fail rules
 pnpm lint
 ```
 
+## SEO
+
+Set `NEXT_PUBLIC_SITE_URL` (e.g. `https://example.com`, no trailing slash) in the
+production environment. Canonical URLs, `/sitemap.xml`, `/robots.txt` and the
+breadcrumb structured data are built from it. Without it they fall back to
+Vercel's production address, or `localhost`.
+
 ## The app
 
 Three ways to practise, all with the official answer key:
