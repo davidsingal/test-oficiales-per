@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const sections = [
   { path: "/examenes-oficiales", label: "Exámenes oficiales", shortLabel: "Exámenes" },
-  { path: "/test-por-tema", label: "Test por tema", shortLabel: "Por tema" },
+  { path: "/test-por-tema", label: "Test por tema", shortLabel: "Temas" },
   { path: "/test-aleatorio", label: "Test aleatorio", shortLabel: "Aleatorio" },
 ];
 
@@ -25,16 +25,17 @@ export function Navbar() {
         className="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-4 py-2 sm:gap-3"
         aria-label="Navegación principal"
       >
-        <div className="flex shrink-0 items-center gap-3">
-          {/* No room on small screens: the licence switch stands in for it there. */}
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          {/* Small screens only fit the anchor: the name shows from sm up. */}
           <Link
             href="/"
-            className="hidden items-center gap-2 py-1 text-sm font-semibold sm:inline-flex"
+            aria-label={SITE_NAME}
+            className="inline-flex items-center gap-2 py-1 text-sm font-semibold"
           >
-            <span className="inline-flex size-7 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+            <span className="inline-flex size-6 items-center justify-center rounded-lg bg-primary text-primary-foreground sm:size-7">
               <AnchorIcon className="size-4" />
             </span>
-            {SITE_NAME}
+            <span className="hidden sm:inline">{SITE_NAME}</span>
           </Link>
           <ul aria-label="Titulación" className="flex items-center rounded-lg bg-muted p-0.5 text-sm font-semibold">
             {Object.values(LICENCES).map((licence) => (
@@ -55,7 +56,7 @@ export function Navbar() {
           </ul>
         </div>
 
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center sm:gap-1">
           {sections.map((section) => {
             const href = `${current.basePath}${section.path}`;
             // A section stays highlighted on its subpages (an exam, a topic).
