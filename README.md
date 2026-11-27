@@ -30,7 +30,12 @@ docker compose run --rm --entrypoint python pipeline -m pytest   # pipeline (pyt
 ```
 
 The e2e tests run against the dev app and the local database, so ingest the data first.
-They read answer keys from the REST API, so new sessions don't break them. After
+They read answer keys from the REST API, so new sessions don't break them.
+
+CI (`.github/workflows/tests.yml`) runs all of this on every push to `main` and every PR.
+It can't rebuild the full dataset (some PDFs are downloaded by hand), so its e2e job
+ingests `e2e/fixtures/exams.json`, a few real sessions of both licences. Regenerate it
+with `python3 e2e/fixtures/build.py` when a test needs data it doesn't have. After
 changing dependencies, rebuild (`docker compose up --build`, and `docker compose build
 e2e`): installing into the running dev server can leave two copies of Next in its cache
 and make pages fail at random.

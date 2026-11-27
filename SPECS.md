@@ -159,6 +159,7 @@ Source: RD 875/2014, anexo II.
 | OPS-1 | Schema changes only through Payload migrations (`push: false`). | code review |
 | OPS-2 | Pending migrations run on deploy (`prodMigrations`, when `NODE_ENV=production`). | manual: fresh DB in production mode applies all migrations |
 | OPS-3 | Exam content is publicly readable (site and REST API); only signed-in admins can change it. | `e2e/access.spec.ts` |
+| OPS-4 | Every push to `main` and every PR runs lint, types and the three test suites (`.github/workflows/tests.yml`). The e2e job uses a production build and the fixture in `e2e/fixtures/`. | the workflow itself |
 
 ## Out of scope
 

@@ -1,0 +1,116 @@
+# Runs the three test suites of SPECS.md on every push to main and every PR.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: "26.13.1"
+  PNPM_VERSION: "12.23.0"
+
+jobs:
+  unit:
+    name: Lint, types and unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      # Same pnpm as the Dockerfile (corepack isn't bundled with Node 25+).
+      - run: npm install -g pnpm@${{ env.PNPM_VERSION }}
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm exec tsc --noEmit -p .
+      - run: pnpm test
+
+  pipeline:
+    name: Pipeline tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r requirements.txt
+      # The dataset tests skip: CI has no extracted exams.json (see e2e/fixtures).
+      - run: python -m pytest -q -rs
+
+  e2e:
+    name: End-to-end tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_per
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d test_per"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # `localhost` makes the Payload adapter use the plain pg driver.
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_per
+      PAYLOAD_SECRET: ci-only-secret
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: npm install -g pnpm@${{ env.PNPM_VERSION }}
+      - run: pnpm install --frozen-lockfile
+
+      - name: Database schema and test data
+        run: |
+          pnpm payload migrate
+          pnpm data:ingest e2e/fixtures/exams.json
+
+      - name: Build and start the app
+        run: |
+          pnpm build
+          pnpm start --port 3000 > next.log 2>&1 &
+          for i in $(seq 1 60); do
+            curl -sf -o /dev/null http://localhost:3000/robots.txt && exit 0
+            sleep 2
+          done
+          cat next.log
+          exit 1
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run Playwright
+        run: pnpm exec playwright test
+
+      - name: Server log
+        if: failure()
+        run: cat next.log
+
+      - name: Upload traces
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: test-results/
+          retention-days: 7
