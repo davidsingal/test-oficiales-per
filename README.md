@@ -16,6 +16,8 @@ docker compose down -v       # stop and wipe the local database
 ```
 
 Schema changes go through Payload migrations (`pnpm payload migrate:create`, then `pnpm payload migrate`).
+In production they apply themselves: `prodMigrations` in `src/payload.config.ts` runs any
+pending migration when Payload starts with `NODE_ENV=production`, i.e. on each deploy.
 
 Checks:
 
