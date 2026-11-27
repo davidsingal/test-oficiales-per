@@ -1,12 +1,23 @@
 "use client";
 
+import type { LicenceId } from "@/lib/licences";
 import { useProgress } from "@/lib/progress-store";
 
 /** Questions in a topic, plus how many the learner has practised and got right. */
-const TopicStats = ({ topicName, total }: { topicName: string; total: number }) => {
+const TopicStats = ({
+  licence,
+  topicName,
+  total,
+}: {
+  licence: LicenceId;
+  topicName: string;
+  total: number;
+}) => {
   const progress = useProgress();
+  // Topic names repeat across licences ("Meteorología"), so match both.
   const records = Object.values(progress.questions).filter(
-    (record) => record.topicName === topicName,
+    (record) =>
+      (record.licence ?? "per") === licence && record.topicName === topicName,
   );
   const correct = records.filter((record) => record.outcome === "correct").length;
 

@@ -1,85 +1,47 @@
-export const OFFICIAL_EXAM_ERROR_LIMITS = {
-  total: 13,
-  ripa: 5,
-  balizamiento: 2,
-  cartaDeNavegacion: 2,
-} as const;
+import type { ExamRules } from "@/lib/licences";
 
-export type OfficialExamTrackedTopic =
-  | "ripa"
-  | "balizamiento"
-  | "cartaDeNavegacion";
-
-export type OfficialExamErrorCounts = {
-  total: number;
-  ripa: number;
-  balizamiento: number;
-  cartaDeNavegacion: number;
+/** One error cap of the official exam: the total, or one topic's. */
+export type OfficialExamLimit = {
+  /** "total", or the topic name. */
+  key: string;
+  label: string;
+  errors: number;
+  maxErrors: number;
+  exceeded: boolean;
 };
 
 export type OfficialExamEvaluation = {
   passed: boolean;
-  exceededLimits: Array<OfficialExamTrackedTopic | "total">;
-  counts: OfficialExamErrorCounts;
+  /** The total first, then each topic with its own cap, in the rules' order. */
+  limits: OfficialExamLimit[];
 };
 
-const normalizeTopicName = (value: string) =>
+/** Lowercase, no accents, trimmed: topic names are compared loosely. */
+export const normalizeTopicName = (value: string) =>
   value
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .trim();
 
-export const OFFICIAL_EXAM_TOPIC_LABELS: Record<OfficialExamTrackedTopic, string> =
-  {
-    ripa: "Reglamento (RIPA)",
-    balizamiento: "Balizamiento",
-    cartaDeNavegacion: "Carta de navegación",
-  };
-
-/** Official exam duration, in minutes. */
-export const OFFICIAL_EXAM_DURATION_MINUTES = 90;
-
-export const getTrackedOfficialExamTopic = (
-  topicName: string,
-): OfficialExamTrackedTopic | null => {
-  const normalizedTopic = normalizeTopicName(topicName);
-
-  // The RIPA topic is stored as "Reglamento (RIPA)", so match the acronym as a
-  // whole word rather than the exact name.
-  if (/\bripa\b/.test(normalizedTopic)) return "ripa";
-  if (normalizedTopic === "balizamiento") return "balizamiento";
-  if (normalizedTopic === "carta de navegacion") return "cartaDeNavegacion";
-
-  return null;
-};
-
+/**
+ * Applies the official pass rules. `errorsByTopic` is keyed by normalized topic
+ * name (see `normalizeTopicName`).
+ */
 export const evaluateOfficialExam = (
-  counts: OfficialExamErrorCounts,
+  rules: ExamRules,
+  totalErrors: number,
+  errorsByTopic: Record<string, number>,
 ): OfficialExamEvaluation => {
-  const exceededLimits: Array<OfficialExamTrackedTopic | "total"> = [];
+  const limits: OfficialExamLimit[] = [
+    { key: "total", label: "Total", errors: totalErrors, maxErrors: rules.maxErrors },
+    ...rules.topicLimits.map((limit) => ({
+      key: limit.topic,
+      label: limit.label,
+      errors: errorsByTopic[normalizeTopicName(limit.topic)] ?? 0,
+      maxErrors: limit.maxErrors,
+    })),
+  ].map((limit) => ({ ...limit, exceeded: limit.errors > limit.maxErrors }));
 
-  if (counts.total > OFFICIAL_EXAM_ERROR_LIMITS.total) {
-    exceededLimits.push("total");
-  }
-
-  if (counts.ripa > OFFICIAL_EXAM_ERROR_LIMITS.ripa) {
-    exceededLimits.push("ripa");
-  }
-
-  if (counts.balizamiento > OFFICIAL_EXAM_ERROR_LIMITS.balizamiento) {
-    exceededLimits.push("balizamiento");
-  }
-
-  if (
-    counts.cartaDeNavegacion > OFFICIAL_EXAM_ERROR_LIMITS.cartaDeNavegacion
-  ) {
-    exceededLimits.push("cartaDeNavegacion");
-  }
-
-  return {
-    passed: exceededLimits.length === 0,
-    exceededLimits,
-    counts,
-  };
+  return { passed: limits.every((limit) => !limit.exceeded), limits };
 };

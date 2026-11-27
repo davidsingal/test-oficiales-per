@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { licenceField } from "./licence-field";
 
 export const Questions: CollectionConfig = {
   slug: "questions",
@@ -8,6 +9,7 @@ export const Questions: CollectionConfig = {
     read: () => true,
   },
   fields: [
+    licenceField,
     {
       type: "row",
       fields: [

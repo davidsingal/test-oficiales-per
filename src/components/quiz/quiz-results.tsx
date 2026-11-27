@@ -3,11 +3,6 @@
 import type { Ref } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import {
-  OFFICIAL_EXAM_ERROR_LIMITS,
-  OFFICIAL_EXAM_TOPIC_LABELS,
-  type OfficialExamTrackedTopic,
-} from "@/lib/official-exam-evaluation";
 import type { QuizSummary } from "@/lib/quiz";
 
 type QuizResultsProps = {
@@ -20,12 +15,6 @@ type QuizResultsProps = {
   isLoadingNewTest?: boolean;
   ref?: Ref<HTMLElement>;
 };
-
-const TRACKED_TOPICS: OfficialExamTrackedTopic[] = [
-  "ripa",
-  "balizamiento",
-  "cartaDeNavegacion",
-];
 
 const countLabel = (count: number, singular: string, plural: string) =>
   `${count} ${count === 1 ? singular : plural}`;
@@ -43,22 +32,7 @@ const QuizResults = ({
   const { evaluation } = summary;
   const scored = summary.total - summary.neutral;
 
-  const limitRows = evaluation
-    ? [
-        {
-          key: "total",
-          label: "Total",
-          errors: evaluation.counts.total,
-          limit: OFFICIAL_EXAM_ERROR_LIMITS.total,
-        },
-        ...TRACKED_TOPICS.map((topic) => ({
-          key: topic,
-          label: OFFICIAL_EXAM_TOPIC_LABELS[topic],
-          errors: evaluation.counts[topic],
-          limit: OFFICIAL_EXAM_ERROR_LIMITS[topic],
-        })),
-      ]
-    : [];
+  const limitRows = evaluation?.limits ?? [];
 
   return (
     <section
@@ -113,7 +87,7 @@ const QuizResults = ({
             </thead>
             <tbody>
               {limitRows.map((row) => {
-                const exceeded = row.errors > row.limit;
+                const { exceeded } = row;
                 return (
                   <tr key={row.key} className="border-t">
                     <td className="py-1.5">{row.label}</td>
@@ -123,7 +97,7 @@ const QuizResults = ({
                         exceeded && "font-medium text-destructive",
                       )}
                     >
-                      {row.errors} / {row.limit}
+                      {row.errors} / {row.maxErrors}
                       {exceeded && " · superado"}
                     </td>
                   </tr>

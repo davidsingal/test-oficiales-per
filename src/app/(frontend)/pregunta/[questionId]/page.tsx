@@ -6,7 +6,8 @@ import config from "@payload-config";
 import Breadcrumbs from "@/components/breadcrumbs";
 import SingleQuestion from "@/components/quiz/single-question";
 import { buttonVariants } from "@/components/ui/button-variants";
-import { formatSessionLabel, toQuizQuestion } from "@/lib/quiz";
+import { LICENCES } from "@/lib/licences";
+import { examPath, formatSessionLabel, toQuizQuestion, topicPath } from "@/lib/quiz";
 import { pageMetadata, truncate } from "@/lib/seo";
 import { monthLabels } from "@/lib/utils";
 import type { Metadata, NextPage } from "next";
@@ -39,11 +40,12 @@ export const generateMetadata = async ({
   const question = await findQuestion((await params).questionId);
   if (!question) return {};
 
+  const licence = LICENCES[question.licence];
   const session = `${monthLabels[question.month].toLowerCase()} ${question.year}`;
   return pageMetadata({
-    title: `${truncate(question.questionText, 60)} (PER ${session})`,
+    title: `${truncate(question.questionText, 60)} (${licence.shortName} ${session})`,
     description: truncate(
-      `Pregunta oficial del examen PER de ${session} (test ${question.testNumber}, n.º ${question.questionNumber}): ${question.questionText}`,
+      `Pregunta oficial del examen ${licence.of} de ${session} (test ${question.testNumber}, n.º ${question.questionNumber}): ${question.questionText}`,
       155,
     ),
     path: `/pregunta/${question.id}`,
@@ -61,6 +63,7 @@ const PreguntaPage: NextPage<PageProps> = async ({ params }) => {
     collection: "questions",
     depth: 0,
     where: {
+      licence: { equals: question.licence },
       year: { equals: question.year },
       month: { equals: question.month },
       testNumber: { equals: question.testNumber },
@@ -78,7 +81,8 @@ const PreguntaPage: NextPage<PageProps> = async ({ params }) => {
     question.month,
     question.testNumber,
   );
-  const examHref = `/examenes-oficiales/${question.year}/${question.month}/${question.testNumber}`;
+  const licence = LICENCES[question.licence];
+  const examHref = examPath(licence.id, question.year, question.month, question.testNumber);
   const topicName =
     typeof question.topic === "object" && question.topic !== null
       ? question.topic.name
@@ -88,8 +92,9 @@ const PreguntaPage: NextPage<PageProps> = async ({ params }) => {
     <main className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6">
       <section className="space-y-2">
         <Breadcrumbs
+          licence={licence}
           items={[
-            { label: "Exámenes oficiales", href: "/examenes-oficiales" },
+            { label: "Exámenes oficiales", href: `${licence.basePath}/examenes-oficiales` },
             { label: sessionLabel, href: examHref },
             { label: `Pregunta ${question.questionNumber}` },
           ]}
@@ -98,7 +103,7 @@ const PreguntaPage: NextPage<PageProps> = async ({ params }) => {
           Pregunta {question.questionNumber}
         </h1>
         <p className="text-muted-foreground">
-          Del examen oficial de {question.month} de {question.year}, test{" "}
+          Del examen oficial {licence.of} de {question.month} de {question.year}, test{" "}
           {question.testNumber}.
         </p>
       </section>
@@ -125,7 +130,7 @@ const PreguntaPage: NextPage<PageProps> = async ({ params }) => {
         </Link>
         {topicName && (
           <Link
-            href={`/test-por-tema/${encodeURIComponent(topicName)}`}
+            href={topicPath(licence.id, topicName)}
             className={buttonVariants({ size: "lg", variant: "outline" })}
           >
             Practicar {topicName}

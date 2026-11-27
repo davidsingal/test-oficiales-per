@@ -9,18 +9,8 @@ import {
   resetProgress,
   useProgress,
 } from "@/lib/progress-store";
-import { formatSessionLabel } from "@/lib/quiz";
-import { monthLabels } from "@/lib/utils";
-import type { Question } from "@/types/payload-types";
-
-const isMonth = (value: string): value is Question["month"] => value in monthLabels;
-
-const labelForExamKey = (key: string) => {
-  const [year, month, test] = key.split("/");
-  return isMonth(month)
-    ? formatSessionLabel(Number(year), month, Number(test))
-    : key;
-};
+import { LICENCES } from "@/lib/licences";
+import { examPath, formatSessionLabel, parseExamKey } from "@/lib/quiz";
 
 /** The learner's saved progress on the home page, with a way to reset it. */
 const ProgressOverview = () => {
@@ -57,16 +47,21 @@ const ProgressOverview = () => {
 
       {inProgress.length > 0 && (
         <ul className="space-y-1 text-sm">
-          {inProgress.map(([key]) => (
-            <li key={key}>
-              <Link
-                href={`/examenes-oficiales/${key}`}
-                className="underline underline-offset-4"
-              >
-                Continuar el examen de {labelForExamKey(key)}
-              </Link>
-            </li>
-          ))}
+          {inProgress.map(([key]) => {
+            const exam = parseExamKey(key);
+            if (!exam) return null;
+            return (
+              <li key={key}>
+                <Link
+                  href={examPath(exam.licence, exam.year, exam.month, exam.testNumber)}
+                  className="underline underline-offset-4"
+                >
+                  Continuar el examen {LICENCES[exam.licence].shortName} de{" "}
+                  {formatSessionLabel(exam.year, exam.month, exam.testNumber)}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       )}
 

@@ -1,6 +1,7 @@
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { sql } from "@payloadcms/db-vercel-postgres";
+import type { LicenceId } from "@/lib/licences";
 import { monthOrder } from "@/lib/utils";
 import type { Question } from "@/types/payload-types";
 
@@ -10,12 +11,15 @@ export type ExamSession = {
   testNumbers: number[];
 };
 
-/** Every exam session (year and month) with its tests, newest first. */
-export const getExamSessions = async (): Promise<ExamSession[]> => {
+/** Every exam session (year and month) of a licence with its tests, newest first. */
+export const getExamSessions = async (
+  licence: LicenceId,
+): Promise<ExamSession[]> => {
   const payload = await getPayload({ config });
   const result = await payload.db.drizzle.execute(sql`
     SELECT DISTINCT "year", "month", "test_number"
     FROM "questions"
+    WHERE "licence" = ${licence}
   `);
 
   const sessions = new Map<string, ExamSession>();

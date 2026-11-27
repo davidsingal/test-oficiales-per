@@ -1,11 +1,11 @@
-"""Data pipeline for the official PER exams.
+"""Data pipeline for the official PER and Patrón de Yate exams.
 
     python main.py import-page FILE|- [--since YYYY-MM]
     python main.py discover [--from YYYY-MM] [--to YYYY-MM] [--retry-gaps] [--write]
     python main.py extract  [--cache DIR] [--output FILE]
 
 extract fetches the original PDFs into the cache as needed, then writes every
-PER exam, its questions, options and correct answers to <output> (JSON). It
+PER and Patrón de Yate exam, its questions, options and correct answers to <output> (JSON). It
 exits with status 1 if any error was found (the JSON is still written so it
 can be inspected).
 """

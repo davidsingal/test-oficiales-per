@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
+import { PER, PY } from "@/lib/licences";
 import {
   examKey,
+  examPath,
   formatSessionLabel,
+  parseExamKey,
   getOutcome,
   needsChart,
   summarizeQuiz,
@@ -17,6 +20,7 @@ const question = (
   correctAnswers: QuizQuestion["correctAnswers"],
 ): QuizQuestion => ({
   id,
+  licence: "per",
   number: id,
   text: `Pregunta ${id}`,
   explanation: null,
@@ -66,7 +70,7 @@ describe("summarizeQuiz", () => {
   it("counts outcomes while the test is in progress", () => {
     const summary = summarizeQuiz(questions, answers, {
       finished: false,
-      official: true,
+      rules: PER.rules,
     });
     expect(summary).toMatchObject({
       total: 10,
@@ -82,36 +86,43 @@ describe("summarizeQuiz", () => {
   it("counts blank answers as errors once finished", () => {
     const summary = summarizeQuiz(questions, answers, {
       finished: true,
-      official: true,
+      rules: PER.rules,
     });
     expect(summary.errors).toBe(7);
-    expect(summary.evaluation?.counts).toEqual({
-      total: 7,
-      ripa: 6,
-      balizamiento: 0,
-      cartaDeNavegacion: 1,
-    });
+    expect(
+      summary.evaluation?.limits.map(({ key, errors }) => [key, errors]),
+    ).toEqual([
+      ["total", 7],
+      ["Reglamento (RIPA)", 6],
+      ["Balizamiento", 0],
+      ["Carta de navegación", 1],
+    ]);
   });
 
   it("fails an official exam on the RIPA limit alone", () => {
     const { evaluation } = summarizeQuiz(questions, answers, {
       finished: true,
-      official: true,
+      rules: PER.rules,
     });
-    expect(evaluation).toMatchObject({ passed: false, exceededLimits: ["ripa"] });
+    expect(evaluation?.passed).toBe(false);
+    expect(
+      evaluation?.limits.filter((limit) => limit.exceeded).map((limit) => limit.key),
+    ).toEqual(["Reglamento (RIPA)"]);
   });
 
   it("skips the pass/fail check outside official exams", () => {
     expect(
-      summarizeQuiz(questions, answers, { finished: true, official: false })
+      summarizeQuiz(questions, answers, { finished: true })
         .evaluation,
     ).toBeNull();
   });
 });
 
 describe("needsChart", () => {
-  it("is true only for Carta de navegación", () => {
+  it("is true only for the chart topics", () => {
     expect(needsChart("Carta de navegación")).toBe(true);
+    expect(needsChart("Navegación carta")).toBe(true);
+    expect(needsChart("Teoría de navegación")).toBe(false);
     expect(needsChart("Balizamiento")).toBe(false);
     expect(needsChart(null)).toBe(false);
   });
@@ -120,7 +131,33 @@ describe("needsChart", () => {
 describe("labels and keys", () => {
   it("formats sessions and exam keys", () => {
     expect(formatSessionLabel(2026, "abril", 1)).toBe("Abril 2026 · Test 1");
-    expect(examKey(2026, "abril", 1)).toBe("2026/abril/1");
+    // PER keys keep the format they had before Patrón de Yate, so saved progress still matches.
+    expect(examKey("per", 2026, "abril", 1)).toBe("2026/abril/1");
+    expect(examKey("py", 2026, "abril", 1)).toBe("py/2026/abril/1");
+  });
+
+  it("reads exam keys back", () => {
+    expect(parseExamKey("2026/abril/1")).toEqual({
+      licence: "per",
+      year: 2026,
+      month: "abril",
+      testNumber: 1,
+    });
+    expect(parseExamKey("py/2025/noviembre/2")).toEqual({
+      licence: "py",
+      year: 2025,
+      month: "noviembre",
+      testNumber: 2,
+    });
+    expect(parseExamKey("2026/abrill/1")).toBeNull();
+    expect(parseExamKey("cy/2026/abril/1")).toBeNull();
+  });
+
+  it("builds exam paths under each licence", () => {
+    expect(examPath(PER.id, 2026, "abril", 1)).toBe("/examenes-oficiales/2026/abril/1");
+    expect(examPath(PY.id, 2026, "abril", 1)).toBe(
+      "/patron-de-yate/examenes-oficiales/2026/abril/1",
+    );
   });
 });
 
@@ -128,11 +165,12 @@ describe("toQuizQuestion", () => {
   it("keeps what the UI needs and sorts the options by letter", () => {
     const doc = {
       id: 7,
+      licence: "per",
       year: 2024,
       month: "noviembre",
       testNumber: 2,
       questionNumber: 12,
-      topic: { id: 1, name: "Balizamiento", updatedAt: "", createdAt: "" },
+      topic: { id: 1, licence: "per", name: "Balizamiento", updatedAt: "", createdAt: "" },
       questionText: "¿Qué marca es esta?",
       explanation: "  ",
       correctAnswers: ["C"],
@@ -148,6 +186,7 @@ describe("toQuizQuestion", () => {
 
     expect(toQuizQuestion(doc)).toEqual({
       id: 7,
+      licence: "per",
       number: 12,
       text: "¿Qué marca es esta?",
       explanation: null, // blank explanations are treated as missing
@@ -160,5 +199,38 @@ describe("toQuizQuestion", () => {
         { id: 3, letter: "B", text: "Dos" },
       ],
     });
+  });
+});
+
+describe("summarizeQuiz (Patrón de Yate)", () => {
+  it("applies the PY limits to its topics", () => {
+    const questions = [1, 2, 3, 4].map((id): QuizQuestion => ({
+      ...question(id, "Navegación carta", ["A"]),
+      licence: "py",
+    }));
+    const { evaluation } = summarizeQuiz(questions, {}, {
+      finished: true,
+      rules: PY.rules,
+    });
+    // Four blank chart answers: over the cap of 3, well under the total of 12.
+    expect(
+      evaluation?.limits.filter((limit) => limit.exceeded).map((limit) => limit.key),
+    ).toEqual(["Navegación carta"]);
+  });
+
+  it("labels PY sessions so mixed reviews tell the licences apart", () => {
+    const doc = {
+      id: 1,
+      licence: "py",
+      year: 2026,
+      month: "abril",
+      testNumber: 1,
+      questionNumber: 1,
+      topic: 4,
+      questionText: "¿?",
+      updatedAt: "",
+      createdAt: "",
+    } satisfies Question;
+    expect(toQuizQuestion(doc).sessionLabel).toBe("PY · Abril 2026 · Test 1");
   });
 });

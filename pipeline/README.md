@@ -1,6 +1,6 @@
 # Data pipeline
 
-Finds the official PER exams published by the ministry, extracts the questions
+Finds the official PER and Patrón de Yate (PY) exams published by the ministry, extracts the questions
 and correct answers from the original PDFs, and loads them into the database.
 Everything runs in Docker; nothing needs to be installed on the host.
 
@@ -45,11 +45,12 @@ only record of where the data comes from:
 - `answers`: "Plantilla de respuestas convocatoria de …"
 - `modifications`: "Modificación de respuestas a exámenes de …". Either a re-issued
   answer key, which is applied automatically after `answers`, or a letter from the
-  exam board. A letter's PER changes must be transcribed into the session's
+  exam board. A letter's PER and PY changes must be transcribed into the session's
   `overrides`, citing the letter as `source`:
   `{"test": 2, "question": 8, "answers": ["B", "C"], "source": "<letter URL>"}`.
-  If a letter doesn't affect PER, mark the document `"reviewed": true`. Until then,
-  `extract` warns about it.
+  `licence` defaults to `"PER"`; PY changes add `"licence": "PY"` (see 2021-12).
+  If a letter affects neither (Capitán de Yate only), mark the document
+  `"reviewed": true`. Until then, `extract` warns about it.
 - `hints` (on a document): for a section whose printed header is missing or unreadable,
   map a page number to the section that starts there, e.g.
   `"hints": {"1": {"licence": "PER", "test": 1}}` (see 2021-02).
@@ -86,8 +87,10 @@ links are added to its exams page, and a "Modificación" usually follows a few w
   the `sources.json` git diff.
 - **Sections:** each session PDF contains every licence (Capitán de Yate, Patrón de Yate,
   PER, PER for PNB holders, PNB). It's split at each `EXAMEN DE … / Código de Test NN`
-  header, and only full PER tests are kept: those starting at q1 and going past q27. The
-  PNB-holders part (from q28) repeats questions of a full test, so it's skipped.
+  header, and PER and PY tests are kept (layouts in `common.py`: PER 45 questions in
+  11 topics, PY 40 in 4). A PER test must start at q1 and go past q27: the PNB-holders
+  part (from q28) repeats questions of a full test, so it's skipped. Capitán de Yate and
+  PNB are skipped.
 - **Questions:** questions and options are parsed from the text. Topics come from the
   section headings in the PDF, with the canonical ranges in `common.py` as a cross-check.
 - **Answers:** answers are read from the answer key, and any later rectification
@@ -99,12 +102,14 @@ links are added to its exams page, and a "Modificación" usually follows a few w
 Known warnings:
 - The 2021-12 PDFs are missing pages (tests 01 and 05).
 - A 2020-12 section printed as PER is actually a 27-question PNB test.
+- 2021-02 has a PY answer key, but its exam PDF doesn't include the PY test.
 
 ## Ingest (`scripts/ingest-exams.ts`)
 
 Runs through `payload run` in the app image, using the Payload local API.
 
-- **Idempotent upsert:** a question is identified by year + month + test + question number,
-  and an answer by question + letter. Re-running only writes what changed.
+- **Idempotent upsert:** a question is identified by licence + year + month + test +
+  question number, a topic by licence + name ("Meteorología" is in both), and an answer
+  by question + letter. Re-running only writes what changed.
 - It never touches `explanation`, which is written by hand.
 - Rows that aren't in the dataset are reported, and deleted only with `prune`.

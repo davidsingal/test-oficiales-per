@@ -15,13 +15,12 @@ import pdfplumber
 
 from common import fold
 
-PER = "PER"
 # Checked in order against the folded "EXAMEN DE ..." header line.
 LICENCES = (
     ("PNB", "basica"),
     ("CY", "capitan"),
     ("PY", "yate"),
-    (PER, "embarcaciones de recreo"),
+    ("PER", "embarcaciones de recreo"),
 )
 CODE_RE = re.compile(r"codigo (?:de )?test\s*:?\s*(?P<code>\d{1,2}(?:\(cid:\d+\))?|\(cid:\d+\))")
 HEADER_LINES = 20  # the section header is always near the top of its first page

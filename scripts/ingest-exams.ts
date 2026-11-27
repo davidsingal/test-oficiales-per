@@ -1,7 +1,8 @@
 /**
  * Upserts the dataset built by the Python pipeline (data/outputs/exams.json)
- * into Payload. Idempotent: questions are keyed by year/month/test/question
- * number and answers by question + letter, so re-running only applies changes.
+ * into Payload. Idempotent: questions are keyed by licence/year/month/test/
+ * question number, topics by licence + name and answers by question + letter,
+ * so re-running only applies changes.
  * The hand-written `explanation` field is never touched.
  *
  *   pnpm data:ingest [dry-run] [prune] [path/to/exams.json]
@@ -22,6 +23,7 @@ import type { Answer, Question } from "../src/types/payload-types";
 
 type AnswerId = Answer["answerId"];
 type Month = Question["month"];
+type Licence = Question["licence"];
 type CorrectAnswer = NonNullable<Question["correctAnswers"]>[number];
 
 type DatasetQuestion = {
@@ -34,6 +36,7 @@ type DatasetQuestion = {
 
 type Dataset = {
   exams: {
+    licence: Licence;
     year: number;
     month: Month;
     testNumber: number;
@@ -68,8 +71,16 @@ const stats = {
   answersPruned: 0,
 };
 
-const questionKey = (q: { year: number; month: string; testNumber: number; questionNumber: number }) =>
-  `${q.year}|${q.month}|${q.testNumber}|${q.questionNumber}`;
+const questionKey = (q: {
+  licence: string;
+  year: number;
+  month: string;
+  testNumber: number;
+  questionNumber: number;
+}) => `${q.licence}|${q.year}|${q.month}|${q.testNumber}|${q.questionNumber}`;
+
+// Topic names repeat across licences ("Meteorología"), so the licence is part of the key.
+const topicKey = (licence: string, name: string) => `${licence}|${name.trim().toLowerCase()}`;
 
 const idOf = (value: number | { id: number } | null | undefined): number | undefined =>
   value == null ? undefined : typeof value === "number" ? value : value.id;
@@ -115,16 +126,20 @@ async function main(): Promise<void> {
   const payload = await getPayload({ config });
 
   // Topics
-  const topicIdByName = new Map<string, number>();
-  for (const topic of await findAll<{ id: number; name: string }>(payload, "topics")) {
-    topicIdByName.set(topic.name.trim().toLowerCase(), topic.id);
+  const topicIdByKey = new Map<string, number>();
+  for (const topic of await findAll<{ id: number; licence: Licence; name: string }>(payload, "topics")) {
+    topicIdByKey.set(topicKey(topic.licence, topic.name), topic.id);
   }
-  const topicNames = new Set(dataset.exams.flatMap((e) => e.questions.map((q) => q.topic)));
-  for (const name of topicNames) {
-    if (topicIdByName.has(name.toLowerCase())) continue;
+  const topics = new Map(
+    dataset.exams.flatMap((e) =>
+      e.questions.map((q) => [topicKey(e.licence, q.topic), { licence: e.licence, name: q.topic }] as const),
+    ),
+  );
+  for (const [key, data] of topics) {
+    if (topicIdByKey.has(key)) continue;
     stats.topicsCreated += 1;
-    const id = dryRun ? -stats.topicsCreated : (await payload.create({ collection: "topics", data: { name } })).id;
-    topicIdByName.set(name.toLowerCase(), id);
+    const id = dryRun ? -stats.topicsCreated : (await payload.create({ collection: "topics", data })).id;
+    topicIdByKey.set(key, id);
   }
 
   // Existing questions and answers
@@ -147,6 +162,7 @@ async function main(): Promise<void> {
   const items = dataset.exams.flatMap((exam) =>
     exam.questions.map((q) => ({
       ...q,
+      licence: exam.licence,
       year: exam.year,
       month: exam.month,
       testNumber: exam.testNumber,
@@ -158,9 +174,10 @@ async function main(): Promise<void> {
   const seenQuestionIds = new Set<number>();
 
   await runPool(items, async (item) => {
-    const topic = topicIdByName.get(item.topic.toLowerCase())!;
+    const topic = topicIdByKey.get(topicKey(item.licence, item.topic))!;
     const existing = existingQuestions.get(questionKey(item));
     const data = {
+      licence: item.licence,
       year: item.year,
       month: item.month,
       testNumber: item.testNumber,

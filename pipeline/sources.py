@@ -9,10 +9,11 @@ Per session:
   answers        the "Plantilla de respuestas" PDF(s)
   modifications  the "Modificación de respuestas" PDF(s). Either a re-issued
                  answer key (applied automatically, after `answers`) or a letter
-                 from the exam board, whose PER changes must be transcribed
-                 into `overrides` (or the document marked `"reviewed": true`
-                 if it does not affect PER).
-  overrides      [{"test": 2, "question": 8, "answers": ["B", "C"], "source": <letter URL>}]
+                 from the exam board, whose PER and PY changes must be
+                 transcribed into `overrides` (or the document marked
+                 `"reviewed": true` if it affects neither).
+  overrides      [{"test": 2, "question": 8, "answers": ["B", "C"], "source": <letter URL>}],
+                 plus "licence": "PY" for Patrón de Yate (default "PER")
 """
 
 from __future__ import annotations
@@ -34,7 +35,7 @@ class Document:
     # header is missing or unreadable in the source PDF.
     hints: dict[int, dict] | None = None
     # A modification letter that has been read and transcribed into `overrides`
-    # (or that does not affect PER).
+    # (or that affects neither PER nor PY).
     reviewed: bool | None = None
 
     def __post_init__(self) -> None:
